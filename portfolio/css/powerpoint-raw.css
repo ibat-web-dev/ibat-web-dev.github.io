@@ -1,0 +1,116 @@
+/* ===== CSS Resets ====== */
+* { padding: 0; margin: 0; box-sizing: border-box }
+html, body { height: 100% }
+body { line-height: 1 }
+ol, ul { margin-left: 20px}
+/* ===== End CSS Resets ===== */
+
+h1, h2, h3, h4 {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+h1, h2 {
+	color: #0d47a1 /* blue */
+}
+
+h1 {
+	font-size: 54px;
+	margin-bottom: 36px;
+	text-align: center;
+	letter-spacing:2px
+}
+
+h2 {
+	font-size: 32px;
+	margin-top: 42px;
+	margin-bottom: 6px;
+}
+
+h3 {
+	font-size: 20px;
+	color: #000;
+	margin-top: 28px;
+	margin-bottom: 4px;
+	text-transform:uppercase;
+}
+
+h4 {
+	font-size: 18px;
+	color: #0d47a1;
+	margin-top: 0;
+	margin-bottom: 4px;
+	text-transform:uppercase;
+}
+
+p, li {
+	font-family: serif; 
+	font-size: 18px;
+	color: #2c3e50; /* dark-blue */
+	margin-bottom: 16px; 
+	line-height: 1.5;
+	font-weight: normal;
+}
+
+.deckhead {
+	font-family: sans-serif; 
+	font-size: 22px;
+	text-align:center;
+	font-style:italic;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:42px;
+}
+
+.box-note {
+	border-top: solid 2px #0d47a1;
+	border-right: solid 2px #0d47a1;
+	border-bottom: solid 2px #0d47a1;
+	border-left: solid 20px #0d47a1;
+
+	padding: 10px 20px 10px 20px;
+	margin-bottom:20px;
+	background: #9be7ff
+}
+
+.box-note p {
+	font-family: sans-serif;
+	margin-bottom: 0;
+	font-size:16px;
+}
+
+.img-center {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:48px;
+	margin-top:48px;
+	width: 100%; height: auto;
+}
+
+ul.weblinks {
+	margin: 20px 0 32px 30px;
+}
+
+ul.weblinks li{
+	margin-bottom: 20px;
+}
+
+.wrapper-content {
+	margin-left: 20%;
+	margin-right:20%;
+	margin-top:4%;
+	margin-bottom: 12%;
+}
+
+ul.toc {
+	margin-top:12px;
+	margin-left: 30px;
+	margin-bottom: 40px;
+}
+
+ul.toc li {
+	font-family: sans-serif;
+	margin-bottom: 10px;
+}

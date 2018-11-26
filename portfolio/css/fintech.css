@@ -1,0 +1,62 @@
+html, body { height: 100% }
+body { padding-top:64px;max-width: 1366px; margin: 0 auto }
+
+
+h1, h2, h3, h4, p, li { font-family: 'Lato', sans-serif }
+
+h1, h3 { font-weight: 900 }
+h2.text-center, h4, p, li { font-weight: 400 }
+
+.jumbotron {
+	background-image: url('../img/skyscrapper.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 480px; width: auto;
+	padding: 10% 0 0 0;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron::after {
+	content: ''; position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0; height: 480px;
+	background: rgba(20, 20, 20, .3);
+	z-index: -1
+}
+
+.jumbotron h1, .jumbotron p.lead {
+	margin: 0 auto; padding: 0; color:#fff
+}
+
+.jumbotron h1 {
+	font-size:72px; font-weight: 900;
+	margin-bottom:2%;
+	text-shadow: 2px 2px #222;
+	font-family: 'Lato',sans-serif;
+}
+
+.jumbotron p.lead {
+	font-size:32px; font-weight:400;
+	max-width:60%;
+}
+
+h2.text-center { font-size: 54px; color: #663399 }
+
+.col-md-6 h3 { font-size: 32px; font-weight:900; color: #663399 }
+.col-md-6 p { font-size: 18px }
+
+p.introduction { font-size: 24px; padding-bottom: 2% }
+
+h4 { margin-bottom: 2px }
+
+.col-md-6.padding-top-bottom { padding: 10% 0 10% 0}
+.col-md-6.narrow-col { padding-left:8%; padding-right:8% }
+
+.background-highlight {
+	padding: 3% 0;
+	background:#e3e3da;
+	margin-bottom:4%
+}
+
+

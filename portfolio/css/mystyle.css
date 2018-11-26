@@ -1,0 +1,359 @@
+html, body { height: 100% /* enables veritial percentage height values */}
+body { 
+	padding-top:64px; /* To make pace for sticky navbar */
+	max-width: 1366px; margin: 0 auto /* maximum width, even  on wider screens */
+}
+
+/* ========= FONTS ========== */
+
+h1, h2, h3, h4 { font-family: sans-serif } /* headings */
+p, li { font-family: sans-serif } /* paragraph and bullet text */
+ul.navbar-nav.mr-auto li.nav-item a.nav-link { font-family: sans-serif } /* navigation bar */
+
+
+h1, h3 { font-weight: 700 } /* 700 is 'bold' */
+h2, h4, p, li { font-weight: 400 } /* 400 is normal */
+
+
+/* ============= COLOUR SCHEMES ============= */
+
+
+/* PURPLE */
+
+ul.navbar-nav.mr-auto li.nav-item a.nav-link { color: #6735a1; opacity: 0.7}
+ul.navbar-nav.mr-auto li.nav-item a.nav-link.active { color: #6735a1; opacity: 1 }
+.navbar .btn-get-in-touch { background-color: #6735a1; color: #fff }
+.navbar .btn-get-in-touch:hover, .navbar .btn-get-in-touch:active { background: #4E2778 }
+
+.container-section-heading p a { color: #6735a1 }
+.container-section-home-page p a { color: #6735a1 }
+.container-section-heading hr.color-center-line { background-color: #6735a1 }
+.container-section-home-page hr.color-center-line { background-color: #6735a1 }
+.bg-highlight-light { background: #fff6e9 }
+.bg-highlight-light .container-get-in-touch p.introduction a { color: #6735a1 } 
+
+.website-samples h3 { color: #6735a1 }
+.website-samples p a  { color: #6735a1 }
+.website-samples a.ghost-button-round { color: #6735a1; border-color: #6735a1 }
+.website-samples a.ghost-button-round:hover, 
+.website-samples a.ghost-button-round:active { background: #6735a1 }
+.website-samples a.ghost-button-square { color: #6735a1; border-color: #6735a1 }
+.website-samples a.ghost-button-square:hover, 
+.website-samples a.ghost-button-square:active { background: #6735a1 }
+
+.tutorials-examples h3 a, 
+.tutorials-examples .col-md-4 p a { color: #6735a1 }
+
+
+/* BLUE */
+
+/* ul.navbar-nav.mr-auto li.nav-item a.nav-link { color: #230cea; opacity: 0.7}
+ul.navbar-nav.mr-auto li.nav-item a.nav-link.active { color: #230cea; opacity: 1 }
+.navbar .btn-get-in-touch { background-color: #230cea; color: #fff }
+.navbar .btn-get-in-touch:hover, .navbar .btn-get-in-touch:active { background: #1C0AC0 }
+
+.container-section-heading p a { color: #230cea }
+.container-section-home-page p a { color: #230cea }
+.container-section-heading hr.color-center-line { background-color: #230cea }
+.container-section-home-page hr.color-center-line { background-color: #230cea }
+
+.bg-highlight-light { background: #B0D6FF }
+.bg-highlight-light .container-get-in-touch p.introduction a { color: #230cea } 
+
+.website-samples h3 { color: #230cea }
+.website-samples p a  { color: #230cea }
+.website-samples a.ghost-button-round { color: #230cea; border-color: #230cea }
+.website-samples a.ghost-button-round:hover, 
+.website-samples a.ghost-button-round:active { background: #230cea }
+.website-samples a.ghost-button-square { color: #230cea; border-color: #230cea }
+.website-samples a.ghost-button-square:hover, 
+.website-samples a.ghost-button-square:active { background: #230cea }
+
+.tutorials-examples h3 a, 
+.tutorials-examples .col-md-4 p a { color: #230cea }
+*/
+
+/* RED */
+
+/*
+ul.navbar-nav.mr-auto li.nav-item a.nav-link { color: #c0392b; opacity: 0.7}
+ul.navbar-nav.mr-auto li.nav-item a.nav-link.active { color: #c0392b; opacity: 1 }
+.navbar .btn-get-in-touch { background-color: #c0392b; color: #fff }
+.navbar .btn-get-in-touch:hover, .navbar .btn-get-in-touch:active { background: #A73225 }
+
+.container-section-heading p a { color: #c0392b }
+.container-section-home-page p a { color: #c0392b }
+.container-section-heading hr.color-center-line { background-color: #c0392b }
+.container-section-home-page hr.color-center-line { background-color: #c0392b }
+
+.bg-highlight-light { background: #ecf0f1 }
+.bg-highlight-light .container-get-in-touch p.introduction a { color: #c0392b } 
+
+.website-samples h3 { color: #c0392b }
+.website-samples p a  { color: #c0392b }
+.website-samples a.ghost-button-round { color: #c0392b; border-color: #c0392b }
+.website-samples a.ghost-button-round:hover, 
+.website-samples a.ghost-button-round:active { background: #c0392b }
+.website-samples a.ghost-button-square { color: #c0392b; border-color: #c0392b }
+.website-samples a.ghost-button-square:hover, 
+.website-samples a.ghost-button-square:active { background: #c0392b }
+
+.tutorials-examples h3 a, 
+.tutorials-examples .col-md-4 p a { color: #c0392b }
+*/
+
+
+/* ======= ALL PAGES  ========== */
+
+.navbar-nav a.nav-link { text-transform: uppercase; font-weight: 700; margin-left: 30px }
+.container-section-heading { text-align: center }
+.container-section-heading p { color:#222; font-size:32px; text-align: center; margin: 0 auto; width: 60% }
+.container-section-heading hr.color-center-line { text-align: center; margin: 12px auto 72px auto;  height: 6px; width: 30% }
+
+.images-shadow { box-shadow: 5px 10px 8px #888 }
+
+.container-get-in-touch { text-align: center }
+.container-get-in-touch p { color:  #021647; font-size:32px; text-align: center; margin: 0 auto; width: 90% }
+
+.bg-highlight-light { padding: 42px 0 48px 0 }
+
+.bg-footer { background: #2c3e50; padding: 42px 0 48px 0  }
+.container-footer h4, p, p a { color: #fff }
+.container-footer h4 { margin-bottom: 6px; font-weight: 700; font-size:18px }
+.container-footer p { margin-bottom: 3px }
+.container-footer .col-md-8 h4,
+.container-footer .col-md-8 p { text-align: center; margin: 0 16% 12px 16% }
+.container-footer p a:hover, .container-footer p a:active { color: #fff; text-decoration: underline }
+
+
+/* ======== HOME PAGE ==========*/
+
+/* jumbotron */
+.jumbotron-home {
+	background-image: url('../img/hero-image-ibat-college.jpg');
+	background-size: cover; /* Ensures background image expands to fill jumbotron area  */
+	text-align: center; /* Ensures text in jumbotron is centered horizontally  */
+	display:flex; align-items:center; /* Ensures text in jumbotron is centered vertically */
+	position: relative; z-index: 1; /* Needed for overlay */
+	margin-bottom:50px
+}
+
+.jumbotron-home::after { /* Creates an overlay - behind text and in front of background image */
+	content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; 	z-index: -1;
+	background: rgba(20, 20, 20, .4); /* Sets colour of overlay and opacity level */
+}
+
+.jumbotron-home, .jumbotron-home::after { height: 480px } /* jumbtron and overlay must be same height */
+
+.jumbotron-home h1, .jumbotron-home h2 {
+	color:#fff; font-weight: 700; margin: 0 auto;
+	line-height: 1.3; text-shadow: 2px 2px #222;
+}
+
+.jumbotron-home h1 { font-size:82px; margin-bottom:2% }
+.jumbotron-home h2 { font-size:42px; font-weight:400; max-width:70% }
+
+.container-section-home-page { text-align: center; padding-bottom: 32px }
+.container-section-home-page h3 { color: #021647; font-size:52px; text-align: center; margin: 0 auto }
+.container-section-home-page p { color: #021647; font-size:22px; text-align: center; margin: 0 auto 16px; width: 60% }
+.container-section-home-page hr.color-center-line { text-align: center; margin: 12px auto 32px auto;  height: 6px; width: 12% }
+.container-section-home-page p a { text-decoration: underline }
+
+
+
+/* ======= PORTFOLIO PAGE  ========== */
+
+/* jumbotron */
+.jumbotron-portfolio {
+	background-image: url('../img/portfolio-hero-image.jpg');
+	background-size: cover; /* Ensures background image expands to fill jumbotron area  */
+	text-align: center; /* Ensures text in jumbotron is centered horizontally  */
+	display:flex; align-items:center; /* Ensures text in jumbotron is centered vertically */
+	position: relative; z-index: 1; /* Needed for overlay */
+	margin-bottom:50px
+}
+
+.jumbotron-portfolio::after { /* Creates an overlay - behind text and in front of background image */
+	content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; 	z-index: -1;
+	background: rgba(20, 20, 20, .5); /* Sets colour of overlay and opacity level */
+}
+
+.jumbotron-portfolio, .jumbotron-portfolio::after { height: 480px } /* jumbtron and overlay must be same height */
+
+.jumbotron-portfolio h1, .jumbotron-portfolio h2 {
+	color:#fff; font-weight: 700; margin: 0 auto;
+	line-height: 1.3; text-shadow: 2px 2px #222;
+}
+
+.jumbotron-portfolio h1 { font-size:72px; margin-bottom:2% }
+.jumbotron-portfolio h2 { font-size:32px; font-weight:400; max-width:70% }
+
+/* website samples - text, link buttons and images */
+
+.website-samples .col-md-4 { padding-bottom:72px }
+.website-samples h3 { font-size: 24px; font-weight: 700; margin-top:24px; margin-bottom:4px }
+.website-samples p  { font-size: 16px; color: #021647; margin-bottom: 22px }
+
+.website-samples p a { text-decoration: underline }
+.website-samples p a:hover, .website-samples p a:active { text-decoration: none }
+
+.website-samples a.ghost-button-square { 
+	display: inline-block; line-height:1; padding: 10px 18px 14px 18px; 
+	border-style: solid;
+	border-width: 3px; 
+	text-decoration: none; border-radius: 1px;
+}
+
+.website-samples a.ghost-button-square:hover, 
+.website-samples a.ghost-button-square:active { color: #fff }
+
+.website-samples a.ghost-button-round { 
+	font-size:17px;
+	display: inline-block; line-height:1; padding: 12px 20px 16px 20px; 
+	border-style: solid;
+	border-width: 3px; 
+	text-decoration: none;  
+	border-radius: 100px 100px 100px 100px;
+}
+
+.website-samples a.ghost-button-round:hover, 
+.website-samples a.ghost-button-round:active { color: #fff }
+
+
+/* === TUTORIALS SAMPLES ========== */
+
+.jumbotron-tutorials {
+	background-image: url('../img/tutorials-hero-image.jpg');
+	background-size: cover; /* Ensures background image expands to fill jumbotron area  */
+	text-align: center; /* Ensures text in jumbotron is centered horizontally  */
+	display:flex; align-items:center; /* Ensures text in jumbotron is centered vertically */
+	position: relative; z-index: 1; /* Needed for overlay */
+	margin-bottom: 28px;
+}
+
+.jumbotron-tutorials::after { /* Creates an overlay - behind text and in front of background image */
+	content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; 	z-index: -1;
+	background: rgba(20, 20, 20, .4); /* Sets colour of overlay and opacity level */
+}
+
+.jumbotron-tutorials, .jumbotron-tutorials::after { height: 480px } /* jumbtron and overlay must be same height */
+
+.jumbotron-tutorials h1, .jumbotron-tutorials h2 {
+	color:#fff; font-weight: 700; margin: 0 auto;
+	line-height: 1.3; text-shadow: 2px 2px #222;
+}
+
+.jumbotron-tutorials h1 { font-size:72px; margin-bottom:2% }
+.jumbotron-tutorials h2 { font-size:32px; font-weight:400; max-width:70% }
+
+.tutorials-examples .col-md-4 { padding-bottom:30px }
+.tutorials-examples .images-shadow { box-shadow: 5px 10px 8px #888888 }
+.tutorials-examples h3 { font-size: 24px; font-weight: 400; margin-top:24px; margin-bottom:4px }
+.tutorials-examples p  { font-size: 16px; color: #021647  }
+
+.tutorials-examples p a { text-decoration: underline }
+.tutorials-examples p a:hover, .tutorials-examples p a:active { text-decoration: none }
+
+tutorials-examples a.ghost-button-square { 
+	display: inline-block; line-height:1; padding: 10px 18px 14px 18px; 
+	border-style: solid;
+	border-width: 3px; 
+	text-decoration: none; border-radius: 1px;
+}
+
+.tutorials-examples a.ghost-button-square:hover, 
+.tutorials-examples a.ghost-button-square:active { color: #fff }
+
+.tutorials-examples a.ghost-button-round { 
+	font-size:17px;
+	display: inline-block; line-height:1; padding: 12px 20px 16px 20px; 
+	border-style: solid;
+	border-width: 3px; 
+	text-decoration: none;  
+	border-radius: 100px 100px 100px 100px;
+}
+
+.tutorials-examples a.ghost-button-round:hover, 
+.tutorials-examples a.ghost-button-round:active { color: #fff }
+
+
+
+/*=========PRIVACY PAGE ===========*/
+
+.container-section-privacy-page { text-align: left; padding-bottom: 48px }
+.container-section-privacy-page h3  { color: #021647; font-size:52px; text-align: center; margin: 24px 10% 20px 10% }
+.container-section-privacy-page h4  { color: #021647; font-size: 22px; font-weight: 700; text-align: left; margin: 32px 10% 2px 10%; width: 80% }
+.container-section-privacy-page p   { color: #021647; font-size: 16px; text-align: left;  margin: 0 10% 20px 10%; width: 80% }
+.container-section-privacy-page ul  { color: #021647; font-size: 16px; text-align: left;  margin: 0 10% 20px 10%; width: 80% }
+.container-section-privacy-page p a { color: blue; text-decoration: underline }
+
+
+
+
+/* ==== FOR MOBILE PHONES =====*/
+
+@media all and (max-width:767px) {
+	.navbar-nav a.nav-link { margin-left: 0; font-size:14px }
+	.navbar-nav .collapse.navbar-collapse { padding-bottom: 120px }
+
+	nav.navbar .container .navbar-collapse.collapse { padding-bottom: 12px }
+
+	.container-section-heading p { font-size:22px; width: 80%; line-height:1.3 }
+	.container-section-heading hr.color-center-line { margin: 12px auto 22px auto;  height: 4px; width: 20% }
+
+	.container-get-in-touch p { font-size:18px; width: 80%; line-height: 1.4 }
+	.bg-highlight-light  { padding: 22px 0 26px 0 }
+
+	.jumbotron-home { margin-bottom: 22px }
+	.jumbotron-home, .jumbotron-home::after { height: 320px }
+	.jumbotron-home h1 { font-size:42px }
+	.jumbotron-home h2 { font-size:22px }
+
+	.container-section-home-page { padding-bottom: 20px }
+	.container-section-home-page h3 { font-size:34px; margin: 0 auto }
+	.container-section-home-page p { font-size:16px; margin: 0 auto 16px; width: 90% }
+	.container-section-home-page hr.color-center-line { margin: 12px auto 32px auto;  height: 6px; width: 42% }
+
+	.jumbotron-portfolio { margin-bottom: 22px }
+	.jumbotron-portfolio, .jumbotron-portfolio::after { height: 320px }
+	.jumbotron-portfolio h1 { font-size:42px }
+	.jumbotron-portfolio h2 { font-size:22px }
+
+	.jumbotron-tutorials { margin-bottom: 22px }
+	.jumbotron-tutorials, .jumbotron-tutorials::after { height: 320px }
+	.jumbotron-tutorials::after { background: rgba(20, 20, 20, .6) }
+	.jumbotron-tutorials h1 { font-size:32px }
+	.jumbotron-tutorials h2 { font-size:20px }
+
+	.website-samples .col-md-4 { text-align: center; padding-bottom:32px }
+	.website-samples h3 { margin-top:22px; font-size: 22px }
+	.website-samples p  { font-size: 15px; margin: 0 auto 14px auto; width: 90% }
+	.website-samples img { width: 84% }
+	.website-samples a.ghost-button-round, 
+	.website-samples a.ghost-button-square { border-width:2px; font-size:15px }
+
+	.tutorials-examples .col-md-4 { text-align: center; padding-bottom:32px }
+	.tutorials-examples h3 { margin-top:22px; font-size: 22px }
+	.tutorials-examples p  { font-size: 15px; margin: 0 auto 14px auto; width: 90% }
+	.tutorials-examples img { width: 84% }
+	.tutorials-examples .embed-responsive-16by9 { margin: 0 auto; width: 84% }
+	.tutorials-examples a.ghost-button-round, 
+	.tutorials-examples a.ghost-button-square { border-width:2px; font-size:15px }
+
+	.container-section-privacy-page { padding-bottom: 48px }
+	.container-section-privacy-page h3 { font-size:28px; margin: 24px 0 20px 0 }
+	.container-section-privacy-page h4 { font-size: 20px; margin: 32px 0 2px 0; width: 100% }
+	.container-section-privacy-page p  { font-size: 14px; margin: 0 0 12px 0; width: 100% }
+	.container-section-privacy-page ul { font-size: 14px; margin: 0 0 12px 0; width: 100% }
+
+
+
+	.bg-footer { padding: 8px 0 26px 0 }
+	.container-footer h4, p { margin-bottom: 6px }
+	.container-footer .col-md-2 h4, .container-footer .col-md-8 h4 { margin-top:20px; font-size:15px; text-align: left }
+	.container-footer .col-md-8 p,  .container-footer .col-md-8 p {  font-size:14px; text-align: left }
+
+	.container-footer .col-md-2 p  { margin: 0 0 8px 0 }
+	.container-footer .col-md-8 h4 { font-size:15px; margin: 20px 0 0 0; }
+	.container-footer .col-md-8 p {  margin: 0 0 12px 0}
+}
