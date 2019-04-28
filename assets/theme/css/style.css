@@ -430,7 +430,10 @@ nav .mbr-section-btn {
 .navbar-collapse {
   -webkit-flex-basis: 100%;
   -webkit-flex-grow: 1;
-  -webkit-align-items: center; }
+  -webkit-align-items: center;
+  max-height: 93.5vh; }
+  .navbar-collapse.show {
+    overflow: auto; }
 
 .nav-dropdown .link {
   padding: .667em 1.667em !important;
