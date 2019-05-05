@@ -114,13 +114,13 @@
 			<p class="form-msg" id="form-msg-text-1"><i class="fas fa-exclamation-triangle"></i> Your Name, please.</p>
 			<p class="form-msg" id="form-msg-text-2"><i class="fas fa-exclamation-triangle"></i> At least 2 characters in your Name, please.</p>
 
-			<label for="contact_email">Email:</label>
+			<label for="email">Email:</label>
 			<div class="flex-row">
 				<div>
 					<span class="field-icon"><i class="fas fa-fw fa-envelope"></i></span>
 				</div>
 				<div>
-					<input type="text" id="contact_email" class="form-field" placeholder="Your email address" maxlength="40" autocapitalize="none">
+					<input type="text" id="email" class="form-field" placeholder="Your email address" maxlength="40" autocapitalize="none">
 				</div>
 			</div>
 			<p class="form-msg" id="form-msg-text-3"><i class="fas fa-exclamation-triangle"></i> Your Email, please.</p>
@@ -244,8 +244,8 @@ function doFormValidate() {
 		formMsg.classList.remove("show-error-message");
 	}
 
-	if(document.getElementById('contact_email').value === ''){
-		let formField = document.querySelector('#contact_email');
+	if(document.getElementById('email').value === ''){
+		let formField = document.querySelector('#email');
 		formField.classList.add("validate");
 		let formMsg = document.querySelector('#form-msg-text-3');
 		formMsg.classList.add("show-error-message");
@@ -253,17 +253,17 @@ function doFormValidate() {
 	}
 
 	else {
-		let formField = document.querySelector('#contact_email');
+		let formField = document.querySelector('#email');
 		formField.classList.remove("validate");
 		let formMsg = document.querySelector('#form-msg-text-2');
 		formMsg.classList.remove("show-error-message");
 	}
 
-	if(document.getElementById('contact_email').value != ''){
-		var a = document.getElementById('contact_email').value;
+	if(document.getElementById('email').value != ''){
+		var a = document.getElementById('email').value;
 		var filter = /^[a-zA-Z0-9]+[a-zA-Z0-9_.-]+[a-zA-Z0-9_-]+@[a-zA-Z0-9]+[a-zA-Z0-9.-]+[a-zA-Z0-9]+.[a-z]{2,4}$/;
 		if(!filter.test(a)){
-			let formField = document.querySelector('#contact_email');
+			let formField = document.querySelector('#email');
 			formField.classList.add("validate");
 			let formMsg3 = document.querySelector('#form-msg-text-3');
 			formMsg3.classList.remove("show-error-message");
@@ -273,7 +273,7 @@ function doFormValidate() {
 		}
 
 		else {
-			let formField = document.querySelector('#contact_email');
+			let formField = document.querySelector('#email');
 			formField.classList.remove("validate");
 			let formMsg = document.querySelector('#form-msg-text-4');
 			formMsg.classList.remove("show-error-message");
