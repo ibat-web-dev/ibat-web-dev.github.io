@@ -309,7 +309,7 @@ body { background-color: lightgray }
 @media all and (min-width:768px) {
 	.container-form { 
 		width: 50%; 
-		padding: 100px 32px 60px 32px;
+		padding: 100px 32px 80px 32px;
 	}
 	.container-form h1 { margin: 0 0 1% 0 }
 }
@@ -318,7 +318,7 @@ body { background-color: lightgray }
 @media all and (max-width:767px) {
 	.container-form { 
 		width: 90%; 
-		padding: 100px 20px 60px 20px;
+		padding: 100px 20px 90px 20px;
 	}
 	.container-form h1 { margin: 0 0 5% 0 }
 }
@@ -458,10 +458,9 @@ body { background-color: lightgray }
 
 	/* Mobiles */
 	@media all and (max-width:767px) { 
-
-		.container-form form#contact-form.contact-form button#btn-submit.btn-submit { 
-			margin-right: -20px;
-			background-color:red
+		.container-form form#contact-form.contact-form button#btn-submit.btn-submit {
+			margin-top:12px;
+			margin-right: 20px;
 		}
 	}
 
