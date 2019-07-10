@@ -1,0 +1,140 @@
+/* ==== BROWSER RESETS  ==== */
+* { padding: 0; margin: 0; border: 0; font-weight: normal; font-size: 16px }
+body, html { height: 100% } 
+body { max-width: 1600px; margin: 0 auto }
+img { display: block; width: 100%; height: auto }
+
+ /* ==== BODY ==== */
+ body { background-color:#f1efe9 }
+
+ /* ==== PAGE WIDTH  ==== */
+
+/* Mobiles */
+@media all and (max-width:767px) {
+    body {
+       padding-left: 5%;
+       padding-right: 5%
+    }
+}
+
+/* Desktop */
+@media all and (min-width:768px) {
+    body {
+       padding-left: 20%;
+       padding-right: 20%
+    }
+}
+
+ /* ==== MAIN HEADING  ==== */
+h1 {
+    font-family: serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: calc(36px + (54 - 36) * ((100vw - 320px)/(1600 - 320)));
+    letter-spacing: -1px;
+}
+
+/* Mobiles */
+@media all and (max-width:767px) {
+    h1 { 
+        line-height: 1.1;
+        width: 90%;
+        margin: 10% 5%;
+    }
+}
+
+/* Desktop */
+@media all and (min-width:768px) {
+    h1 { 
+        line-height: 1.2;
+        width: 90%;
+        margin: 5%;
+    }
+}
+
+/* ==== SUB HEADINGS ==== */
+h2, 
+h3, 
+h4 { font-family: sans-serif; font-weight: bold; line-height: 1.2 }
+
+h2 { letter-spacing: 1px; text-transform: uppercase }
+
+h2 {
+  font-size: calc(18px + (22 - 18) * ((100vw - 320px)/(1600 - 320)));
+}
+
+h3 {
+  font-size: calc(16px + (20 - 16) * ((100vw - 320px)/(1600 - 320)));
+}
+
+h4 {
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px)/(1600 - 320)));
+}
+
+ /* Desktop */
+ @media all and (min-width:768px) {
+    h2 { margin-top: 5% }
+    h3 { margin-top: 3% }
+    h4 { margin-top: 1.5% }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) {
+    h2 { margin-top: 10% }
+    h3 { margin-top: 1% }
+    h4 { margin-top: 1% }
+}
+
+/* ==== PARAGRAPH TEXT ==== */
+
+p { 
+    font-family: sans-serif;
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));	
+}
+ 
+/* Mobiles */
+@media all and (max-width:767px) {
+    p  { line-height: 1.4; margin-bottom: 5% }
+}
+ 
+/* Desktop */
+@media all and (min-width:768px) {
+    p { line-height: 1.6; margin-bottom: 3% }
+}
+
+/* ==== BULLETS ==== */
+
+ul li, ol li {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+}
+
+/* Mobiles */
+@media all and (max-width:767px) {
+    ul, ol { margin-left: 5% }
+    ul li, ol li {
+       line-height: 1.4;
+       margin-bottom: 5%;
+    }
+}
+ 
+/* Desktop */
+@media all and (min-width:768px) {
+    ul, ol { margin-left: 2% }
+    ul li, ol li {
+       line-height: 1.6;
+       margin-bottom: 3%;
+    }
+}
+ 
+/* ==== IMAGES ==== */
+/* Mobiles */
+ @media all and (max-width:767px) {
+    img { margin-bottom: 4% }
+}
+
+/* Desktop */
+@media all and (min-width:768px) {
+    img { margin-bottom: 1% }
+}
