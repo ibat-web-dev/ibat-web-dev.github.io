@@ -1,7 +1,7 @@
 /* ==== BROWSER RESETS  ==== */
 * { padding: 0; margin: 0; border: 0; font-weight: normal; font-size: 16px }
 body, html { height: 100% }	
-
+body { max-width: 1600px; margin: 0 auto }
 
 /* ==== PAGE WIDTH  ==== */
 
@@ -26,7 +26,7 @@ body, html { height: 100% }
 h1 {
    font-family: serif;
    font-weight: bold;
-   font-size: 40px;
+   font-size: calc(42px + (64 - 42) * ((100vw - 320px)/(1600 - 320)));
    letter-spacing: -1px;
 }
 
@@ -53,7 +53,7 @@ h1 {
 h2 {
   font-family: serif;
   font-weight: bold;
-  font-size: 32px;
+  font-size: calc(32px + (48 - 32) * ((100vw - 320px)/(1600 - 320)));
 }
 
 
@@ -79,7 +79,7 @@ h2 {
 h3 {
   font-family: serif;
   font-weight: bold;
-  font-size: 28px;
+  font-size: calc(22px + (28 - 22) * ((100vw - 320px)/(1600 - 320)));
 }
 
 
@@ -106,7 +106,7 @@ h3 {
 p {
    font-family: sans-serif;
    font-weight: normal;
-   font-size: 16px;
+   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
 }
 
 
