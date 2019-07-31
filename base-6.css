@@ -178,6 +178,20 @@ div.important-note-2 {
 
 .important-note-2 p { margin-bottom: 0  }
 
+div.important-note-3 { 
+   margin: 42px 0 42px 0;
+   padding: 14px 14px 14px 14px;
+   border-style: solid;
+   border-top-width: 0;
+   border-bottom-width: 0;
+   border-left-width: 20px;
+   border-right-width: 0
+}
+
+.important-note-2 h3 { margin-top: 0 }
+
+.important-note-2 p { margin-bottom: 0  }
+
 
 div.important-note-4 { 
    margin: 42px 0 42px 0;
