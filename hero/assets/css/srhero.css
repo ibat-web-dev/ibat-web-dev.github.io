@@ -1,0 +1,600 @@
+/* ==== BROWSER RESETS  ==== */
+* { padding: 0; margin: 0; border: 0; font-weight: normal; font-size: 16px }
+body, html { height: 100% }	
+html { box-sizing: border-box; scroll-behavior: smooth }
+body { max-width: 1600px; margin: 0 auto }
+
+
+/* === HERO BLOCK 1 === */
+<span class="orange-light">.hero-block-1</span> {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    <span class="blue-light">background-color</span>: <span class="orange">#0065f2</span>;
+}
+
+<span class="orange-light">.hero-block-1 h1</span>, <span class="orange-light">.hero-block-1 h2</span> {
+    <span class="blue-light">font-family</span>: 'Open Sans', sans-serif;
+    <span class="blue-light">font-family</span>: <span class="orange">#fff</span>;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">text-align</span>: <span class="orange">center</span>;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-height</span>: <span class="green-light">14</span>
+}
+
+<span class="orange-light">.hero-block-1 h1</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(36px + (72 - 36) * ((100vw - 320px)/(1600 - 320)));
+}
+
+<span class="orange-light">.hero-block-1 h2</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
+}
+
+/* Mobiles - height and bottom margin, text width */
+@media all and (max-width:767px) { 
+    <span class="orange-light">.hero-block-1</span> { <span class="blue-light">height</span>: 360px; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span> }
+    <span class="orange-light">.hero-block-1 h1</span>, <span class="orange-light">.hero-block-1 h2</span> { <span class="blue-light">width</span>: <span class="green-light">80%</span> }
+    <span class="orange-light">.hero-block-1 h1</span> { <span class="blue-light">margin-bottom</span>: <span class="green-light">10%</span> } 
+}
+
+/* Desktop - <span class="blue-light">height</span> and bottom margin, text <span class="blue-light">width</span> */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-1</span> { <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span> }
+    <span class="orange-light">.hero-block-1 h1</span>, <span class="orange-light">.hero-block-1 h2</span> { <span class="blue-light">width</span>: 60% }
+    <span class="orange-light">.hero-block-1 h1</span> { <span class="blue-light">margin-bottom</span>: <span class="green-light">4%</span> }
+}
+
+/* === HERO BLOCK 2 === */
+
+<span class="orange-light">.hero-block-2 {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    <span class="blue-light">background-color</span>: <span class="orange">#78d8da</span>;
+}
+
+<span class="orange-light">.hero-block-2 h1</span>, <span class="orange-light">.hero-block-2 h2</span> {
+    <span class="blue-light">font-family</span>: 'Montserrat', sans-serif;
+    <span class="blue-light">font-family</span>: <span class="orange">#000</span>;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">text-align</span>: <span class="orange">left</span>;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>    
+}
+
+<span class="orange-light">.hero-block-2 h1</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(32px + (84 - 32) * ((100vw - 320px)/(1600 - 320)));
+}
+
+<span class="orange-light">.hero-block-2 h2</span> {
+    <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(18px + (32 - 18) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">font-weight</span>: normal
+}
+
+/* Mobiles */
+@media all and (max-<span class="blue-light">width</span>:767px) { 
+    <span class="orange-light">.hero-block-2</span> { <span class="blue-light">height</span>: 360px; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span> }
+    <span class="orange-light">.hero-block-2 h1</span>, <span class="orange-light">.hero-block-2 h2</span> { <span class="blue-light">width</span>: <span class="green-light">80%</span> }
+    <span class="orange-light">.hero-block-2 h1</span> { <span class="blue-light">margin-bottom</span>: <span class="green-light">10%</span> } 
+}
+
+/* Desktop */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-2</span> { <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span> }
+    <span class="orange-light">.hero-block-2 h1</span>, <span class="orange-light">.hero-block-2 h2</span> { <span class="blue-light">width</span>: 60% }
+    <span class="orange-light">.hero-block-2 h1</span> { <span class="blue-light">margin-bottom</span>: <span class="green-light">4%</span> }
+}
+
+
+
+/* === HERO BLOCK 3 === */
+
+<span class="orange-light">.hero-block-3</span> {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    <span class="blue-light">background-color</span>: #f6e58d;
+}
+
+<span class="orange-light">.hero-block-3 h1</span>, <span class="orange-light">.hero-block-3 h2</span> {
+    <span class="blue-light">font-family</span>: 'Merriweather', serif;
+    <span class="blue-light">font-family</span>: #273c75;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">text-align</span>: left;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>    
+}
+
+<span class="orange-light">.hero-block-3 h1</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(32px + (72 - 32) * ((100vw - 320px)/(1600 - 320)));
+}
+
+<span class="orange-light">.hero-block-3 h2</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(18px + (32 - 18) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">font-weight</span>: normal
+}
+
+/* Mobiles */
+@media all and (max-<span class="blue-light">width</span>:767px) { 
+    <span class="orange-light">.hero-block-3</span> { <span class="blue-light">height</span>: 360px; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span> }
+    <span class="orange-light">.hero-block-3 h1</span>, <span class="orange-light">.hero-block-3 h2</span> { <span class="blue-light">width</span>: 70% }
+    <span class="orange-light">.hero-block-3 h1</span> { <span class="blue-light">margin-bottom</span>: 5% } 
+}
+
+/* Desktop */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-3</span> { <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span> }
+    <span class="orange-light">.hero-block-3 h1</span>, <span class="orange-light">.hero-block-3 h2</span> { <span class="blue-light">width</span>: 60% }
+    <span class="orange-light">.hero-block-3 h1</span> { <span class="blue-light">margin-bottom</span>: 1% }
+}
+
+.<span class="blue-light">font-family</span>-change-2</span>x {
+	-webkit-animation: <span class="blue-light">font-family</span>-change-2</span>x 2s linear infinite alternate both;
+	        animation: <span class="blue-light">font-family</span>-change-2</span>x 2s linear infinite alternate both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-8</span>-1</span>2 11:33:18
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation <span class="blue-light">font-family</span>-change-2</span>x
+ * ----------------------------------------
+ */
+ @-webkit-keyframes <span class="blue-light">font-family</span>-change-2</span>x {
+    0% {
+      background: #f6e58d;
+    }
+    100% {
+      background: #f1c40f;
+    }
+  }
+  @keyframes <span class="blue-light">font-family</span>-change-2</span>x {
+    0% {
+      background: #f6e58d;
+    }
+    100% {
+      background: #f1c40f;
+    }
+}
+  
+
+/* === HERO BLOCK 4 === */
+
+<span class="orange-light">.hero-block-4</span> {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    background-image: linear-gradient(#512d6d,#c42f9e);
+}
+
+<span class="orange-light">.hero-block-4 h1</span>, <span class="orange-light">.hero-block-4 h2</span> {
+    <span class="blue-light">font-family</span>: 'Open Sans', sans-serif;
+    <span class="blue-light">font-family</span>: #fff;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">text-align</span>: left;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>    
+}
+
+<span class="orange-light">.hero-block-4 h1</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(32px + (72 - 32) * ((100vw - 320px)/(1600 - 320)));
+}
+
+<span class="orange-light">.hero-block-4 h2</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(18px + (32 - 18) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">font-weight</span>: normal
+}
+
+/* Mobiles  */
+@media all and (max-<span class="blue-light">width</span>:767px) { 
+    <span class="orange-light">.hero-block-4</span> { <span class="blue-light">height</span>: 360px; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span> }
+    <span class="orange-light">.hero-block-4 h1</span>, <span class="orange-light">.hero-block-4 h2</span> { <span class="blue-light">width</span>: 70% }
+    <span class="orange-light">.hero-block-4 h1</span> { <span class="blue-light">margin-bottom</span>: 5% } 
+}
+
+/* Desktop */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-4</span> { <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span> }
+    <span class="orange-light">.hero-block-4 h1</span>, <span class="orange-light">.hero-block-4 h2</span> { <span class="blue-light">width</span>: 60% }
+    <span class="orange-light">.hero-block-4 h1</span> { <span class="blue-light">margin-bottom</span>: 1% }
+}
+
+
+/* === HERO BLOCK 5 === */
+
+<span class="orange-light">.hero-block-5</span> {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    background-image: url('../img/hotel-dark.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+<span class="orange-light">.hero-block-5 h1</span>, <span class="orange-light">.hero-block-5 h2</span> {
+    <span class="blue-light">font-family</span>: 'Open Sans', sans-serif;
+    <span class="blue-light">font-family</span>: #fff;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">text-align</span>: center;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>;
+    text-shadow: 2px 2px #222 
+}
+
+<span class="orange-light">.hero-block-5 h1</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(54px + (112 - 54) * ((100vw - 320px)/(1600 - 320)));
+}
+
+<span class="orange-light">.hero-block-5 h2</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(24px + (64 - 24) * ((100vw - 320px)/(1600 - 320)));
+}
+
+/* Mobiles */
+@media all and (max-<span class="blue-light">width</span>:767px) { 
+    <span class="orange-light">.hero-block-5</span> { <span class="blue-light">height</span>: 360px; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span> }
+    <span class="orange-light">.hero-block-5 h1</span>, <span class="orange-light">.hero-block-5 h2</span> { <span class="blue-light">width</span>: 70% }
+    <span class="orange-light">.hero-block-5 h1</span> { <span class="blue-light">margin-bottom</span>: 5% } 
+}
+
+/* Desktop */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-5</span> { <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span> }
+    <span class="orange-light">.hero-block-5 h1</span>, <span class="orange-light">.hero-block-5 h2</span> { <span class="blue-light">width</span>: 60% }
+    <span class="orange-light">.hero-block-5 h1</span> { <span class="blue-light">margin-bottom</span>: 1% }
+}
+
+
+/* === HERO BLOCK 6 === */
+
+<span class="orange-light">.hero-block-6</span> {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../img/bike-tours.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+<span class="orange-light">.hero-block-6 h1</span>, <span class="orange-light">.hero-block-6 h2</span> {
+    <span class="blue-light">font-family</span>: 'Monstserrat', sans-serif;
+    <span class="blue-light">font-family</span>: #fff;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">text-align</span>: center;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>;
+    text-shadow: 2px 2px #222 
+}
+
+<span class="orange-light">.hero-block-6 h1</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(54px + (112 - 54) * ((100vw - 320px)/(1600 - 320)));
+}
+
+<span class="orange-light">.hero-block-6 h2</span> {
+    <span class="blue-light">font-family</span>: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(22px + (48 - 22) * ((100vw - 320px)/(1600 - 320)));
+}
+
+/* Mobiles */
+@media all and (max-<span class="blue-light">width</span>:767px) { 
+    <span class="orange-light">.hero-block-6</span> { <span class="blue-light">height</span>: 360px; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span> }
+    <span class="orange-light">.hero-block-6 h1</span>, <span class="orange-light">.hero-block-6 h2</span> { <span class="blue-light">width</span>: 70% }
+    <span class="orange-light">.hero-block-6 h1</span> { <span class="blue-light">margin-bottom</span>: 5% } 
+}
+
+/* Desktop */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-6</span> { <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span> }
+    <span class="orange-light">.hero-block-6 h1</span>, <span class="orange-light">.hero-block-6 h2</span> { <span class="blue-light">width</span>: 60% }
+    <span class="orange-light">.hero-block-6 h1</span> { <span class="blue-light">margin-bottom</span>: 1% }
+}
+
+
+/* === HERO BLOCK 7 === */
+
+<span class="orange-light">.hero-block-7</span> {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    background-image: linear-gradient(rgba(0,0,255,0.5),rgba(0,0,255,0.5)),url('../img/meeting.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+<span class="orange-light">.hero-block-7 h1</span>, <span class="orange-light">.hero-block-7 h2</span> {
+    <span class="blue-light">font-family</span>: 'Roboto Condensed', sans-serif;
+    <span class="blue-light">font-family</span>: #fff;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">text-align</span>: center;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>;
+    text-shadow: 2px 2px #222;
+    text-transform: uppercase;
+}
+
+<span class="orange-light">.hero-block-7 h1</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(34px + (76 - 34) * ((100vw - 320px)/(1600 - 320)));
+}
+
+<span class="orange-light">.hero-block-7 h2</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(22px + (40 - 22) * ((100vw - 320px)/(1600 - 320)));
+}
+
+/* Mobiles */
+@media all and (max-<span class="blue-light">width</span>:767px) { 
+    <span class="orange-light">.hero-block-7</span> { <span class="blue-light">height</span>: 360px; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span> }
+    <span class="orange-light">.hero-block-7 h1</span>, <span class="orange-light">.hero-block-7 h2</span> { <span class="blue-light">width</span>: 70% }
+    <span class="orange-light">.hero-block-7 h1</span> { <span class="blue-light">margin-bottom</span>: 8% } 
+}
+
+/* Desktop */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-7</span> { <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span> }
+    <span class="orange-light">.hero-block-7 h1</span>, <span class="orange-light">.hero-block-7 h2</span> { <span class="blue-light">width</span>: 60% }
+    <span class="orange-light">.hero-block-7 h1</span> { <span class="blue-light">margin-bottom</span>: 3% }
+}
+
+
+
+/* === HERO BLOCK 8 === */
+
+<span class="orange-light">.hero-block-8</span> {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+<span class="orange-light">.hero-block-8 h1</span>, <span class="orange-light">.hero-block-8 h2</span> {
+    <span class="blue-light">font-family</span>: 'Open Sans', sans-serif;
+    <span class="blue-light">font-family</span>: #fff;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">text-align</span>: center;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>
+}
+
+<span class="orange-light">.hero-block-8 h1</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(38px + (68 - 38) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: 1.1
+}
+
+<span class="orange-light">.hero-block-8 h2</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(18px + (32 - 18) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: 1.5
+}
+
+/* Mobiles */
+@media all and (max-<span class="blue-light">width</span>:767px) {
+    <span class="orange-light">.hero-block-8</span> { 
+        background-image: url('../img/stormy-beach-mobile.jpg');
+        <span class="blue-light">height</span>: 4<span class="green-light">40px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span>
+    }
+    <span class="orange-light">.hero-block-8 h1</span>, <span class="orange-light">.hero-block-8 h2</span> { 
+        <span class="blue-light">text-align</span>: center;
+        <span class="blue-light">width</span>: 90%;
+        <span class="blue-light">font-family</span>: #fff;
+        text-shadow: 2px 2px #222;
+    }
+    <span class="orange-light">.hero-block-8 h1</span> { <span class="blue-light">margin-bottom</span>: 12% }
+    <span class="orange-light">.hero-block-8 h2</span> { 
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+        padding: 14px 10px;
+        <span class="blue-light">width</span>: <span class="green-light">80%</span>;
+    }      
+}
+
+/* Desktop  */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-8</span> { 
+        background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('../img/stormy-beach.jpg');
+        <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span>
+    }
+    <span class="orange-light">.hero-block-8 h1</span>, <span class="orange-light">.hero-block-8 h2</span> { 
+        <span class="blue-light">text-align</span>: left;
+        <span class="blue-light">width</span>: 40%;
+        <span class="blue-light">margin-left</span>: <span class="green-light">10%</span>;
+        <span class="blue-light">font-family</span>: #000;
+    }
+    <span class="orange-light">.hero-block-8 h1</span> { <span class="blue-light">margin-bottom</span>: 5% } 
+}
+
+
+/* === HERO BLOCK 9 === */
+
+<span class="orange-light">.hero-block-9</span> {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('../img/plants.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+<span class="orange-light">.hero-block-9 h1</span>, <span class="orange-light">.hero-block-9 h2</span> {
+    <span class="blue-light">font-family</span>: 'Playfair Display', serif;
+    <span class="blue-light">font-family</span>: #000;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">text-align</span>: left;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>
+}
+
+<span class="orange-light">.hero-block-9 h1</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(42px + (68 - 42) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: 1.1
+}
+
+<span class="orange-light">.hero-block-9 h2</span> {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(22px + (32 - 22) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: 1.5
+}
+
+/* Mobiles */
+@media all and (max-<span class="blue-light">width</span>:767px) {
+    <span class="orange-light">.hero-block-9</span> { 
+        <span class="blue-light">height</span>: 4<span class="green-light">40px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span>
+    }
+    <span class="orange-light">.hero-block-9 h1</span>, <span class="orange-light">.hero-block-9 h2</span> { 
+        <span class="blue-light">width</span>: <span class="green-light">80%</span>;
+    }
+    <span class="orange-light">.hero-block-9 h1</span> { <span class="blue-light">margin-bottom</span>: 12% }
+}
+
+/* Desktop  */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-9</span> { 
+        <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span>
+    }
+    <span class="orange-light">.hero-block-9 h1</span>, <span class="orange-light">.hero-block-9 h2</span> { 
+        <span class="blue-light">width</span>: 40%;
+        <span class="blue-light">margin-left</span>: <span class="green-light">10%</span>;
+    }
+    <span class="orange-light">.hero-block-9 h1</span> { <span class="blue-light">margin-bottom</span>: 5% } 
+}
+
+
+
+/* === HERO BLOCK 10 === */
+
+<span class="orange-light">.hero-block-1</span>0 {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+<span class="orange-light">.hero-block-1</span>0 h1, <span class="orange-light">.hero-block-1</span>0 h2 {
+    <span class="blue-light">font-family</span>: 'Open Sans', sans-serif;
+    <span class="blue-light">font-family</span>: #fff;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>;
+    text-shadow: 2px 2px #222;
+}
+
+<span class="orange-light">.hero-block-1</span>0 h1 {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(44px + (68 - 44) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: 1.1;
+    text-transform: uppercase;
+}
+
+<span class="orange-light">.hero-block-1</span>0 h2 {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(22px + (38 - 22) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: 1.5;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    padding: 12px
+}
+
+/* Mobiles */
+@media all and (max-<span class="blue-light">width</span>:767px) {
+    <span class="orange-light">.hero-block-1</span>0 { 
+        background-image: url('../img/learn-english-mobile.png');
+        <span class="blue-light">height</span>: 4<span class="green-light">40px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span>
+    }
+    <span class="orange-light">.hero-block-1</span>0 h1, <span class="orange-light">.hero-block-1</span>0 h2 { 
+        <span class="blue-light">text-align</span>: center;
+        <span class="blue-light">width</span>: <span class="green-light">80%</span>;
+    }
+    <span class="orange-light">.hero-block-1</span>0 h1 { <span class="blue-light">margin-bottom</span>: 12% }
+}
+
+/* Desktop  */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-1</span>0 { 
+        background-image: url('../img/learn-english.png');
+        <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span>
+    }
+    <span class="orange-light">.hero-block-1</span>0 h1, <span class="orange-light">.hero-block-1</span>0 h2 { 
+        <span class="blue-light">width</span>: 40%;
+        <span class="blue-light">margin-left</span>: 50%;
+    }
+    <span class="orange-light">.hero-block-1</span>0 h1 { <span class="blue-light">margin-bottom</span>: 2% } 
+}
+
+
+/* === HERO BLOCK 11 === */
+
+<span class="orange-light">.hero-block-1</span>1 {
+    <span class="blue-light">display</span>: <span class="orange">flex</span>;
+    <span class="blue-light">flex-direction</span>: <span class="orange">column</span>;
+    <span class="blue-light">justify-content</span>: <span class="orange">center</span>
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+<span class="orange-light">.hero-block-1</span>1 h1, <span class="orange-light">.hero-block-1</span>1 h2 {
+    <span class="blue-light">font-family</span>: 'Open Sans', sans-serif;
+    <span class="blue-light">font-family</span>: #fff;
+    <span class="blue-light">font-weight</span>: <span class="orange">bold</span>;
+    <span class="blue-light">margin-left</span>: <span class="orange">auto</span>;
+    <span class="blue-light">margin-right</span>: <span class="orange">auto</span>;
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: <span class="green-light">14</span>;
+    text-shadow: 2px 2px #222;
+}
+
+<span class="orange-light">.hero-block-1</span>1 h1 {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(44px + (68 - 44) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: 1.1;
+    text-transform: uppercase;
+}
+
+<span class="orange-light">.hero-block-1</span>1 h2 {
+     <span class="blue-light">font-size</span>: <span class="yellow">calc</span>(22px + (38 - 22) * ((100vw - 320px)/(1600 - 320)));
+    <span class="blue-light">line-<span class="blue-light">height</span></span>: 1.5;
+    background-image: linear-gradient(rgba(255,0,0,0.5),rgba(255,0,0,0.5));
+    padding: 12px
+}
+
+/* Mobiles */
+@media all and (max-<span class="blue-light">width</span>:767px) {
+    <span class="orange-light">.hero-block-1</span>1 { 
+        background-image: url('../img/beach-holiday-mobile.jpg');
+        <span class="blue-light">height</span>: 4<span class="green-light">40px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">40px</span>
+    }
+    <span class="orange-light">.hero-block-1</span>1 h1, <span class="orange-light">.hero-block-1</span>1 h2 { 
+        <span class="blue-light">text-align</span>: center;
+        <span class="blue-light">width</span>: <span class="green-light">80%</span>;
+    }
+    <span class="orange-light">.hero-block-1</span>1 h1 { <span class="blue-light">margin-bottom</span>: 12% }
+}
+
+/* Desktop  */
+@media all and (min-<span class="blue-light">width</span>:768px) { 
+    <span class="orange-light">.hero-block-1</span>1 { 
+        background-image: url('../img/beach-holiday.jpg');
+        <span class="blue-light">height</span>: 4<span class="green-light">80px</span>; <span class="blue-light">margin-bottom</span>: <span class="green-light">80px</span>
+    }
+    <span class="orange-light">.hero-block-1</span>1 h1, <span class="orange-light">.hero-block-1</span>1 h2 { 
+        <span class="blue-light">width</span>: 40%;
+        <span class="blue-light">margin-left</span>: 50%;
+        <span class="blue-light">text-align</span>: left;
+    }
+    <span class="orange-light">.hero-block-1</span>1 h1 { <span class="blue-light">margin-bottom</span>: 2% } 
+}
+
+
+
+
