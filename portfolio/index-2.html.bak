@@ -113,43 +113,7 @@
 
 <div class="container-wide">
 
-	<p class="note">(<b>NOTE</B>: See alternative versions:  <a href="index.html">here</a> and  <a href="index-3.html">here</a>.)</p>
-
-	<div class="flex-grid-three">
-
-		<div class="col-gutter">
-			<a href="../mobirise-light/index.html">
-				<img src="assets/img/portfolio-all-the-light.png" class="img-fluid images-shadow" alt="portfolio all the light">
-			</a>
-			<h3>All the Light</h3>
-			<p>A tribute to <i>All the Light We Cannot See</i>, the best-selling novel by Anthony Doerr. Created with <a class="fancy-link" href="https://mobirise.com" target="_blank">Mobirise</a>.</p>
-			<a class="btn-ghost btn-rounded" href="../mobirise-light/index.html">View web page</a>
-		</div>
-
-		<div class="col-gutter">
-			 <a href="../smooth-smoothies/index.html" target="_blank">
-				<img src="assets/img/portfolio-smoothie.png" class="img-fluid images-shadow" alt="portfolio smooth smoothies">
-			</a>
-			<h3>Smooth Smoothies</h3>
-			<p>A website for a smoothie outlet, with vibrant colours and trendy fonts. Includes an email sign-up form. Built with <a class="fancy-link" href="https://mobirise.com" target="_blank">Mobirise</a>.</p>
-			<a class="btn-ghost btn-rounded" href="../smooth-smoothies/index.html">View web page</a>
-		</div>
-
-		<div class="col-gutter">
-			<a href="../careers-summit/index.html">
-				<img src="assets/img/portfolio-careers-summit.png"  class="img-fluid images-shadow"  alt="portfolio careers summit">
-			</a>
-			<h3>Careers Summit</h3>
-			<p>A promotional website for a careers event, with a background YouTube video and a countdown timer.  Also built with <a class="fancy-link" href="https://mobirise.com" target="_blank">Mobirise</a>.</p>
-			<a class="btn-ghost btn-rounded" href="../careers-summit/index.html">View web page</a>
-		</div>
-
-	</div><!--- /flex-grid -->
-
-</div><!--- /container -->
-
-
-<div class="container-wide">
+	<p class="note">(<b>NOTE</B>: See alternative versions:  <a href="index-1.html">here</a> and  <a href="index-3.html">here</a>.)</p>
 
 	<div class="flex-grid-three">
 
@@ -163,31 +127,13 @@
 		</div>
 
 		<div class="col-gutter">
-			<a href="../powerpoint/index.html">
-				<img src="assets/img/portfolio-powerpoint.png" class="img-fluid images-shadow"  alt="portfolio powerpoint">
+			<a href="../tourism.html">
+				<img src="assets/img/tourism.png" class="img-fluid images-shadow"  alt="portfolio powerpoint">
 			</a>
-			<h3>Microsoft PowerPoint</h3>
-			<p>A responsive web page that uses the <a class="fancy-link" href="https://github.com/cferdinandi/smooth-scroll" target="_blank">smooth-scroll.js</a> JavaScript library for navigating internal hyperlinks.</p>
-			<a class="btn-ghost btn-rounded" href="../powerpoint/index.html">View web page</a>
+			<h3>Irish Tourism</h3>
+			<p>A responsive web page with external hyperlinks that showcases Ireland&#8217;s most-visited tourist destinations.</p>
+			<a class="btn-ghost btn-rounded" href="../tourism.html">View web page</a>
 		</div>
-
-		<div class="col-gutter">
-			<a href="../animation/index.html">
-				<img src="assets/img/portfolio-animation.png" class="img-fluid images-shadow"  alt="portfolio animation">
-			</a>
-			<h3>Google Fonts Animation</h3>
-			<p>A responsive web page with a variety of <a class="fancy-link" href="https://fonts.google.com" target="_blank">Google Fonts</a> combinations. Includes on-load and on-scroll animations.</p>
-			<a class="btn-ghost btn-rounded" href="../animation/index.html">View web page</a>
-		</div>
-
-	</div><!--- /flex-grid -->
-
-</div><!--- /container -->
-
-
-<div class="container-wide">
-
-	<div class="flex-grid-three">
 
 		<div class="col-gutter">
 			<a href="../hero/index.html">
@@ -198,14 +144,14 @@
 			<a class="btn-ghost btn-rounded" href="../hero/index.html">View web page</a>
 		</div>
 
-		<div class="col-gutter">
-			<a href="../flexbox-columns/index.html">
-				<img src="assets/img/portfolio-flexbox-columns.png" class="img-fluid images-shadow"  alt="portfolio flexbox columns">
-			</a>
-			<h3>CSS Flexbox Columns</h3>
-			<p>A showcase of responsive two-, three- and four-column layouts, with and without gutters, created with CSS flexbox.</p>
-			<a class="btn-ghost btn-rounded" href="../flexbox-columns/index.html">View web page</a>
-		</div>
+	</div><!--- /flex-grid -->
+
+</div><!--- /container -->
+
+
+<div class="container-wide">
+
+	<div class="flex-grid-three">
 
 		<div class="col-gutter">
 			<a href="../menus/menu-desktop-1.html">
@@ -216,17 +162,9 @@
 			<a class="btn-ghost btn-rounded" href="../menus/menu-desktop-1.html">View web page</a>
 		</div>
 
-	</div><!--- /flex-grid -->
-
-</div><!--- /container -->
-
-<div class="container-wide">
-
-	<div class="flex-grid-three">
-
 		<div class="col-gutter">
 			<a href="../project-sample-1/index.html">
-				<img src="assets/img/portfolio-special-project-1.png" class="img-fluid images-shadow"  alt="portfolio final project 1">
+				<img src="assets/img/sample-website-1.png" class="img-fluid images-shadow"  alt="portfolio final project 1">
 			</a>
 			<h3>Final Project (1)</h3>
 			<p>Three-page website for a fictitious global travel agency.</p>
@@ -235,7 +173,7 @@
 
 		<div class="col-gutter">
 			<a href="../project-sample-2/index.html">
-				<img src="assets/img/portfolio-special-project-2.png" class="img-fluid images-shadow"  alt="portfolio final project 2">
+				<img src="assets/img/sample-website-2.png" class="img-fluid images-shadow"  alt="portfolio final project 2">
 			</a>
 			<h3>Final Project (2)</h3>
 			<p>Three-page website for a fictitious digital design and marketing agency.</p>
@@ -246,7 +184,6 @@
 
 </div><!--- /container -->
 
-
 <div class="container-footer">
 
 	<div class="flex-grid-footer">
@@ -255,11 +192,11 @@
 
 			<h4>SITE MAP</h4>
 
-			<p><i class="fa fa-home"></i> <a href="../index.html">Home</a></p>
+			<p><i class="fa fa-home"></i>&nbsp;&nbsp;<a href="../index.html">Home</a></p>
 
-			<p><i class="fa fa-file"></i> <a href="index.html">Portfolio</a></p>
+			<p><i class="fa fa-file"></i>&nbsp;&nbsp;<a href="index.html">Portfolio</a></p>
 
-			<p><i class="fa fa-lock"></i> <a href="../privacy.html">Privacy</a></p>
+			<p><i class="fa fa-lock"></i>&nbsp;&nbsp;<a href="../privacy.html">Privacy</a></p>
 		
 		</div><!-- /column -->
 
@@ -273,11 +210,11 @@
 
 			<h4>CONTACT</h4>
 
-			<p><i class="fa fa-envelope"></i> <a href="mailto:ibat.training@gmail.com">Email</a></p>
+			<p><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:ibat.training@gmail.com">Email</a></p>
 
-			<p><i class="fa fa-github-square"></i> <a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
+			<p><i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
 
-			<p><i class="fa fa-linkedin"></i> <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
+			<p><i class="fa fa-linkedin"></i>&nbsp;&nbsp;<a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
 
 		</div><!-- /column -->
 
