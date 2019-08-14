@@ -12,8 +12,8 @@
 
 	<link rel="stylesheet" href="assets/css/contact.css">
 
-	<!-- Link to icons for Font Awesome 5 -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Link to icons for Font Awesome 4 -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- Cookie consent code-->	
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
@@ -105,43 +105,43 @@
 			<label for="contact_name">Name:</label>
 			<div class="flex-row">
 				<div>
-					<span class="field-icon"><i class="fas fa-fw fa-user"></i></span>
+					<span class="field-icon"><i class="fa fa-user"></i></span>
 				</div>
 				<div>
 					<input type="text" id="contact_name" name="contact_name" class="form-field" placeholder="Your name" maxlength="30">
 				</div>
 			</div>
-			<p class="form-msg" id="form-msg-text-1"><i class="fas fa-exclamation-triangle"></i> Your Name, please.</p>
-			<p class="form-msg" id="form-msg-text-2"><i class="fas fa-exclamation-triangle"></i> At least 2 characters in your Name, please.</p>
+			<p class="form-msg" id="form-msg-text-1"><i class="fa fa-exclamation-triangle"></i> Your Name, please.</p>
+			<p class="form-msg" id="form-msg-text-2"><i class="fa fa-exclamation-triangle"></i> At least 2 characters in your Name, please.</p>
 
 			<label for="email">Email:</label>
 			<div class="flex-row">
 				<div>
-					<span class="field-icon"><i class="fas fa-fw fa-envelope"></i></span>
+					<span class="field-icon"><i class="fa fa-envelope"></i></span>
 				</div>
 				<div>
 					<input type="text" id="email" name="email" class="form-field" placeholder="Your email address" maxlength="40" autocapitalize="none">
 				</div>
 			</div>
-			<p class="form-msg" id="form-msg-text-3"><i class="fas fa-exclamation-triangle"></i> Your Email, please.</p>
-			<p class="form-msg" id="form-msg-text-4"><i class="fas fa-exclamation-triangle"></i> A valid Email address, please.</p>
+			<p class="form-msg" id="form-msg-text-3"><i class="fa fa-exclamation-triangle"></i> Your Email, please.</p>
+			<p class="form-msg" id="form-msg-text-4"><i class="fa fa-exclamation-triangle"></i> A valid Email address, please.</p>
 
 
 			<label class="contact_message">Message:</label>
 			<div class="flex-row">
 				<div>
-					<span class="field-icon"><i class="fas fa-fw fa-pen"></i></span>
+					<span class="field-icon"><i class="fa fa-pen"></i></span>
 				</div>
 				<div>
 					<textarea name="contact_message" id="contact_message" class="form-field" placeholder="Your message" maxlength="600"></textarea>
 				</div>
 			</div>
-			<p class="form-msg" id="form-msg-text-5"><i class="fas fa-exclamation-triangle"></i> Your Message, please.</p>
-			<p class="form-msg" id="form-msg-text-6"><i class="fas fa-exclamation-triangle"></i> At least 2 characters in your Message, please.</p>
+			<p class="form-msg" id="form-msg-text-5"><i class="fa fa-exclamation-triangle"></i> Your Message, please.</p>
+			<p class="form-msg" id="form-msg-text-6"><i class="fa fa-exclamation-triangle"></i> At least 2 characters in your Message, please.</p>
 
 			<input type="hidden" name="_subject" value="Email from Website Form" />
 
-			<button id="btn-submit" type="submit" class="btn-submit">Send <i class="fas fa-arrow-circle-right"></i></button> 
+			<button id="btn-submit" type="submit" class="btn-submit">Send <i class="fa fa-arrow-circle-right"></i></button> 
 
 	</form>
 
@@ -153,15 +153,10 @@
 	<div class="flex-grid-footer">
 
 		<div class="col-gutter">
-
 			<h4>SITE MAP</h4>
-
-			<p><i class="fas fa-fw fa-home"></i> <a href="../index.html">Home</a></p>
-
-			<p><i class="fas fa-fw fa-file-alt"></i> <a href="index.html">Portfolio</a></p>
-
-			<p><i class="fas fa-fw fa-lock"></i> <a href="../privacy.html">Privacy</a></p>
-		
+			<p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="index.html">Home</a></p>
+			<p><i class="fa fa-file" aria-hidden="true"></i>&nbsp;&nbsp;<a href="portfolio/index.html">Portfolio</a></p>
+			<p><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;<a href="privacy.html">Privacy</a></p>
 		</div><!-- /column -->
 
 		<div class="col-gutter">
@@ -170,21 +165,18 @@
 			<p>I created this website to showcase some of the projects I have created.</p>
 		</div><!-- /column -->
 
+
 		<div class="col-gutter">
-
 			<h4>CONTACT</h4>
-
-			<p><i class="fas fa-fw fa-envelope"></i> <a href="mailto:ibat.training@gmail.com">Email</a></p>
-
-			<p><i class="fab fa-fw fa-github-square"></i> <a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
-
-			<p><i class="fab fa-fw fa-linkedin"></i> <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
-
+			<p><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:ibat.training@gmail.com">Email</a></p>
+			<p><i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
+			<p><i class="fa fa-linkedin"></i>&nbsp;&nbsp;<a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
 		</div><!-- /column -->
 
 	</div><!-- /flexgrid -->
 	
 </div> <!-- /footer -->
+
 
 
 <!-- Begin JavaScript code showing/hiding slide-out menu -->
