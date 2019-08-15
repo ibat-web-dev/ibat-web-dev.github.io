@@ -1,11 +1,8 @@
 /* ==== BROWSER RESETS  ==== */
-* { box-sizing: border-box; padding: 0; margin: 0 }
-body, html { height: 100% }
-body { max-width: 1600px; margin: 0 auto}
-
-
-/* ==== UTILITY CLASS  ==== */
-.img-fluid { width: 100%; height: auto }
+* { padding: 0; margin: 0; border: 0; font-weight: normal; font-size: 16px }
+body, html { height: 100% }	
+html { box-sizing: border-box; scroll-behavior: smooth }
+body { max-width: 1600px; margin: 0 auto }
 
 
 /* ==== FONT  ==== */
@@ -165,8 +162,6 @@ body { font-family: sans-serif }
 	
 }
 
-
-
 /*===================== DESKTOP LOGO AND NAVIGATION MENU BAR ======================= */
 
 /* Hide on mobiles */
@@ -283,7 +278,6 @@ body { font-family: sans-serif }
 
 	/*== Sticky desktop menu == */
 	.menu-desktop-sticky { position: fixed }
-
 }
 
 
@@ -318,7 +312,7 @@ body { background-color: lightgray }
 @media all and (max-width:767px) {
 	.container-form { 
 		width: 90%; 
-		padding: 100px 20px 80px 20px;
+		padding: 100px 20px 90px 20px;
 	}
 	.container-form h1 { margin: 0 0 5% 0 }
 }
@@ -555,5 +549,3 @@ body { background-color: lightgray }
 
 	.flex-grid-footer h4 { margin-bottom: 2px }
 }
-
-
