@@ -1,0 +1,411 @@
+/* ==== BROWSER RESETS  ==== */
+* { padding: 0; margin: 0; border: 0; box-sizing: border-box; font-weight: normal; font-size: 16px }
+body, html { height: 100% }	
+html { scroll-behavior: smooth }
+body { max-width: 1600px; margin: 0 auto }
+img { display: block; width: 100%; height: auto }
+
+/* ==== FONT  ==== */
+body { font-family: sans-serif }
+
+
+/*===================== MOBILE LOGO WITH SLIDE-OUT NAVIGATION MENU  ======================= */
+
+/* Hide on desktops  */
+@media all and (min-width:768px) { 
+	.container-menu-bar-mobile, .container-menu-options-mobile {
+		display: none;
+	}
+}
+
+@media all and (max-width:767px) { 
+
+	.container-menu-bar-mobile {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	/* Logo */
+	.container-menu-bar-mobile .item-logo img { 
+		display: block; 
+		margin-left: 10px;
+		margin-top: 9px;
+		margin-bottom: 9px 
+	}
+
+	/* Hamburger icon */
+	.container-menu-bar-mobile .item-icon {
+		text-align: right;
+		margin-right: 16px;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.container-menu-bar-mobile .item-icon .bar1, 
+	.container-menu-bar-mobile .item-icon .bar2, 
+	.container-menu-bar-mobile .item-icon .bar3 {
+		width: 36px;
+		height: 4px;
+		margin: 7px 0;
+		transition: 0.4s;
+	}
+
+	/* Hamburger icon chnages shape */
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.change .bar2 { opacity: 0 }
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+
+	/* Mobile menu options */
+	.container-menu-options-mobile { 
+		position: fixed; 
+		display: block; 
+		top: 60px;
+		height: 100%; 
+		width: 320px;
+		right: -320px;
+		padding-top: 30px;
+		transition: 0.5s;
+	}
+
+	.container-menu-options-mobile ul li { 
+		list-style-type: none;
+	    margin-left: 40px;
+		margin-bottom: 30px;
+		display: block;
+		line-height: 1
+	}
+
+	.container-menu-options-mobile ul li a { 
+		text-decoration: none;
+		font-weight:bold;
+		font-size:18px;
+	}
+
+	.container-menu-options-mobile ul li a:hover, .container-menu-options-mobile ul li a:active  { 
+		text-decoration: underline;
+	}
+
+	/* Mobile menu option styled as button */
+	.container-menu-options-mobile ul li a.btn-solid { 
+		display: inline-block;
+		padding: 12px 32px;
+		border-width: 2px;
+		border-style: solid;
+	}
+
+	.container-menu-options-mobile li a.btn-solid:hover, 
+	.container-menu-options-mobile li a.btn-solid:active { 
+		text-decoration: none;
+	}
+
+	/* Mobile menu option button corners */
+	.container-menu-options-mobile li a.btn-soft { border-radius: 5px }
+	.container-menu-options-mobile li a.btn-rounded { border-radius: 100px }
+
+
+	/*== Dark mobile menu == */
+	.menu-mobile-dark { background-color: blue; box-shadow: 0px 1px 10px #888 }
+
+	.menu-mobile-dark .item-icon .bar1, 
+	.menu-mobile-dark .item-icon .bar2, 
+	.menu-mobile-dark .item-icon .bar3 {
+		background-color: #fff;
+	}
+
+	.menu-mobile-dark li a { color: #fff }
+
+	.menu-mobile-dark li a.btn-solid { 
+		background-color: #fff; border-color: #fff; color:blue;
+	}
+
+	.menu-mobile-dark li a.btn-solid:hover, 
+	.menu-mobile-dark li a.btn-solid:active { 
+		background-color: blue; color:#fff;
+	}
+
+	/*== Light mobile menu == */
+	.menu-mobile-light { background-color: #fff; box-shadow: 0px 1px 10px #888 }
+
+	.menu-mobile-light .item-icon .bar1, 
+	.menu-mobile-light .item-icon .bar2, 
+	.menu-mobile-light .item-icon .bar3 {
+		background-color: blue;
+	}
+
+	.menu-mobile-light li a { color: blue }
+
+	.menu-mobile-light li a.btn-solid { 
+		background-color: blue; border-color: #fff; color:#fff;
+	}
+
+	.menu-mobile-light li a.btn-solid:hover, 
+	.menu-mobile-light li a.btn-solid:active { 
+		background-color: #fff; color:blue; border-color: blue
+	}
+
+	/*== Sticky mobile menu == */
+	.menu-mobile-sticky { position: fixed }
+	
+}
+
+
+
+/*===================== DESKTOP LOGO AND NAVIGATION MENU BAR ======================= */
+
+/* Hide on mobiles */
+@media all and (max-width:767px) { 
+	.container-menu-desktop { display: none }
+}
+
+/* Display on desktops */
+@media all and (min-width:768px) { 
+	.container-menu-desktop {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 60px;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	/* Logo */
+	.container-menu-desktop .item-logo img { display: block; margin-left: 8px }
+
+	/* Menu options */
+	.container-menu-desktop .item-menu ul { text-align: right }
+
+	.container-menu-desktop .item-menu ul li {
+		display: inline;
+		list-style-type: none;
+		line-height:1;
+	}
+
+	.container-menu-desktop .item-menu ul li:last-child { margin-right: 12px }
+
+	.container-menu-desktop .item-menu ul li a { 
+		text-decoration: none;
+		font-weight:bold;
+		font-size: calc(14px + (19 - 14) * ((100vw - 320px)/(1600 - 320)))
+	}
+
+	.container-menu-desktop .item-menu ul li a:hover, 
+	.container-menu-desktop .item-menu ul li a:active { 
+		text-decoration: underline;
+	}
+
+	/* Menu option styled as a button */
+	.container-menu-desktop .item-menu ul li a.btn-solid { 
+		padding: 8px 28px;
+		border-width: 2px;
+		border-style: solid;
+	}
+
+	.container-menu-desktop .item-menu ul li a.btn-solid:hover, 
+	.container-menu-desktop .item-menu ul li a.btn-solid:active { 
+		text-decoration: none;
+		background-color: blue;
+		color:#fff;
+	}
+
+	/* Button corner styles */
+	.container-menu-desktop .item-menu ul li a.btn-soft    { border-radius: 5px }
+	.container-menu-desktop .item-menu ul li a.btn-rounded { border-radius: 100px }
+
+}
+
+/* Spacing for various desktop screen widths */
+@media all and (min-width:768px) and (max-width:899px) { 
+	.container-menu-desktop { padding: 0 2% }
+	.container-menu-desktop .item-menu { margin-left: -200px }
+	.container-menu-desktop .item-menu ul li { margin-right: 20px }
+}
+
+@media all and (min-width:901px) and (max-width: 1099px) { 
+	.container-menu-desktop { padding: 0 5% 0 5% }
+	.container-menu-desktop .item-menu { margin-left: -180px }
+	.container-menu-desktop .item-menu ul li { margin-right: 30px }
+}
+
+@media all and (min-width:1100px) { 
+	.container-menu-desktop { padding: 0 8% 0 8% }
+	.container-menu-desktop .item-menu { margin-left: 0 }
+	.container-menu-desktop .item-menu ul li { margin-right: 40px }
+}
+
+
+/* Styles for light (white background) and dark (purple background) menus */
+@media all and (min-width:768px) { 
+
+	/*== Dark desktop menu == */
+	.menu-desktop-dark { background-color: blue; box-shadow: 0px 1px 10px #888; }
+	.menu-desktop-dark .item-menu ul li a { color: #fff }
+
+	.menu-desktop-dark .item-menu ul li a.btn-solid { 
+		background-color: #fff; border-color: #fff; color:blue;
+	}
+
+	.menu-desktop-dark .item-menu ul li a.btn-solid:hover, 
+	.menu-desktop-dark .item-menu ul li a.btn-solid:active { 
+		background-color: blue; color:#fff;
+	}
+
+	/*== Light desktop menu == */
+	.menu-desktop-light { background-color: #fff; box-shadow: 0px 1px 10px #888; }
+	.menu-desktop-light .item-menu ul li a { color: blue }
+
+	.menu-desktop-light .item-menu ul li a.btn-solid { 
+		background-color: blue; border-color: blue; color: #fff;
+	}
+
+	.menu-desktop-light .item-menu ul li a.btn-solid:hover, 
+	.menu-desktop-light .item-menu ul li a.btn-solid:active { 
+		background-color: #fff; color: blue;
+	}
+
+	/*== Sticky desktop menu == */
+	.menu-desktop-sticky { position: fixed }
+
+}
+
+
+
+/* ========================== PAGE WRAPPER  ============================== */
+
+.page-wrapper h1, .page-wrapper h2, .page-wrapper h3 { line-height: 1.2; font-weight: bold }
+
+.page-wrapper h1 { font-size: calc(30px + (64 - 30) * ((100vw - 320px)/(1600 - 320))) }
+.page-wrapper h2 { font-size: calc(22px + (36 - 22) * ((100vw - 320px)/(1600 - 320))); color: #000 }
+.page-wrapper h3 { font-size: calc(18px + (24 - 18) * ((100vw - 320px)/(1600 - 320))); color: #000 }
+
+.page-wrapper p, 
+.page-wrapper li { font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320))); line-height: 1.6  }
+.page-wrapper li { margin-left: 17px }
+
+.page-wrapper a.fancy-link:link, 
+.page-wrapper a.fancy-link:visited {
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: solid 2px blue;
+	color:blue;
+}
+
+.page-wrapper a.fancy-link:hover, 
+.page-wrapper a.fancy-link:active {
+	text-decoration: none;
+	border-bottom: none
+}
+
+/* Desktop */
+@media all and (min-width:768px) {
+	.page-wrapper { 
+		width: 60%; 
+		margin-left: auto; 
+		margin-right: auto; 
+		padding-top: 100px
+	}
+	.page-wrapper h1 { margin: 0 0 5% 0 }
+	.page-wrapper h2 { margin: 5% 0 1% 0 }
+	.page-wrapper h3 { margin: 4% 0 0 0 }
+	.page-wrapper p, 
+	.page-wrapper ul li { margin-bottom: 20px }
+	.page-wrapper img { 
+		display: block; 
+		margin-bottom: 20px
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:767px) {
+	.page-wrapper { 
+		width: 80%; 
+		margin-left: auto; 
+		margin-right: auto;
+		padding-top: 80px
+	}
+	.page-wrapper h1 { margin: 0 0 5% 0 }
+	.page-wrapper h2 { margin: 12% 0 1% 0 }
+	.page-wrapper h3 { margin: 8% 0 0 0 }
+	.page-wrapper p, 
+	.page-wrapper ul li { margin-bottom: 14px }
+	.page-wrapper img { 
+		display: block; 
+		margin-bottom: 14px
+	}
+}
+
+
+/*======================= FOOTER =====================*/
+
+.container-footer { background-color: #2c3e50; margin-top: 5% }
+
+.container-footer h4, 
+.container-footer p { color: #fff }
+
+.flex-grid-footer { display: flex }
+
+.flex-grid-footer p a:link, 
+.flex-grid-footer p a:visited {
+	color: #fff;
+	padding-bottom:2px;
+	text-decoration: none;
+	border-bottom: solid 1px #fff;
+}
+
+.flex-grid-footer p a:hover,
+.flex-grid-footer p a:active {
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: solid 1px lightblue;
+	color: lightblue;
+}
+
+
+.flex-grid-footer h4 { 
+	font-weight:bold;
+	font-size: calc(16px + (18 - 16) * ((100vw - 320px)/(1600 - 320))); line-height: 1.6
+}
+
+.flex-grid-footer p { 
+	font-size: calc(15px + (16 - 15) * ((100vw - 320px)/(1600 - 320))); 
+	line-height: 1.6;
+	margin-bottom: 12px
+}
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-footer { flex-direction: row; text-align: left; padding: 3% 8% 3% 8% }
+	.flex-grid-footer .col-gutter:nth-child(1) { width: 22%; margin-right: 4% }
+	.flex-grid-footer .col-gutter:nth-child(2) { width: 62%; margin-right: 4% }
+	.flex-grid-footer .col-gutter:nth-child(3) { width: 22%; margin-right: 0 }
+	.flex-grid-footer .col-gutter:nth-child(2) { text-align: center }
+	.flex-grid-footer h4 { margin-bottom: 6px }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.flex-grid-footer { flex-direction: column; text-align: left; padding: 10% 10% 10% 10% }
+	.flex-grid-footer .col-gutter, 
+	.flex-grid-footer .col-no-gutter { width: 100% }
+
+	.flex-grid-footer .col-gutter:nth-child(1),
+	.flex-grid-footer .col-gutter:nth-child(2) { padding-bottom: 22px }
+
+	.flex-grid-footer h4 { margin-bottom: 2px }
+}
+
+
+
+
