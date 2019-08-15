@@ -3,6 +3,7 @@
 body, html { height: 100% }	
 html { box-sizing: border-box; scroll-behavior: smooth }
 body { max-width: 1600px; margin: 0 auto }
+img { display: block; width: 100%; height: auto }
 
 
 /* ==== FONT  ==== */
