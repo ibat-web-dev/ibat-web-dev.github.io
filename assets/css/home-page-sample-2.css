@@ -6,8 +6,7 @@ img { display: block; width: 100%; height: auto }
 html { scroll-behavior: smooth }
 
 /* ==== FONT  ==== */
-body { font-family: 'Roboto', sans-serif }
-
+body { font-family: sans-serif }
 
 /*===================== MOBILE LOGO WITH SLIDE-OUT NAVIGATION MENU  ======================= */
 
