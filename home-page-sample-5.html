@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Sample Mobile Menu 4 | Mary Smith Web Design Portfolio</title>
+	<meta name="description" content="Sample sticky slide-out navigation menu above hero block for mobile screens.">
+
+	<meta name="author" content="Mary Smith">
+
+	<link rel="stylesheet" href="assets/css/home-page-sample-4.css">
+
+	<style>
+		p.note { text-align:center; margin-bottom:32px }
+	</style>
+
+	<!-- Link to Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
+
+	<!-- Link to icons for Font Awesome 4 -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122243940-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-122243940-1');
+	</script>
+</head>
+
+
+<body>
+
+
+<!-- begin menu mobile -->
+
+<div class="container-menu-bar-mobile menu-mobile-transparent menu-mobile-sticky">
+	<div class="item-logo">
+		<a href="../index.html">
+			<img src="assets/img/logo-blue.png" alt="logo">
+		</a>
+	</div>
+	<div class="item-icon">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+</div>
+
+<div class="container-menu-options-mobile menu-mobile-transparent">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="portfolio/index.html">Work</a></li>
+		<li><a href="contact.html" class="btn-solid btn-rounded"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a></li>
+	</ul>
+</div>
+<!-- end menu mobile -->
+
+
+<!-- begin menu desktop -->
+<div class="container-menu-desktop menu-desktop-transparent menu-desktop-sticky">
+	<div class="item-logo">
+		<a href="../index.html">
+			<img src="assets/img/logo-blue.png" alt="logo">
+		</a>
+	</div>
+	<div class="item-menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="portfolio/index.html">Projects</a></li>
+			<li><a href="contact" class="btn-solid btn-rounded"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end menu desktop -->
+
+
+<!-- begin page content -->
+
+<div class="hero-block">
+	<div class="flex-grid-two">
+		<div class="col-gutter">
+			<div class="slide-in-left">
+				<h1>Websites:</h1>
+				<h2>Designed.<br>
+				Developed.<br>
+				Deployed.</h2>
+			</div>
+		</div>
+		<div class="col-gutter">
+			<img src="assets/img/home-page-designer-removebg-preview.png" alt="web design">
+		</div>
+	</div><!--- /flex-grid -->
+</div>
+
+<div class="container-full-feature">
+
+	<p class="note">(<b>NOTE</B>: See alternative versions:  <a href="home-page-sample-1.html">here</a> and  <a href="home-page-sample-3.html">here</a>.)</p>
+
+	<h2>Recent projects</h2>
+	<p>For the <a href="project-sample-1/index.html">IBAT Tours Travel Agency</a>, I completed a three-page website that features a list of their <a href="project-sample-1/destinations.html">destinations</a> and a collection of <a href="project-sample-1/about-us.html">customer testimonials</a>.</p>
+
+	<div class="flex-grid-three">
+		<div class="col-gutter">
+			<img src="assets/img/ibat-tours-screen-desktop-1.jpg" alt="sample screen 1">
+		</div>
+		<div class="col-gutter">
+			<img src="assets/img/ibat-tours-screen-desktop-2.jpg" alt="sample screen 2">
+		</div>
+		<div class="col-gutter">
+			<img src="assets/img/ibat-tours-screen-desktop-3.jpg" alt="sample screen 3">
+		</div>
+	</div><!--- /flex-grid -->
+</div><!--- /container -->
+
+
+<div class="container-footer">
+	<div class="flex-grid-footer">
+		<div class="col-gutter">
+			<h4>Site Map</h4>
+			<p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="index.html">Home</a></p>
+			<p><i class="fa fa-file" aria-hidden="true"></i>&nbsp;&nbsp;<a href="../portfolio/index.html">Portfolio</a></p>
+			<p><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;<a href="../privacy.html">Privacy</a></p>
+		</div><!-- /column -->
+		<div class="col-gutter">
+			<h4>About Me</h4>
+			<p>Hi, I&#8217;m Mary Smith. I'm a web designer and developer. I created this website to showcase some of my projects.</p>
+		</div><!-- /column -->
+		<div class="col-gutter">
+			<h4>Contact</h4>
+			<p><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:ibat.training@gmail.com">Email</a></p>
+			<p><i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
+			<p><i class="fa fa-linkedin"></i>&nbsp;&nbsp;<a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
+		</div><!-- /column -->
+	</div><!-- /flexgrid -->
+</div> <!-- /footer -->
+
+
+<!-- Begin JavaScript code showing/hiding slide-out menu -->
+<script>
+	document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
+
+	function toggleMobileMenu() {
+		//toggle hamburger icon
+		let elemIcon = document.querySelector('.item-icon');
+		elemIcon.classList.toggle("change");
+	
+		//if mobile menu currently closed, open menu.
+		if (elemIcon.classList.contains('change')) {
+			document.querySelector(".container-menu-options-mobile").style.right = "0";
+		}
+		//if mobile menu currently open, close menu.
+		else {
+			document.querySelector(".container-menu-options-mobile").style.right = "-320px";
+		}
+	}
+</script>
+<!-- End JavaScript code showing/hiding slide-out menu -->
+<script>
+	document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
+
+	function toggleMobileMenu() {
+		//toggle hamburger icon
+		let elemIcon = document.querySelector('.item-icon');
+		elemIcon.classList.toggle("change");
+	
+		//if mobile menu currently closed, open menu.
+		if (elemIcon.classList.contains('change')) {
+			document.querySelector(".container-menu-options-mobile").style.right = "0";
+		}
+		//if mobile menu currently open, close menu.
+		else {
+			document.querySelector(".container-menu-options-mobile").style.right = "-320px";
+		}
+	}
+</script>
+<!-- End JavaScript code showing/hiding slide-out menu -->
+
+
+<!-- Begin JavaScript code for menu styles on scrolling -->
+<script>
+
+	window.onscroll = function() {
+		scrollDesktop();
+		scrollMobile();
+	}
+
+	function scrollDesktop() {
+		let headerDesktop = document.querySelector('.container-menu-desktop');
+		let stickyDesktop = headerDesktop.offsetTop;
+
+		if (window.pageYOffset > stickyDesktop) {
+			headerDesktop.classList.add("menu-desktop-dark");
+			headerDesktop.classList.remove("menu-desktop-transparent");
+		} else {
+			headerDesktop.classList.add("menu-desktop-transparent");
+			headerDesktop.classList.remove("menu-desktop-dark");
+		}
+	}
+
+	function scrollMobile() {
+		let headerMobile = document.querySelector('.container-menu-bar-mobile');
+		let stickyMobile = headerMobile.offsetTop;
+		if (window.pageYOffset > stickyMobile) {
+			headerMobile.classList.add("menu-mobile-dark");
+			headerMobile.classList.remove("menu-mobile-transparent");
+		} else {
+			headerMobile.classList.add("menu-mobile-transparent");
+			headerMobile.classList.remove("menu-mobile-dark");
+		}
+	}
+</script>
+<!-- End JavaScript code for menu styles on scrolling -->
+
+</body>
+</html>
