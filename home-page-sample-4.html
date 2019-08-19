@@ -161,6 +161,25 @@
 	}
 </script>
 <!-- End JavaScript code showing/hiding slide-out menu -->
+<script>
+	document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
+
+	function toggleMobileMenu() {
+		//toggle hamburger icon
+		let elemIcon = document.querySelector('.item-icon');
+		elemIcon.classList.toggle("change");
+	
+		//if mobile menu currently closed, open menu.
+		if (elemIcon.classList.contains('change')) {
+			document.querySelector(".container-menu-options-mobile").style.right = "0";
+		}
+		//if mobile menu currently open, close menu.
+		else {
+			document.querySelector(".container-menu-options-mobile").style.right = "-320px";
+		}
+	}
+</script>
+<!-- End JavaScript code showing/hiding slide-out menu -->
 
 
 <!-- Begin JavaScript code for menu styles on scrolling -->
