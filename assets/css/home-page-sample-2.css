@@ -123,7 +123,7 @@ body { font-family: 'Roboto', sans-serif }
 	.menu-mobile-dark .item-icon .bar1, 
 	.menu-mobile-dark .item-icon .bar2, 
 	.menu-mobile-dark .item-icon .bar3 {
-		background-color:#2cd4d9;
+		background-color:#FA7743;
 	}
 
 	.menu-mobile-dark li a { color: #fff }
@@ -432,7 +432,7 @@ body { font-family: 'Roboto', sans-serif }
 	line-height: 1.6;
 	color:#24193B;
 	font-weight:normal;
-	font-family: serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container-full-feature p a {
