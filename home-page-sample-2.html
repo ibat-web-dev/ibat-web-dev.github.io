@@ -28,7 +28,6 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-122243940-1');
 	</script>
 
@@ -50,11 +49,11 @@
 	</div>
 </div>
 
-<div class="container-menu-options-mobile menu-mobile-transparent">
+<div class="container-menu-options-mobile menu-mobile-dark">
 	<ul>
 		<li><a href="index.html">Home</a></li>
-		<li><a href="portfolio/index.html">Work</a></li>
-		<li><a href="contact.html" class="btn-solid btn-rounded"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a></li>
+		<li><a href="portfolio/index.html">Portfolio</a></li>
+		<li><a href="#" class="btn-solid btn-rounded"><i class="fa fa-envelope" aria-hidden="true"></i> Get in touch</a></li>
 	</ul>
 </div>
 <!-- end menu mobile -->
@@ -69,9 +68,9 @@
 	</div>
 	<div class="item-menu">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="portfolio/index.html">Projects</a></li>
-			<li><a href="contact" class="btn-solid btn-rounded"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="portfolio/index.html">Portfolio</a></li>
+		<li><a href="#" class="btn-solid btn-rounded"><i class="fa fa-envelope" aria-hidden="true"></i> Get in touch</a></li>
 		</ul>
 	</div>
 </div>
@@ -140,25 +139,6 @@
 
 
 <!-- Begin JavaScript code showing/hiding slide-out menu -->
-<script>
-	document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
-
-	function toggleMobileMenu() {
-		//toggle hamburger icon
-		let elemIcon = document.querySelector('.item-icon');
-		elemIcon.classList.toggle("change");
-	
-		//if mobile menu currently closed, open menu.
-		if (elemIcon.classList.contains('change')) {
-			document.querySelector(".container-menu-options-mobile").style.right = "0";
-		}
-		//if mobile menu currently open, close menu.
-		else {
-			document.querySelector(".container-menu-options-mobile").style.right = "-320px";
-		}
-	}
-</script>
-<!-- End JavaScript code showing/hiding slide-out menu -->
 <script>
 	document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
 
