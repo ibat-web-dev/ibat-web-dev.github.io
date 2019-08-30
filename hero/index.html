@@ -12,6 +12,7 @@
 	<meta name="author" content="Mary Smith">
 
 	<link rel="stylesheet" href="assets/css/hero.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,800,800i" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet"> 
@@ -79,6 +80,24 @@
 		<h1>Best beaches.<br>Best prices.</h1>
 		<h2>Check out our latest offers for sun-soaked holidays you can afford.</h2>
 	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#000"
+		},
+		"button": {
+		  "background": "#f1d600"
+		}
+	  },
+	  "content": {
+		"href": "https://www.munnelly.com/legal/"
+	  }
+	});
+	</script>
+
 
 </body>
 </html>
