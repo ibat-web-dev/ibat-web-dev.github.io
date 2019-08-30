@@ -9,6 +9,8 @@
 	<meta name="author" content="Mary Smith">
 	<link rel="stylesheet" href="assets/css/how-to-set-up-a-website.css">
 
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122243940-1"></script>
 	<script>
@@ -17,6 +19,7 @@
     	gtag('js', new Date());
    		gtag('config', 'UA-122243940-1');
   </script>
+
 </head>
 
 <body>
@@ -157,5 +160,23 @@
 			<p>As with any purchasing decision, intending consumers of domain names and web hosting services should research the market carefully and choose the services that best meet their requirements and budget.</p>
 		</div>
 	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#000"
+		},
+		"button": {
+		  "background": "#f1d600"
+		}
+	  },
+	  "content": {
+		"href": "https://www.munnelly.com/legal/"
+	  }
+	});
+	</script>
+
 </body>
 </html>
