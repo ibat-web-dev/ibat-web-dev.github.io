@@ -15,27 +15,7 @@
 	<!-- Link to icons for Font Awesome 4 -->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<!-- Cookie consent code-->	
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-	<script>
-	window.addEventListener("load", function(){
-	window.cookieconsent.initialise({
-	  "palette": {
-		"popup": {
-		  "background": "#383b75"
-		},
-		"button": {
-		  "background": "#f1d600"
-		}
-	  },
-	  "theme": "classic",
-	  "content": {
-		"href": "https://ibat-web-dev.github.io/privacy.html"
-	  }
-	})});
-	</script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122243940-1"></script>
@@ -98,7 +78,7 @@
 	<div class="container-form">
 		<h1>Get in touch</h1>
 
-		<form name="contact-form" id="contact-form" class="contact-form" method="post" action="https://formspree.io/myname@gmail.com" onsubmit="return doFormValidate(this);">
+		<form name="contact-form" id="contact-form" class="contact-form" method="post" action="https://formspree.io/ibat.training@gmail.com" onsubmit="return doFormValidate(this);">
 
 			<input type="text" name="_gotcha" style="display:none" />
 
@@ -149,32 +129,25 @@
 <!-- end wrapper for form  -->
 
 <div class="container-footer">
-
 	<div class="flex-grid-footer">
-
 		<div class="col-gutter">
 			<h4>SITE MAP</h4>
 			<p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="index.html">Home</a></p>
 			<p><i class="fa fa-file" aria-hidden="true"></i>&nbsp;&nbsp;<a href="portfolio/index.html">Portfolio</a></p>
 			<p><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;<a href="privacy.html">Privacy</a></p>
 		</div><!-- /column -->
-
 		<div class="col-gutter">
 			<h4>ABOUT ME</h4>
 			<p>Hi, I'm Mary Smith. I'm a web designer and developer.</p>
 			<p>I created this website to showcase some of the projects I have created.</p>
 		</div><!-- /column -->
-
-
 		<div class="col-gutter">
 			<h4>CONTACT</h4>
 			<p><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:ibat.training@gmail.com">Email</a></p>
 			<p><i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
 			<p><i class="fa fa-linkedin"></i>&nbsp;&nbsp;<a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
 		</div><!-- /column -->
-
 	</div><!-- /flexgrid -->
-	
 </div> <!-- /footer -->
 
 
@@ -312,6 +285,25 @@ function doFormValidate() {
 }
 
 </script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#000"
+		},
+		"button": {
+		  "background": "#f1d600"
+		}
+	  },
+	  "content": {
+		"href": "https://www.munnelly.com/legal/"
+	  }
+	});
+	</script>
+
 
 </body>
 </html>
