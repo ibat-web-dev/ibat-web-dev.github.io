@@ -392,7 +392,6 @@ html { scroll-behavior: smooth }
     .hero-block-8 h1, .hero-block-8 h2 { 
         text-align: center;
         width: 90%;
-        font-family: #fff;
         text-shadow: 2px 2px #222;
     }
     .hero-block-8 h1 { margin-bottom: 18% }
