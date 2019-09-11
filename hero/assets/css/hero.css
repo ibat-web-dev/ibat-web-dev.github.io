@@ -490,7 +490,7 @@ html { scroll-behavior: smooth }
 
 .hero-block-10 h1 {
     font-size: calc(44px + (68 - 44) * ((100vw - 320px)/(1600 - 320)));
-    line-height: 1.1
+    line-height: 1.1;
     text-transform: uppercase;
 }
 
