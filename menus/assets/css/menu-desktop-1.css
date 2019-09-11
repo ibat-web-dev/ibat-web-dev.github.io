@@ -58,7 +58,7 @@ body { font-family: 'Lato', sans-serif }
 		transition: 0.4s;
 	}
 
-	/* Hamburger icon chnages shape */
+	/* Hamburger icon changes shape */
 	.change .bar1 {
 		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
 		transform: rotate(-45deg) translate(-9px, 6px);
@@ -264,7 +264,7 @@ body { font-family: 'Lato', sans-serif }
 @media all and (min-width:768px) { 
 
 	/*== Dark desktop menu == */
-	.menu-desktop-dark { background-color: blue }
+	.menu-desktop-dark { background-color: blue; box-shadow: 0 1px 10px #888 }
 	.menu-desktop-dark .item-menu ul li a { color: #fff }
 
 	.menu-desktop-dark .item-menu ul li a.btn-solid { 
@@ -277,7 +277,7 @@ body { font-family: 'Lato', sans-serif }
 	}
 
 	/*== Light desktop menu == */
-	.menu-desktop-light { background-color: #fff }
+	.menu-desktop-light { background-color: #fff; box-shadow: 0 1px 10px #888 }
 	.menu-desktop-light .item-menu ul li a { color: blue }
 
 	.menu-desktop-light .item-menu ul li a.btn-solid { 

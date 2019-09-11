@@ -19,7 +19,7 @@
 <body>
 
 <!-- begin menu desktop -->
-<div class="container-menu-desktop menu-desktop-dark">
+<div class="container-menu-desktop menu-desktop-transparent menu-desktop-sticky">
 	<div class="item-logo">
 		<a href="index.html">
 			<img src="assets/img/logo-green.png" alt="logo">
@@ -31,7 +31,7 @@
 			<li><a href="#">Trails</a></li>
 			<li><a href="#">Bikes</a></li>
 			<li><a href="#">Pricing</a></li>
-			<li><a href="#" class="btn-solid btn-rounded">Book Now</a></li>
+			<li><a href="#" class="btn-solid btn-soft">Book Now</a></li>
 		</ul>
 	</div>
 </div>
@@ -111,6 +111,22 @@
 </div>
 <!-- end wrapper for page content -->
 
+<!-- Begin JavaScript code for menu styles on scrolling -->
+<script>
+    window.onscroll = function() {scrollDesktop()};
+    function scrollDesktop() {
+        let headerDesktop = document.querySelector(".container-menu-desktop");
+        let stickyDesktop = headerDesktop.offsetTop;
+        if (window.pageYOffset > stickyDesktop) {
+            headerDesktop.classList.add("menu-desktop-light");
+            headerDesktop.classList.remove("menu-desktop-transparent");
+        } else {
+            headerDesktop.classList.add("menu-desktop-transparent");
+            headerDesktop.classList.remove("menu-desktop-light");
+        }
+    }
+</script>
+<!-- End JavaScript code for menu styles on scrolling -->
 
 </body>
 </html>

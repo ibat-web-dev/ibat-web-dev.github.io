@@ -125,7 +125,8 @@ body { font-family: 'Lato', sans-serif }
 	.menu-desktop-light .item-menu ul li a.btn-solid:active { 
 		background-color: #fff; color: #500294;
 	}
-
+	/* Sticky desktop menu */
+	.menu-desktop-sticky { position: fixed }
 }
 
 
@@ -159,7 +160,7 @@ body { font-family: 'Lato', sans-serif }
 
 /* Desktop */
 @media all and (min-width:768px) {
-	.page-wrapper { width: 60%; margin-left: auto; margin-right: auto }
+	.page-wrapper { width: 60%; margin-left: auto; margin-right: auto; padding-top: 100px}
 	.page-wrapper h1 { margin: 0 0 5% 0 }
 	.page-wrapper h2 { margin: 5% 0 1% 0 }
 	.page-wrapper h3 { margin: 4% 0 0 0 }
