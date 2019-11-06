@@ -1,0 +1,156 @@
+/* ==== BROWSER RESETS  ==== */
+* { box-sizing: border-box; padding: 0; margin: 0 }
+body, html { height: 100% }
+body { max-width: 1600px; font-family: sans-serif }
+img { width: 100%; height: auto }
+* { margin:0; padding:0; box-sizing: border-box }
+
+/* === HERO BLOCK 5 === */
+
+.hero-block-5 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+/* =================================== OUTER FLEXBOX CONTAINERS ============================= */
+.container-flexbox { 
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Background colors */
+.container-flexbox.bg-watermelon { background-color: #f77bb6 }
+.container-flexbox.bg-apple      { background-color: #93edc3 }
+.container-flexbox.bg-blueberry  { background-color: #a287ca }
+.container-flexbox.bg-lemon      { background-color: #e7e78c }
+
+/* Desktop - inside padding  */
+@media all and (min-width:768px) {
+	.container-flexbox { padding: 4% 13% 3% 13% }
+}
+
+/* Mobiles - inside padding */
+@media all and (max-width:767px) {
+	.container-flexbox { padding: 10% 8% 3% 8% }
+}
+
+
+
+/* ================ INNER FLEXBOX COLUMN CONTAINERS: 1 COLUMN EVERY SCREEN ============== */
+
+.container-flexbox .item-1 { 
+	width: 100%;
+	padding: 1% 6% 0 6%;
+}
+
+
+
+/* ======================= INNER FLEXBOX COLUMN CONTAINERS: 2 COLUMNS DESKTOP, 1 COLUMN MOBILE  ========================= */
+
+.container-flexbox .item-2 { width: 47% }
+
+/* Desktop - outside spacing at bottom of within inner flexbox containers */
+@media all and (min-width:768px) {
+	.container-flexbox .item { margin-bottom: 3% }
+}
+
+/* Mobiles - bottom margin */
+@media all and (max-width:767px) {
+	.container-flexbox .item { margin-bottom: 5% }
+}
+
+/* === HEADINGS AND PARAGRAPH ELEMEHTS WITHIN FLEXBOX CONTAINERS === */
+
+.container-flexbox .item-2 h2 { 
+	font-family: 'Neucha', sans-serif;
+	font-weight: 800; 
+	color: #d1274b;
+	line-height: 1.2;
+	margin-bottom: 4px;
+	letter-spacing: 2px;
+	font-size: calc(32px + (60 - 32) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.container-flexbox .item-2 p { 
+	font-family: 'Neucha', sans-serif;
+	font-size: calc(15px + (26 - 15) * ((100vw - 320px) / (1600 - 320))); 
+	line-height: 1.6;
+	margin-bottom: 14px;
+	letter-spacing: 1px
+}
+
+.container-flexbox .item-1 p { 
+	font-family: 'Neucha', sans-serif;
+	font-weight: bold; 
+	color: #733fc0;
+	line-height: 1.6;
+	text-align: center;
+	font-size: calc(26px + (54 - 26) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+
+/* ============================= FLEXBOX CONTAINERS AND MOBILE SCREENS  =========================== */
+
+@media all and (max-width:767px) { 
+	/* Two columns to one column */
+	.container-flexbox { flex-direction: column }
+	.container-flexbox .item-2 { width: 100% }
+	/* Re-order columns in first and third outer containers */
+	.container-flexbox.bg-watermelon .item:nth-child(1) { order: 2 }
+	.container-flexbox.bg-watermelon .item:nth-child(2) { order: 1 }
+	.container-flexbox.bg-blueberry .item:nth-child(1) { order: 2 }
+	.container-flexbox.bg-blueberry .item:nth-child(2) { order: 1 }
+}
+
+
+.hero-block-5 h1, .hero-block-5 h2 {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Neucha', sans-serif;
+	text-shadow: 2px 2px #222;
+}
+
+.hero-block-5 h1 {
+	font-size: calc(64px + (112 - 64) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.hero-block-5 h2 {
+	font-size: calc(24px + (64 - 24) * ((100vw - 320px)/(1600 - 320)));
+	line-height: 1.5;
+}
+
+/* Desktop - block height, text width and h1 bottom margin */
+@media all and (min-width:768px) { 
+	.hero-block-5 { height: 520px }
+	.hero-block-5 h1, .hero-block-5 h2 { 
+		width: 60%; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hero-block-5 h1 { margin-bottom: 1% }
+}
+
+/* Mobiles - block height, text width and h1 bottom margin */
+@media all and (max-width:767px) { 
+	.hero-block-5 { height: 360px }
+	.hero-block-5 h1, .hero-block-5 h2  { 
+		margin-top: 0; 
+		width: 70%; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hero-block-5 h1 { margin-bottom: 5% }
+}
+
+
+
+
+
+
