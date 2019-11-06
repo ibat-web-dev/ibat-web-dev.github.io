@@ -24,21 +24,28 @@ img { width: 100%; height: auto }
 	justify-content: space-between;
 }
 
-/* Background colors */
-.container-flexbox.bg-watermelon { background-color: #f77bb6 }
-.container-flexbox.bg-apple      { background-color: #93edc3 }
-.container-flexbox.bg-blueberry  { background-color: #a287ca }
-.container-flexbox.bg-lemon      { background-color: #e7e78c }
 
 /* Desktop - inside padding  */
 @media all and (min-width:768px) {
-	.container-flexbox { padding: 4% 13% 3% 13% }
+	.container-flexbox { 
+		padding: 3% 5% 3% 5%
+	}
 }
 
 /* Mobiles - inside padding */
 @media all and (max-width:767px) {
-	.container-flexbox { padding: 10% 8% 3% 8% }
+	.container-flexbox { 
+		padding: 3% 10% 3% 10%
+	}
+
 }
+
+.container-flexbox.bg-watermelon  { background-color: #f77bb6}
+.container-flexbox.bg-apple       { background-color: #93edc3}
+.container-flexbox.bg-blueberry   { background-color: #a287ca }
+.container-flexbox.bg-lemon       { background-color: #e7e78c }
+
+
 
 
 
@@ -51,9 +58,9 @@ img { width: 100%; height: auto }
 
 
 
-/* ======================= INNER FLEXBOX COLUMN CONTAINERS: 2 COLUMNS DESKTOP, 1 COLUMN MOBILE  ========================= */
+/* ===== INNER FLEXBOX COLUMN CONTAINERS: 2 COLUMNS DESKTOP, 1 COLUMN MOBILE  ====== */
 
-.container-flexbox .item-2 { width: 47% }
+.container-flexbox .item-2 { width: 46% }
 
 /* Desktop - outside spacing at bottom of within inner flexbox containers */
 @media all and (min-width:768px) {
@@ -79,7 +86,7 @@ img { width: 100%; height: auto }
 
 .container-flexbox .item-2 p { 
 	font-family: 'Neucha', sans-serif;
-	font-size: calc(15px + (26 - 15) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(15px + (22 - 15) * ((100vw - 320px) / (1600 - 320))); 
 	line-height: 1.6;
 	margin-bottom: 14px;
 	letter-spacing: 1px
@@ -95,17 +102,16 @@ img { width: 100%; height: auto }
 }
 
 
-/* ============================= FLEXBOX CONTAINERS AND MOBILE SCREENS  =========================== */
+/* =========== FLEXBOX CONTAINERS AND MOBILE SCREENS  ============= */
 
 @media all and (max-width:767px) { 
 	/* Two columns to one column */
 	.container-flexbox { flex-direction: column }
 	.container-flexbox .item-2 { width: 100% }
-	/* Re-order columns in first and third outer containers */
-	.container-flexbox.bg-watermelon .item:nth-child(1) { order: 2 }
-	.container-flexbox.bg-watermelon .item:nth-child(2) { order: 1 }
-	.container-flexbox.bg-blueberry .item:nth-child(1) { order: 2 }
-	.container-flexbox.bg-blueberry .item:nth-child(2) { order: 1 }
+	.container-flexbox.bg-watermelon .item-2:nth-child(1) { order: 2 }
+	.container-flexbox.bg-watermelon .item-2:nth-child(2) { order: 1 }
+	.container-flexbox.bg-blueberry  .item-2:nth-child(1) { order: 2 }
+	.container-flexbox.bg-blueberry  .item-2:nth-child(2) { order: 1 }
 }
 
 
@@ -148,8 +154,6 @@ img { width: 100%; height: auto }
 	}
 	.hero-block-5 h1 { margin-bottom: 5% }
 }
-
-
 
 
 
