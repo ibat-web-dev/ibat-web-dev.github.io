@@ -17,17 +17,21 @@ body { font-family: 'Roboto', sans-serif }
 
 /* Desktop - inside padding  */
 @media all and (min-width:768px) {
-	.container-flexbox { padding: 2% 10% 1% 10% }
+	.container-flexbox { 
+		padding: 3% 8% 3% 8%
+	}
 }
 
 /* Mobiles - inside padding */
 @media all and (max-width:767px) {
-	.container-flexbox { padding: 7% 8% 1% 8% }
+	.container-flexbox { 
+		padding: 3% 12% 3% 12%
+	}
 }
 
-.bg-light-gray { background-color: #f5f5f5 }
-.bg-green      { background-color: #5ba745 }
-
+.container-flexbox.bg-green  { 
+	background-color: #5ba745
+}
 
 
 /* ================ INNER FLEXBOX ITEM COLUMNS: 1 ITEM COLUMN EVERY SCREEN ============== */
