@@ -5,49 +5,51 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Smooth Smoothies | IBAT Portoflio Project | Mary Smith</title>
+	<title>Smooth Smoothies | IBAT Web Design Portfolio Project | Mary Smith</title>
 
-	<meta name="description" content="Smooth Smoothies - sample project web page.">
+	<meta name="description" content="Dublin's finest smoothie store. Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.">
 
 	<meta name="author" content="Mary Smith">
 
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="assets/css/style.css" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Neucha:400,400i,700,700i&display=swap" rel="stylesheet"> 
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Neucha:400,400i,700,700i&display=swap" rel="stylesheet">
 
-	<style>
-			.hero-block-5 { 
-				background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('assets/img/smoothie-hero-image.jpg');
-			}
-		</style>
+	<!-- Styles for Cookie Consent Popup Message  -->
+	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122243940-1"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	gtag('config', 'UA-122243940-1');
+	  gtag('config', 'UA-122243940-1');
 	</script>
 
 </head>
 
 <body>
 
-	<div class="hero-block-5">
+	<!-- Begin hero block -->
+	<div class="container-hero">
 		<h1>Smooth Smoothies</h1>
 		<h2>Where flavour meets goodness</h2>
 	</div>
+	<!-- End hero block -->
 
+
+	<!-- Begin outer flexbox container for one column layout (.item-1) on all screens -->
 	<div class="container-flexbox">
 		<div class="item-1">
 			<p>Our world-class smoothies are great at any time of the day and offer a tasty alternative to sugary and unhealthy snacks!</p>
-			<p>&nbsp;</p>
 		</div>
-	</div><!-- end container-flexbox -->
+	</div><!-- end outer flexbox container -->
 
 
+	<!-- Begin outer flexbox container for two-column layout (.item-2) on desktop and one-column layout on mobile screens -->
 	<div class="container-flexbox bg-watermelon">
 
 		<div class="item-2">
@@ -59,9 +61,10 @@
 			<img src="assets/img/watermelon.png" alt="pic">
 		</div>
 
-	</div>
+	</div><!-- end outer flexbox container -->
 
 
+	<!-- Begin outer flexbox container for two-column layout (.item-2) on desktop and one-column layout on mobile screens -->
 	<div class="container-flexbox bg-apple">
 
 		<div class="item-2">
@@ -73,9 +76,10 @@
 			<p>Apples are an awesome source of fibre and vitamin C. They also contain polyphenols, which can have numerous health benefits.  Apples have been linked to a lower risk of heart disease because they contain soluble fibre of the kind that can help lower your blood cholesterol levels. Studies have also shown that eating apples reduces the risk of type 2 diabetes.</p>
 		</div>
 
-	</div>
+	</div><!-- end outer flexbox container -->
 
 
+	<!-- Begin outer flexbox container for two-column layout (.item-2) on desktop and one-column layout on mobile screens -->
 	<div class="container-flexbox bg-blueberry">
 
 		<div class="item-2">
@@ -87,9 +91,10 @@
 			<img src="assets/img/blueberry.png" alt="pic">
 		</div>
 
-	</div>
+	</div><!-- end outer flexbox container -->
 
 
+	<!-- Begin outer flexbox container for two-column layout (.item-2) on desktop and one-column layout on mobile screens -->
 	<div class="container-flexbox bg-lemon">
 
 		<div class="item-2">
@@ -101,8 +106,24 @@
 			<p>Add zest to your day with our delicious Lemon Luxury smoothie. As a citrus fruit, lemons are high in vitamin C, which is a primary antioxidant that helps reduce your risk of cardiovascular disease and lowers blood pressure. Refreshing and energising - that's our Lemony Luxury smoothie!</p>
 		</div>
 
-	</div>
+	</div><!-- end outer flexbox container -->
 
-
+	<!-- JavaScript for Cookie Consent Popup Message -->
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#000"
+		},
+		"button": {
+		  "background": "#f1d600"
+		}
+	  },
+	  "content": {
+		"href": "ibat-web-dev.github.io/privacy.html"
+	  }
+	});
+	</script>
 </BODY>
 </HTML>
