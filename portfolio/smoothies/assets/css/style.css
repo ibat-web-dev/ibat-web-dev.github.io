@@ -5,7 +5,6 @@ body { max-width: 1600px; font-family: sans-serif }
 img { width: 100%; height: auto; display: block }
 * { margin:0; padding:0; box-sizing: border-box }
 
-
 /* =========== STYLES FOR HERO CONTAINER AT TOP OF WEB PAGE ========== */
 
 .container-hero {
@@ -55,8 +54,7 @@ img { width: 100%; height: auto; display: block }
 }
 
 
-
-/* =================================== OUTER FLEXBOX CONTAINERS ============================= */
+/* ================================== PARENT FLEXBOX CONTAINER ============================= */
 
 .container-flexbox { 
 	display: flex;
@@ -75,14 +73,14 @@ img { width: 100%; height: auto; display: block }
 }
 
 /* Background colors */
-.container-flexbox.bg-watermelon { background-color: #f77bb6 }
-.container-flexbox.bg-apple      { background-color: #93edc3 }
-.container-flexbox.bg-blueberry  { background-color: #a287ca }
-.container-flexbox.bg-lemon      { background-color: #e7e78c }
+.container-flexbox.bg-watermelon { background-color: #FBBDD9 }
+.container-flexbox.bg-apple      { background-color: #B7F3D9 }
+.container-flexbox.bg-blueberry  { background-color: #8C6BBE }
+.container-flexbox.bg-lemon      { background-color: #F1F1BC }
 
 
 
-/* ====================== INNER COLUMNS: 1 COLUMN EVERY SCREEN ( .item-1 ) =================== */
+/* ====================== FLEXBOX CHILD COLUMN: 1 COLUMN EVERY SCREEN ( .item-1 ) =================== */
 
 /* All screen sizes, always 100% wide */
 .container-flexbox .item-1 { 
@@ -97,7 +95,7 @@ img { width: 100%; height: auto; display: block }
 }
 
 
-/* ================ INNER COLUMNS: 2 COLUMNS DESKTOP, 1 COLUMN MOBILE ( .item-2 ) ============== */
+/* ================ FLEXBOX CHILD COLUMN: 2 COLUMNS DESKTOP, 1 COLUMN MOBILE ( .item-2 ) ============== */
 
 /* Desktop */
 @media all and (min-width:768px) {
