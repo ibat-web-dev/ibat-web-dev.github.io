@@ -7,7 +7,7 @@ img { width: 100%; height: auto; display: block }
 body { font-family: 'Roboto', sans-serif }
 
 
-/* ================================== FLEXBOX PARENT CONTAINER ============================= */
+/* ============ PARENT FLEXBOX CONTAINERS ========== */
 
 .container-flexbox { 
 	display: flex;
@@ -30,8 +30,15 @@ body { font-family: 'Roboto', sans-serif }
 .container-flexbox.bg-green      { background-color: #5ba745 }
 
 
-/* =========== FLEXBOX CHILD COLUMN: 2 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ( .item-2 ) =========== */
-/* Used for hero container a top of web page */
+/* ============= FLEXBOX ITEM COLUMNS: 1 ITEM COLUMN EVERY SCREEN ========== */
+
+.container-flexbox .item-1 { 
+	width: 100%;
+	padding: 1% 6% 0 6%;
+}
+
+
+/* ====== FLEXBOX ITEM COLUMNS: 2 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ====== */
 
 /* Desktops - 2 columns */
 @media all and (min-width:768px) { 
@@ -43,45 +50,31 @@ body { font-family: 'Roboto', sans-serif }
 
 /* Mobiles - 1 column */
 @media all and (max-width:767px) { 
-	.container-flexbox .item-2 { 
+	.container-flexbox .item-2 {
+		text-align: center; 
 		width: 100%;
-		padding: 4% 10% 0 10%;
+		padding: 10% 10% 8% 10%;
 	}
+
+	.container-flexbox .item-2:nth-child(1) { order: 2 }
+	.container-flexbox .item-2:nth-child(2) { order: 1 }
 }
 
+/* ======= FLEXBOX ITEM COLUMNS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ===== */
 
-/* ====================== FLEXBOX CHILD COLUMN: 1 COLUMN EVERY SCREEN ( .item-1 ) =================== */
-
-/* All screen sizes, always 100% wide */
-.container-flexbox .item-1 { 
-	width: 100%;
-	padding-top: 2%;
-	padding-bottom: 2%
-}
-
-/* For mobile screens only, extra padding at bottom of column */
-@media all and (max-width:767px) {
-	.container-flexbox .item-1 { 
-		padding-bottom: 7%;
-	}
-}
-
-
-/* ======== FLEXBOX CHILD COLUMN: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ( .item-3 ) ============ */
-
-/* On all screens, gray border, rounded corners with drop shadow effect */
 .container-flexbox .item-3 { 
+	background-color: #fff;
 	box-shadow: rgba(160,160,160,0.8) 5px 5px 20px;
-	border-radius: 12px;
-	background-color:#fff
+	border-radius: 12px 
 }
 
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
 	.container-flexbox .item-3 { 
 		width: 30%;
+		text-align: left;
 		padding: 3% 3% 3% 3%;
-		margin-bottom: 6%
+		margin-bottom: 7%
 	}
 }
 
@@ -89,154 +82,119 @@ body { font-family: 'Roboto', sans-serif }
 @media all and (max-width:767px) { 
 	.container-flexbox .item-3 { 
 		width: 100%;
-		padding: 10% 10% 10% 10%;
-		margin-bottom: 20%
-	}
-	.container-flexbox .item-3:last-child { 
-		margin-bottom: 10%
-	}
-}
-
-
-/* ============================ STYLES FOR HEADINGS, PARAGRAPHS, IMAGES ============================ */
-
-/* Two columns within hero container (.item-2 ) */
-
-/* All screens */
-.container-flexbox .item-2 h1 { 
-	font-weight: 900; 
-	color: #000;
-	line-height: 1.1;
-	letter-spacing: -1px;
-	margin-bottom: 20px;
-	font-size: calc(38px + (62 - 38) * ((100vw - 320px) / (1600 - 320))); 
-}
-
-.container-flexbox .item-2 p { 
-	font-weight: 500; 
-	color: #696969;
-	line-height: 1.3;
-	font-size: calc(22px + (32 - 22) * ((100vw - 320px) / (1600 - 320))); 
-}
-
-/* Desktops only */
-@media all and (min-width:768px) { 
-	.container-flexbox .item-2 h1,
-	.container-flexbox .item-2 p { 
-		text-align: left;
-	}
-}
-
-/* Mobiles only */
-@media all and (max-width:767px) { 
-	.container-flexbox .item-2 h1,
-	.container-flexbox .item-2 p { 
 		text-align: center;
-	}
-	.container-flexbox .item-2 img {
-		margin-top: 20px;
-		margin-bottom: 40px
+		padding: 10% 10% 10% 10%;
+		margin-bottom: 14%
 	}
 }
 
-/* Single column (.item-1 ) */
-.container-flexbox .item-1 h2,
-.container-flexbox .item-1 p {
+.container-flexbox .item-3 img { 
+	margin-bottom: 20px;
+	border-radius: 5px
+}
+
+.container-flexbox.happy-users .item-3 {
 	text-align: center;
+	margin-top: 3%;
+	padding-bottom:2%
 }
 
+.container-flexbox.happy-users .item-3 img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%; 
+	border-radius: 100%
+}
+
+/* ========== HEADINGS, PARAGRAPHS, IMAGES ======== */
+
+/* Single column item-1 */
 .container-flexbox .item-1 h2 { 
 	font-weight: 900; 
 	color: #5ba745;
 	line-height: 1.2;
 	margin-bottom: 12px;
 	letter-spacing: -1px;
-	font-size: calc(34px + (64 - 34) * ((100vw - 320px) / (1600 - 320))); 
+	text-align: center;
+	font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 .container-flexbox .item-1 p { 
 	font-weight: 400; 
 	line-height: 1.6;
 	letter-spacing: 1px;
-	font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1600 - 320))); 
+	text-align: center;
+	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
 	color: #000
 }
 
-/* Single column with green background and white text (.item-1 ) */
-.container-flexbox.bg-green .item-1 p.big-text,
-.container-flexbox.bg-green .item-1 p.big-text a {
-	color: #fff
-}
-
 .container-flexbox.bg-green .item-1 p.big-text {
-	font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1600 - 320))); 
 	margin-bottom:20px;
 	font-weight: 500;
 }
 
-/* Desktops only */
-@media all and (min-width:768px) { 
-	.container-flexbox.bg-green .item-1 p.big-text {
-		width: 70%;
-		margin: 0 auto 16px auto;
-	}
+.container-flexbox.bg-green .item-1 p.big-text,
+.container-flexbox.bg-green .item-1 p.big-text a {
+	color: #fff;
+}
+
+.container-flexbox.bg-green .item-1 p.big-text a {
+	text-decoration: none;
+	color: #fff;
+	border-bottom: solid 2px #fff;
+	padding-bottom:3px;
+}
+
+.container-flexbox.bg-green .item-1 p.big-text a:hover,
+.container-flexbox.bg-green .item-1 p.big-text a:active {
+	text-decoration: none;
+	color: #fff;
+	border-bottom: solid 2px #5ba745;
+	padding-bottom:3p;
+}
+
+@media all and (max-width:767px) { 
 	.container-flexbox.bg-green .item-1 img { 
-		margin: 0 auto 0 auto;
-		width: 80%;
+		margin-bottom: 24px
 	}
 }
 
-.slide-in-left {
-	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+/* Two columns item-2 */
+
+.container-flexbox .item-2 h1 { 
+	font-weight: 900; 
+	color: #000;
+	line-height: 1.1;
+	margin-bottom: 12px;
+	letter-spacing: -1px;
+	margin-bottom: 20px;
+	font-size: calc(30px + (72 - 30) * ((100vw - 320px) / (1600 - 320))); 
 }
 
+.container-flexbox .item-2 p { 
+	font-weight: 500; 
+	color: gray;
+	line-height: 1.3;
+	font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1600 - 320))); 
+}
 
-/* Three-columns (.item-3) */
+/* Three columns item-3 */
+
 .container-flexbox .item-3 h3 { 
 	font-weight: 500; 
 	color: #000;
 	line-height: 1.2;
-	margin-bottom: 6px;
-	font-size: calc(22px + (26 - 22) * ((100vw - 320px) / (1600 - 320))); 
+	margin-bottom: 2px;
+	font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 .container-flexbox .item-3 p { 
-	font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))); 
 	line-height: 1.5;
+	margin-bottom: 14px;
 	color: rgb(82, 95, 127);
-}
-
-.container-flexbox .item-3 img { 
-	margin-bottom: 20px;
-}
-
-/* Desktops - left align */
-@media all and (min-width:768px) { 
-	.container-flexbox .item-3 h3, 
-	.container-flexbox .item-3 p { 
-		text-align: left
-	}
-}
-
-/* Mobiles - center align */
-@media all and (max-width:767px) { 
-	.container-flexbox .item-3 h3, 
-	.container-flexbox .item-3 p { 
-		text-align: center
-	}
-}
-
-/* Customer testimonials */
-.container-flexbox.happy-users .item-3 p {
-	text-align: center;
-	font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1600 - 320))); 	
-}
-
-.container-flexbox.happy-users .item-3 img {
-	border-radius: 100%;
-	width: 80%;
-	margin: 0 auto 18px auto
 }
 
 .slide-in-left {
@@ -251,27 +209,9 @@ body { font-family: 'Roboto', sans-serif }
  * ----------------------------------------------
 */
 
-@keyframes slide-in-left {
-	0% {
-		transform: translateX(-1000px);
-		opacity: 0;
-}
-
-	100% {
-		transform: translateX(0);
-		opacity: 1;
-	}
-}
-
 .scale-up-center {
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-
-/*
- * ----------------------------------------
- * animation scale-up-center
- * ----------------------------------------
-*/
 
 @keyframes scale-up-center {
 	0% {
@@ -282,3 +222,4 @@ body { font-family: 'Roboto', sans-serif }
 	}
 }
   
+
