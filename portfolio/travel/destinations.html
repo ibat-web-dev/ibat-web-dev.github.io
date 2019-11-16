@@ -5,63 +5,62 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Sample Travel Website | IBAT Portoflio Project | Mary Smith</title>
+	<title>Travel Agency Destinations Page | IBAT Portoflio Project | Mary Smith</title>
 
-	<meta name="description" content="Sample Travel Website.">
+	<meta name="description" content="IBAT Tours offers a wide range of must-see destinations across three continents. No one takes you to more places at such affordable prices.">
 
 	<meta name="author" content="Mary Smith">
 
 	<link rel="stylesheet" href="assets/css/style.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i%7CRoboto+Slab:400,700&display=swap" rel="stylesheet">
 
-	<style>
-		.hero-block-5 { 
-			background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('assets/img/hero-destinations.jpg');
-		}
-		.hero-block-5 h1 { font-size: calc(38px + (102 - 38) * ((100vw - 320px)/(1600 - 320))) }
-	</style>
+	<!-- Styles for Cookie Consent Popup Message  -->
+	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122243940-1"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-122243940-1');
-</script>
-
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-122243940-1');
+	</script>
 
 </head>
 
+
+
 <body>
 
-
-	<div class="hero-block-5">
+	<!-- Begin hero block -->
+	<div class="container-hero-block destinations-page">
 		<div class="slide-in-top">
 			<h1>Destinations</h1>
 			<h2>So much to see</h2>
 		</div>
 	</div>
+	<!-- End hero block -->
 
 
+	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
 	<div class="container-flexbox bg-light">
 		<div class="item-1">
 			<h2>Taking you there</h2>
 			<p>IBAT Tours offers a wide range of must-see destinations across three continents. No one takes you to more places at such affordable prices.</p>
-			<p>&nbsp;</p>
 		</div>
-	</div><!-- end container-flexbox -->
+	</div><!-- End parent flexbox container -->
 
 
-
+	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
 	<div class="container-flexbox bg-orange">
 		<div class="item-1">
 			<h2>Europe</h2>
 			<p>Enjoy a city break at Europe's top locations. Lowest prices for travel and accommodation.</p>
 		</div>
-	</div><!-- end container-flexbox -->
+	</div><!-- End parent flexbox container -->
+
 
 	<div class="container-flexbox bg-orange">
 
@@ -86,18 +85,19 @@
 		<div class="item-4-2">
 			<img src="assets/img/lisbon.jpg" alt="Lisbon">
 			<h3>Lisbon</h3>
-			<p>Portugal's hilly, coastal capital city. Enjoy the pastel-colored buildings, cobbled streets and the custard tarts.</p>
+			<p>Portugal's hilly, coastal capital city. Enjoy the pastel-coloured buildings, cobbled streets and the custard tarts.</p>
 		</div>
 
-	</div><!-- end container-flexbox -->
+	</div><!-- End parent flexbox container -->
 
 
+	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
 	<div class="container-flexbox bg-light">
 		<div class="item-1">
 			<h2>America</h2>
 			<p>Long-haul holidays at prices you won't believe. See what America has to offer.</p>
 		</div>
-	</div>
+	</div><!-- End parent flexbox container -->
 
 
 	<div class="container-flexbox bg-light">
@@ -126,23 +126,23 @@
 			<p>Surrounded by water, mountains and evergreen forests, Seattle is home to a large tech industry and contains thousands of acres of parkland.</p>
 		</div>
 
-	</div><!-- end container-flexbox -->
+	</div><!-- End parent flexbox container -->
 
 
+	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
 	<div class="container-flexbox bg-orange">
 		<div class="item-1">
 			<h2>Australia</h2>
 			<p>Take a trip to the Land Down Under. Australia's premier destinations are waiting for you.</p>
 		</div>
-	</div><!-- end container-flexbox -->
-
+	</div><!-- End parent flexbox container -->
 
 	<div class="container-flexbox bg-orange">
 
 		<div class="item-4-2">
 			<img src="assets/img/sydney.jpg" alt="Sydney">
 			<h3>Sydney</h3>
-			<p>A vibrant city that shines all year around with waterside bars and cafes, spectacular events, music and ideas.</p>
+			<p>A vibrant city that shines all year round with waterside bars and cafes, spectacular events, music and ideas.</p>
 		</div>
 
 		<div class="item-4-2">
@@ -163,8 +163,25 @@
 			<p>Sandy beaches line Perth's suburbs, and the huge, riverside Kings Park and Botanic Garden on Mount Eliza offer sweeping views.</p>
 		</div>
 
-	</div><!-- end container-flexbox -->
+	</div><!-- End parent flexbox container -->
 
+	<!-- JavaScript for Cookie Consent Popup Message -->
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  	"palette": {
+			"popup": {
+				"background": "#000"
+			},
+			"button": {
+				"background": "#f1d600"
+			}
+		},
+	  	"content": {
+			"href": "https://ibat-web-dev.github.io/privacy.html"
+		}
+	});
+	</script>
 
-</BODY>
-</HTML>
+</body>
+</html>

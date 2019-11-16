@@ -6,19 +6,69 @@ img { width: 100%; height: auto; display: block }
 * { margin:0; padding:0; box-sizing: border-box }
 
 
-/* === HERO BLOCK 5 === */
+/* === HERO BLOCK === */
 
-.hero-block-5 {
+.container-hero-block {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.container-hero-block.home-page {
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/hero-home.jpg');
+}
 
-/* =================================== OUTER FLEXBOX CONTAINERS ============================= */
+.container-hero-block.destinations-page {
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/hero-destinations.jpg');
+}
+
+.container-hero-block.about-us-page {
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/hero-about-us.jpg')
+}
+
+.container-hero-block h1, .container-hero-block h2 {
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 2px 2px #222;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-hero-block h1 { 
+	color: #fff;
+	font-size: calc(42px + (102 - 42) * ((100vw - 320px)/(1600 - 320)))
+}
+
+.container-hero-block h2 {
+	color:  #ff5000;
+	line-height: 1.5;
+	font-size: calc(32px + (64 - 32) * ((100vw - 320px)/(1600 - 320)));
+}
+
+/* Desktop - block height, text width and h1 bottom margin */
+@media all and (min-width:768px) { 
+	.container-hero-block { height: 520px }
+	.container-hero-block h1, .container-hero-block h2 { 
+		width: 60%; 
+	}
+	.container-hero-block h1 { margin-bottom: 3% }
+}
+
+/* Mobiles - block height, text width and h1 bottom margin */
+@media all and (max-width:767px) { 
+	.container-hero-block { height: 360px }
+	.container-hero-block h1, .container-hero-block h2  { 
+		width: 90%; 
+	}
+	.container-hero-block h1 { margin-bottom: 5% }
+}
+
+
+/* ========= PARENT FLEXBOX CONTAINERS ======= */
 
 .container-flexbox { 
 	display: flex;
@@ -40,23 +90,17 @@ img { width: 100%; height: auto; display: block }
 .container-flexbox.bg-orange { background-color: #ff5000 /* #e45724 */ }
 .container-flexbox.bg-light  { background-color: #eff8f5 /* #f0f0f0 */ }
 
-/* ================ INNER FLEXBOX COLUMN CONTAINERS: 4 COLUMNS ON DESKTOPS, 2 COLUMNS ON MOBILES ============== */
 
-/* Desktops - 4 columns */
-@media all and (min-width:768px) { 
-	.container-flexbox .item-4-2 { width: 22% }
-	.container-flexbox .item-4-2 { margin-bottom: 3% }
-}
 
-/* Mobiles - 2 columns */
-@media all and (max-width:767px) { 
-	.container-flexbox .item-4-2 { width: 47% }
-	.container-flexbox .item-4-2 { margin-bottom: 14% }
+/* ====== INNER FLEXBOX COLUMN: 1 COLUMN EVERY SCREEN ======= */
+
+.container-flexbox .item-1 { 
+	width: 100%;
+	padding: 1% 6% 0 6%;
 }
 
 
-
-/* ================ INNER FLEXBOX COLUMN CONTAINERS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ============== */
+/* =======INNER FLEXBOX COLUMNS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ===== */
 
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
@@ -71,19 +115,59 @@ img { width: 100%; height: auto; display: block }
 }
 
 
-/* ================ INNER FLEXBOX COLUMN CONTAINERS: 1 COLUMN EVERY SCREEN ============== */
+/* ==== INNER FLEXBOX COLUMNS: 4 COLUMNS ON DESKTOPS, 2 COLUMNS ON MOBILES ======= */
 
-.container-flexbox .item-1 { 
-	width: 100%;
-	padding: 1% 6% 0 6%;
+/* Desktops - 4 columns */
+@media all and (min-width:768px) { 
+	.container-flexbox .item-4-2 { width: 22% }
+	.container-flexbox .item-4-2 { margin-bottom: 3% }
 }
+
+/* Mobiles - 2 columns */
+@media all and (max-width:767px) { 
+	.container-flexbox .item-4-2 { width: 47% }
+	.container-flexbox .item-4-2 { margin-bottom: 14% }
+}
+
+/* =======INNER FLEXBOX COLUMNS: 3 COLUMNS ON DESKTOPS, 2 COLUMNS ON MOBILES ===== */
+
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+	.container-flexbox.happy-users .item-3-2 { width: 30% }
+	.container-flexbox.happy-users .item-3-2 { margin-bottom: 3% }
+}
+
+/* Mobiles - 2 column */
+@media all and (max-width:767px) { 
+	.container-flexbox.happy-users .item-3-2 { width: 45% }
+	.container-flexbox.happy-users .item-3-2 { margin-bottom: 14% }
+}
+
+.container-flexbox.happy-users .item-3-2 {
+	text-align: center;
+	margin-top: 3%;
+	padding-bottom:2%;
+}
+
+.container-flexbox.happy-users .item-3-2 img {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:20px;
+	width: 70%; 
+	border-radius: 100%;
+	border-color: #ff5000;
+	border-style: solid;
+	border-width: 6px
+}
+
 
 /* ================ HEADINGS, PARAGRAPHS, IMAGES AND FAUX BUTTONS ============== */
 
+/* Single column */
 .container-flexbox .item-1 h2 { 
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700; 
-	color: #d1274b;
+	color: #ff5000;
 	line-height: 1.2;
 	margin-bottom: 12px;
 	letter-spacing: 2px;
@@ -98,14 +182,32 @@ img { width: 100%; height: auto; display: block }
 	line-height: 1.6;
 	letter-spacing: 1px;
 	text-align: center;
+	margin-bottom:24px;
 	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
 }
 
-.container-flexbox .item-1 p a { 
+.container-flexbox .item-1 p a {
 	color: #ff5000;
-	font-weight: bold;
+	font-weight: bold;	
+	text-decoration: none;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	padding-bottom: 2px;
 }
 
+
+.container-flexbox .item-1 p a:link,
+.container-flexbox .item-1 p a:visited { 
+	border-bottom-color: #ff5000;
+}
+
+.container-flexbox .item-1 p a:hover,
+.container-flexbox .item-1 p a:active { 
+	border-bottom-color: #fff;
+}
+
+
+/* Three and four column */
 .container-flexbox .item-3 h3,
 .container-flexbox .item-4-2 h3 { 
 	font-family: 'Roboto Slab', serif;
@@ -120,14 +222,23 @@ img { width: 100%; height: auto; display: block }
 .container-flexbox .item-3 p,
 .container-flexbox .item-4-2 p { 
 	font-family: 'Roboto Slab', serif;
+	font-weight: 500;
 	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))); 
-	line-height: 1.5;
+	line-height: 1.7;
 	margin-bottom: 14px;
 }
 
-.container-flexbox img { 
+.container-flexbox .item-3 img,
+.container-flexbox .item-4-2 img {
 	margin-bottom: 12px;
 	border-radius: 5px;
+}
+
+.container-flexbox.happy-users .item-3-2 p {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 500;
+	font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1600 - 320))); 
+	line-height: 1.5;
 }
 
 .container-flexbox.bg-orange h2,
@@ -135,89 +246,37 @@ img { width: 100%; height: auto; display: block }
 .container-flexbox.bg-orange p { color: #fff }
 
 .container-flexbox.bg-light h2,
-.container-flexbox.bg-light h3 { color: #044d6c } 
-.container-flexbox.bg-light p { color: #044d6c }
+.container-flexbox.bg-light h3,  
+.container-flexbox.bg-light p  { color: #044d6c }
 
-
-.hero-block-5 h1, .hero-block-5 h2 {
-	text-align: center;
-	color: #fff;
-	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
-	text-shadow: 2px 2px #222;
-}
-
-.hero-block-5 h1 {
-	font-size: calc(54px + (112 - 54) * ((100vw - 320px)/(1600 - 320)));
-}
-
-.hero-block-5 h2 {
-	font-size: calc(24px + (64 - 24) * ((100vw - 320px)/(1600 - 320)));
-	line-height: 1.5;
-	color:  #ff5000
-}
-
-/* Desktop - block height, text width and h1 bottom margin */
-@media all and (min-width:768px) { 
-	.hero-block-5 { height: 520px }
-	.hero-block-5 h1, .hero-block-5 h2 { 
-		width: 60%; 
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.hero-block-5 h1 { margin-bottom: 1% }
-}
-
-/* Mobiles - block height, text width and h1 bottom margin */
-@media all and (max-width:767px) { 
-	.hero-block-5 { height: 360px }
-	.hero-block-5 h1, .hero-block-5 h2  { 
-		margin-top: 0; 
-		width: 70%; 
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.hero-block-5 h1 { margin-bottom: 5% }
-}
-
-/* ======== ANIMATION ON PAGE LOAD ===== */
-
-.slide-in-top {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-          animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
 
 /* ----------------------------------------------
  * Generated by Animista on 2019-3-20 10:33:40
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
-/*
- * ----------------------------------------
- * animation slide-in-top
- * ----------------------------------------
- */
+.slide-in-top {
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 @-webkit-keyframes slide-in-top {
   0% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    transform: translateY(-200px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes slide-in-top {
   0% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    transform: translateY(-200px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
