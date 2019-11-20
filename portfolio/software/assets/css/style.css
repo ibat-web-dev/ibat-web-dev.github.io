@@ -5,9 +5,173 @@ body { max-width: 1600px; font-family: sans-serif }
 img { width: 100%; height: auto; display: block }
 * { margin:0; padding:0; box-sizing: border-box }
 body { font-family: 'Roboto', sans-serif }
+html {
+	scroll-behavior: smooth;
+  }
+
+/* ===================== DESKTOP MENU =============================== */
+
+/* Mobiles - Hide desktp menu */
+@media all and (max-width:767px) { 
+    .container-menu-desktop.menu-light,
+	.container-menu-desktop.menu-dark { 
+        display: none
+   }
+}
+
+/* Outer parent desktop menu flexbox container */
+.container-menu-desktop { 
+	display: flex;
+	justify-content: space-between;
+    padding: 1.5% 8% 1% 8%;
+    box-shadow: 0px 1px 10px #888
+    /* margin-bottom: 60px; */
+}
+
+.container-menu-desktop img { 
+    display: inline;
+    width: auto
+}
+
+.container-menu-desktop ul, 
+.container-menu-desktop li {
+    display: inline-block;
+}
+
+.container-menu-desktop ul li {
+    list-style-type: none;
+    margin-right: 40px
+}
+
+.container-menu-desktop ul li:last-child {
+    margin-right: 0
+}
+
+.container-menu-desktop ul li a {
+    text-decoration: none;
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+    /* font-weight:bold */
+    /* text-transform: uppercase */
+}
+
+.container-menu-desktop ul li a.btn-cta {
+    padding: 8px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100px
+}
 
 
-/* ============ PARENT FLEXBOX CONTAINERS ========== */
+/*===================== MOBILE LOGO WITH SLIDE-OUT NAVIGATION MENU  ======================= */
+
+/* Hide on desktops  */
+@media all and (min-width:768px) { 
+    .container-menu-bar-mobile.menu-light,
+    .container-menu-bar-mobile.menu-dark, 
+    .container-menu-options-mobile.menu-light,
+    .container-menu-options-mobile.menu-dark {
+		display: none;
+	}
+}
+
+.container-menu-bar-mobile {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    width: 100%;
+    /* box-shadow: 0px 1px 10px #888 */
+    /*	margin-bottom: 40px; */
+}
+
+/* Logo */
+.container-menu-bar-mobile .item-logo img { 
+	display: block; 
+	margin-left: 10px;
+	margin-top: 9px;
+	margin-bottom: 9px 
+}
+
+/* Hamburger icon */
+.container-menu-bar-mobile .item-icon {
+	text-align: right;
+	margin-right: 16px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.container-menu-bar-mobile .item-icon .bar1, 
+.container-menu-bar-mobile .item-icon .bar2, 
+.container-menu-bar-mobile .item-icon .bar3 {
+	width: 36px;
+	height: 4px;
+	margin: 7px 0;
+	transition: 0.4s;
+}
+
+/* Hamburger icon chnages shape */
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 { opacity: 0 }
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Mobile menu options */
+.container-menu-options-mobile { 
+	position: fixed; 
+	display: block; 
+	top: 60px;
+	height: 100%; 
+	width: 320px;
+	right: -320px;
+	padding-top: 30px;
+	transition: 0.5s;
+}
+
+.container-menu-options-mobile ul li { 
+	list-style-type: none;
+    margin-left: 40px;
+	margin-bottom: 30px;
+	display: block;
+	line-height: 1
+}
+
+
+/*== Dark background menu == */
+.menu-dark { background-color: red }
+.menu-dark .item-icon .bar1, 
+.menu-dark .item-icon .bar2, 
+.menu-dark .item-icon .bar3 {
+	background-color: #fff;
+}
+
+.menu-dark li a { color: #fff }
+.menu-dark li a.btn-cta { 
+	background-color: #fff; border-color: #fff; color:#500294;
+}
+
+.menu-dark li a.btn-cta:hover, 
+.menu-dark li a.btn-cta:active { 
+	background-color: #500294; color:#fff;
+}
+
+/*== Light menu == */
+.menu-light { background-color: #fff; }
+.menu-light .item-icon .bar1, 
+.menu-light .item-icon .bar2, 
+.menu-light .item-icon .bar3 {
+	background-color: red;
+}	
+
+
+
+
+/* =================================== OUTER FLEXBOX CONTAINERS ============================= */
 
 .container-flexbox { 
 	display: flex;
@@ -15,22 +179,26 @@ body { font-family: 'Roboto', sans-serif }
 	flex-wrap: wrap;
 }
 
-/* Desktops only - inside padding  */
+/* Desktop - inside padding  */
 @media all and (min-width:768px) {
-	.container-flexbox { padding: 2% 10% 1% 10% }
+	.container-flexbox { 
+		padding: 3% 8% 3% 8%
+	}
 }
 
-/* Mobiles only - inside padding */
+/* Mobiles - inside padding */
 @media all and (max-width:767px) {
-	.container-flexbox { padding: 7% 8% 1% 8% }
+	.container-flexbox { 
+		padding: 3% 12% 3% 12%
+	}
 }
 
-/* Background colors */
-.container-flexbox.bg-light-gray { background-color: #f5f5f5 }
-.container-flexbox.bg-green      { background-color: #5ba745 }
+.container-flexbox.bg-green  { 
+	background-color: #5ba745
+}
 
 
-/* ============= FLEXBOX ITEM COLUMNS: 1 ITEM COLUMN EVERY SCREEN ========== */
+/* ================ INNER FLEXBOX ITEM COLUMNS: 1 ITEM COLUMN EVERY SCREEN ============== */
 
 .container-flexbox .item-1 { 
 	width: 100%;
@@ -38,7 +206,7 @@ body { font-family: 'Roboto', sans-serif }
 }
 
 
-/* ====== FLEXBOX ITEM COLUMNS: 2 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ====== */
+/* ================ INNER FLEXBOX ITEM COLUMNS: 2 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ============== */
 
 /* Desktops - 2 columns */
 @media all and (min-width:768px) { 
@@ -50,29 +218,24 @@ body { font-family: 'Roboto', sans-serif }
 
 /* Mobiles - 1 column */
 @media all and (max-width:767px) { 
-	.container-flexbox .item-2 {
-		text-align: center; 
+	.container-flexbox .item-2 { 
 		width: 100%;
-		padding: 10% 10% 8% 10%;
+		padding: 10% 10% 10% 10%;
+		margin-bottom: 14%
 	}
-
-	.container-flexbox .item-2:nth-child(1) { order: 2 }
-	.container-flexbox .item-2:nth-child(2) { order: 1 }
 }
-
-/* ======= FLEXBOX ITEM COLUMNS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ===== */
 
 .container-flexbox .item-3 { 
-	background-color: #fff;
 	box-shadow: rgba(160,160,160,0.8) 5px 5px 20px;
-	border-radius: 12px 
+	border-radius: 12px
 }
+
+/* ================ INNER FLEXBOX ITEM COLUMNS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ============== */
 
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
 	.container-flexbox .item-3 { 
 		width: 30%;
-		text-align: left;
 		padding: 3% 3% 3% 3%;
 		margin-bottom: 7%
 	}
@@ -82,33 +245,19 @@ body { font-family: 'Roboto', sans-serif }
 @media all and (max-width:767px) { 
 	.container-flexbox .item-3 { 
 		width: 100%;
-		text-align: center;
 		padding: 10% 10% 10% 10%;
 		margin-bottom: 14%
 	}
 }
 
-.container-flexbox .item-3 img { 
-	margin-bottom: 20px;
-	border-radius: 5px
+.container-flexbox .item-3 { 
+	box-shadow: rgba(160,160,160,0.8) 5px 5px 20px;
+	border-radius: 12px
 }
 
-.container-flexbox.happy-users .item-3 {
-	text-align: center;
-	margin-top: 3%;
-	padding-bottom:2%
-}
 
-.container-flexbox.happy-users .item-3 img {
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%; 
-	border-radius: 100%
-}
+/* ================ HEADINGS, PARAGRAPHS, IMAGES ============== */
 
-/* ========== HEADINGS, PARAGRAPHS, IMAGES ======== */
-
-/* Single column item-1 */
 .container-flexbox .item-1 h2 { 
 	font-weight: 900; 
 	color: #5ba745;
@@ -128,66 +277,33 @@ body { font-family: 'Roboto', sans-serif }
 	color: #000
 }
 
-.container-flexbox.bg-green .item-1 p.big-text {
-	font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1600 - 320))); 
-	margin-bottom:20px;
-	font-weight: 500;
-}
-
-.container-flexbox.bg-green .item-1 p.big-text,
-.container-flexbox.bg-green .item-1 p.big-text a {
-	color: #fff;
-}
-
-.container-flexbox.bg-green .item-1 p.big-text a {
-	text-decoration: none;
-	color: #fff;
-	border-bottom: solid 2px #fff;
-	padding-bottom:3px;
-}
-
-.container-flexbox.bg-green .item-1 p.big-text a:hover,
-.container-flexbox.bg-green .item-1 p.big-text a:active {
-	text-decoration: none;
-	color: #fff;
-	border-bottom: solid 2px #5ba745;
-	padding-bottom:3p;
-}
-
-@media all and (max-width:767px) { 
-	.container-flexbox.bg-green .item-1 img { 
-		margin-bottom: 24px
-	}
-}
-
-
-/* Two columns item-2 */
-
 .container-flexbox .item-2 h1 { 
 	font-weight: 900; 
 	color: #000;
 	line-height: 1.1;
 	margin-bottom: 12px;
 	letter-spacing: -1px;
+	text-align: left;
 	margin-bottom: 20px;
 	font-size: calc(30px + (72 - 30) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 .container-flexbox .item-2 p { 
 	font-weight: 500; 
-	color: gray;
+	color: darkgray;
 	line-height: 1.3;
+	text-align: left;
+	margin-bottom: 20px;
 	font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1600 - 320))); 
 }
 
-/* Three columns item-3 */
 
 .container-flexbox .item-3 h3 { 
 	font-weight: 500; 
 	color: #000;
 	line-height: 1.2;
 	margin-bottom: 2px;
-	font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 .container-flexbox .item-3 p { 
@@ -197,29 +313,131 @@ body { font-family: 'Roboto', sans-serif }
 	color: rgb(82, 95, 127);
 }
 
-.slide-in-left {
-    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.container-flexbox.bg-green p.big-text {
+	font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1600 - 320))); 
+	margin-bottom:20px;
+	font-weight: 500;
 }
 
-/* ----------------------------------------------
- * Generated by Animista
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ----------------------------------------------
-*/
-
-.scale-up-center {
-    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-@keyframes scale-up-center {
-	0% {
-		transform: scale(0.5);
-	}
-	100% {
-		transform: scale(1);
+/* Desktops - Left Align */
+@media all and (min-width:768px) { 
+	.container-flexbox .item-3 h3, 
+	.container-flexbox .item-3 p { 
+		text-align: left
 	}
 }
-  
 
+/* Mobiles - Center Align */
+@media all and (max-width:767px) { 
+	.container-flexbox .item-3 h3, 
+	.container-flexbox .item-3 p { 
+		text-align: center
+	}
+}
+
+
+
+.container-flexbox img { 
+	margin-bottom: 12px;
+	border-radius: 5px;
+}
+
+.container-flexbox.bg-green p.big-text,
+.container-flexbox.bg-green p.big-text a {
+	color: #fff
+}
+
+.container-flexbox.happy-users .item-3 p {
+	text-align: center;
+}
+
+.container-flexbox.happy-users .item-3 img {
+	border-radius: 100%;
+	width: 80%;
+	margin: 0 auto 12px auto
+}
+
+
+
+/* ============ FOOTER STYLES ================= */
+
+/* Outer parent container */
+.container-footer { 
+	display: flex;
+	justify-content: space-between;
+   flex-wrap: wrap;
+   background: #5ba745
+}
+
+/* Desktop - inside padding  */
+@media all and (min-width:768px) {
+	.container-footer { padding: 3% 8% 5% 8% }
+}
+
+/* Mobiles - inside padding */
+@media all and (max-width:767px) {
+	.container-footer { padding: 12% 8% 1% 8% }
+}
+
+/* Inner columns */
+
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+   .container-footer .item-3:nth-child(1) { width: 20% }
+   .container-footer .item-3:nth-child(2) { width: 50% }
+   .container-footer .item-3:nth-child(3) { width: 20% }
+}
+
+/* Mobiles - 1 column */
+@media all and (max-width:767px) { 
+	.container-footer .item-3 { 
+      width: 100%;
+      margin-bottom: 10%
+   }
+   .container-footer .item-3:nth-child(2) { order: 1 }
+   .container-footer .item-3:nth-child(1) { order: 2 }
+   .container-footer .item-3:nth-child(3) { order: 3 } 
+}
+
+/* Styles for background, text and links */
+
+.container-footer .item-3 h4,
+.container-footer .item-3 p,
+.container-footer .item-3 p i,
+.container-footer .item-3 p a {
+   color: #fff
+}
+
+.container-footer .item-3 h4 {
+   font-weight: bold;
+   margin-bottom: 12px;
+   font-size: calc(18px + (20 - 18) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.container-footer .item-3 p {
+   font-weight: normal;
+   margin-bottom: 12px;
+   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.container-footer .item-3 i { 
+   padding-right: 26px;
+} 
+
+.container-footer .item-3 p a {
+   text-decoration: none;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   padding-bottom:2px;
+}
+
+.container-footer .item-3 p a:link, 
+.container-footer .item-3 p a:visited  {
+   border-bottom-color: transparent;
+}
+
+.container-footer .item-3 p a:hover, 
+.container-footer .item-3 p a:active  {
+   border-bottom-color: #fff
+
+}
