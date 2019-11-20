@@ -28,11 +28,49 @@
 		gtag('config', 'UA-122243940-1');
 	</script>
 
+	<!-- Link to icons for Font Awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
 </head>
 
 
 
 <body>
+
+		 <!-- Begin desktop menu -->
+		 <div class="container-menu-desktop menu-dark">
+			<a href="../../index.html"><img src="assets/img/menus-logo.png"></a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="destinations.html">Destinations</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+			</ul>
+		</div>
+		<!-- End desktop menu -->
+	
+	
+		<!-- Begin menu mobile -->
+	
+		<div class="container-menu-bar-mobile menu-dark">
+			<div class="item-logo">
+				<a href="../../index.html"><img src="assets/img/menus-logo.png"></a>
+			</div>
+			<div class="item-icon">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
+	
+		<div class="container-menu-options-mobile menu-dark">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="destinations.html">Destinations</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+			</ul>
+		</div>
+		<!-- end menu mobile -->
+
 
 	<!-- Begin hero block -->
 	<div class="container-hero-block destinations-page">
@@ -165,6 +203,38 @@
 
 	</div><!-- End parent flexbox container -->
 
+	<!-- Begin footer -->
+	<div class="container-footer">
+
+		<div class="item-3">
+
+			<h4>SITE MAP</h4>
+			<p><i class="fas fa-home fa-fw"></i><a href="index.html">Home</a></p>
+			<p><i class="far fa-file-alt fa-fw"></i><a href="index.html">Portfolio</a></p>
+			<p><i class="fas fa-lock fa-fw"></i><a href="privacy.html">Privacy</a></p>
+		
+		</div>
+
+		<div class="item-3">
+			<h4>ABOUT ME</h4>
+			<p>Hi, I'm John Smith. I'm a web designer and developer.</p>
+			
+			<p>I created this sample three-page website for a fictional travel agency to showcase some of my digital creation skills.</p>
+
+		</div>
+
+		<div class="item-3">
+			<h4>CONTACT</h4>
+			<p><i class="far fa-envelope fa-fw"></i><a href="mailto:ibat.training@gmail.com">Email</a></p>
+
+			<p><i class="fab fa-github-square fa-fw"></i><a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
+
+			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
+		</div>
+	</div>
+	
+	<!-- End footer -->
+
 	<!-- JavaScript for Cookie Consent Popup Message -->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
@@ -182,6 +252,28 @@
 		}
 	});
 	</script>
+
+   <!-- Begin JavaScript code showing/hiding slide-out menu -->
+   <script>
+	document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
+
+	function toggleMobileMenu() {
+		//toggle hamburger icon
+		let elemIcon = document.querySelector('.item-icon');
+		elemIcon.classList.toggle("change");
+	
+		//if mobile menu currently closed, open menu.
+		if (elemIcon.classList.contains('change')) {
+			document.querySelector(".container-menu-options-mobile").style.right = "0";
+		}
+		//if mobile menu currently open, close menu.
+		else {
+			document.querySelector(".container-menu-options-mobile").style.right = "-320px";
+		}
+	}
+</script>
+<!-- End JavaScript code showing/hiding slide-out menu -->
+
 
 </body>
 </html>
