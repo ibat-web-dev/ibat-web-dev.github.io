@@ -53,7 +53,7 @@ body { font-family: 'Roboto', sans-serif }
 	.container-flexbox .item-2 {
 		text-align: center; 
 		width: 100%;
-		padding: 10% 10% 8% 10%;
+		padding: 10% 10% 10% 10%;
 	}
 
 	.container-flexbox .item-2:nth-child(1) { order: 2 }
