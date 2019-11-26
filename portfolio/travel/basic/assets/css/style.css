@@ -78,7 +78,7 @@ body { background-color: #eff8f5 }
 
 /* Desktop - inside padding  */
 @media all and (min-width:768px) {
-	.container-flexbox { padding: 2% 10% 1% 10% }
+	.container-flexbox { padding: 2% 10% 2% 10% }
 }
 
 /* Mobiles - inside padding */
@@ -131,6 +131,8 @@ body { background-color: #eff8f5 }
 
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
+	.container-flexbox.happy-users.no-padding-bottom { padding: 2% 10% 0 10% }
+	.container-flexbox.happy-users.no-padding-top { padding: 0 10% 0 10% }
 	.container-flexbox.happy-users .item-3-2 { width: 30% }
 	.container-flexbox.happy-users .item-3-2 { margin-bottom: 3% }
 }
@@ -210,7 +212,7 @@ body { background-color: #eff8f5 }
 .container-flexbox .item-4-2 h3 { 
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700; 
-	color: #d1274b;
+	color: #ff5000;;
 	line-height: 1.2;
 	margin-bottom: 2px;
 	letter-spacing: 2px;
