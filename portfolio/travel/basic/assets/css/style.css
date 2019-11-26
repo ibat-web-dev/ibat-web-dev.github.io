@@ -86,6 +86,9 @@ body { background-color: #eff8f5 }
 	.container-flexbox { padding: 7% 8% 1% 8% }
 }
 
+.container-flexbox.no-padding-bottom { padding: 2% 10% 0 10% }
+.container-flexbox.no-padding-top    { padding: 0 10% 0 10% }
+
 /* Background colors */
 .container-flexbox.bg-orange { background-color: #ff5000  }
 
@@ -131,8 +134,6 @@ body { background-color: #eff8f5 }
 
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
-	.container-flexbox.happy-users.no-padding-bottom { padding: 2% 10% 0 10% }
-	.container-flexbox.happy-users.no-padding-top { padding: 0 10% 0 10% }
 	.container-flexbox.happy-users .item-3-2 { width: 30% }
 	.container-flexbox.happy-users .item-3-2 { margin-bottom: 3% }
 }
