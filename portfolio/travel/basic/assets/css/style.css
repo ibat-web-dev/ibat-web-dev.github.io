@@ -124,7 +124,7 @@ body { background-color: #eff8f5 }
 /* Mobiles - 2 columns */
 @media all and (max-width:767px) { 
 	.container-flexbox .item-4-2 { width: 47% }
-	.container-flexbox .item-4-2 { margin-bottom: 14% }
+	.container-flexbox .item-4-2 { margin-bottom: 10% }
 }
 
 /* =======INNER FLEXBOX COLUMNS: 3 COLUMNS ON DESKTOPS, 2 COLUMNS ON MOBILES ===== */
