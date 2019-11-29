@@ -1,0 +1,74 @@
+/* ==== BROWSER RESETS  ==== */
+* { padding: 0; margin: 0; border: 0; box-sizing: border-box; font-weight: normal; font-size: 16px }
+body, html { height: 100% }	
+html { scroll-behavior: smooth }
+body { max-width: 1600px; margin: 0 auto }
+img { display: block; width: 100%; height: auto }
+
+/* ==== FONT  ==== */
+body { font-family: sans-serif }
+
+
+
+/* ========================== PAGE WRAPPER  ============================== */
+
+/* Desktop - container and element spacing */
+@media all and (min-width:768px) {
+	.page-wrapper { 
+        width: 60%; 
+        margin: 0 auto;
+		padding: 40px 0 80px 0;
+	}
+	.page-wrapper h1 { margin: 0 0 5% 0 }
+	.page-wrapper h2 { margin: 5% 0 1% 0 }
+	.page-wrapper h3 { margin: 4% 0 0 0 }
+	.page-wrapper p, 
+    .page-wrapper ul li { margin-bottom: 20px }
+ 	.page-wrapper img { margin-bottom: 20px }
+}
+
+/* Mobiles - container and element spacing  */
+@media all and (max-width:767px) {
+	.page-wrapper { 
+		width: 80%; 
+        margin: 0 auto;
+		padding: 72px 0 80px 0;
+	}
+	.page-wrapper h1 { margin: 0 0 5% 0 }
+	.page-wrapper h2 { margin: 12% 0 1% 0 }
+	.page-wrapper h3 { margin: 8% 0 0 0 }
+	.page-wrapper p, 
+    .page-wrapper ul li { margin-bottom: 14px }
+    .page-wrapper img { margin-bottom: 14px }
+}
+
+/* Headings, paragraphs, bullets and images */
+.page-wrapper h1, .page-wrapper h2, .page-wrapper h3 { line-height: 1.2; font-weight: bold }
+
+.page-wrapper h1 { font-size: calc(30px + (64 - 30) * ((100vw - 320px)/(1600 - 320))) }
+.page-wrapper h2 { font-size: calc(22px + (36 - 22) * ((100vw - 320px)/(1600 - 320))); color: #000 }
+.page-wrapper h3 { font-size: calc(18px + (24 - 18) * ((100vw - 320px)/(1600 - 320))); color: #000 }
+
+.page-wrapper p, 
+.page-wrapper li { font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320))); line-height: 1.6  }
+.page-wrapper li { margin-left: 17px }
+
+/* Fancy hyperlinks  */
+.page-wrapper a.fancy-link {
+    text-decoration: none;
+    border-style: solid;
+    border-bottom-width: 2px;    
+	padding-bottom: 2px;
+}
+ 
+.page-wrapper a.fancy-link:link, 
+.page-wrapper a.fancy-link:visited {
+	border-bottom-color: blue
+}
+
+.page-wrapper a.fancy-link:hover, 
+.page-wrapper a.fancy-link:active {
+	border-bottom-color: transparent
+}
+
+
