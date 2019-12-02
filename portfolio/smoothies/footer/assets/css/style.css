@@ -228,9 +228,10 @@ img { width: 100%; height: auto; display: block }
 }
 
 .container-footer .item-3 p {
-   font-weight: normal;
-   margin-bottom: 12px;
-   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+	font-weight: normal;
+	margin-bottom: 12px;
+	font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+	line-height: 1.6
 }
 
 .container-footer .item-3 i { 
