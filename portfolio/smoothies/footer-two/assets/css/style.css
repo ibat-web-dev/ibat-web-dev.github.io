@@ -209,7 +209,7 @@ img { width: 100%; height: auto; display: block }
     font-family: sans-serif;
     font-weight: normal;
     font-style:  italic;
-    color: #8d9093;
+    color: #fff;
     margin: 0 auto 36px auto;
     font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
 }
