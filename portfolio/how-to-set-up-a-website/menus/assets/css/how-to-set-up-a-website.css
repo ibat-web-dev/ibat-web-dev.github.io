@@ -4,8 +4,8 @@ body, html { height: 100% }
 body { max-width: 1600px; margin: 0 auto }
 img { display: block; width: 100%; height: auto }
 
-/* ==== BODY ==== */
-body { background-color: #f1efe9 }
+ /* ==== BODY ==== */
+ body { background-color: #f1efe9 }
 
 /* ==== PAGE WRAPPER  ==== */
 .page-wrapper { 
