@@ -3,7 +3,7 @@
 body, html { height: 100% }
 body { max-width: 1600px; font-family: sans-serif }
 img { width: 100%; height: auto; display: block }
-
+* { margin:0; padding:0; box-sizing: border-box }
 
 /* ==== FONT AND COLOUR ==== */
 body { 
