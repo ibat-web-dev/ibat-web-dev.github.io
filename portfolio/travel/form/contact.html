@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Travel Agency Home Page | IBAT Portfolio Project | Mary Smith</title>
+
+	<meta name="description" content="IBAT Tours is an award-winning travel agency that has successfully provided happy holiday experiences for thousands of customers for over a decade.">
+
+	<meta name="author" content="Mary Smith">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i%7CRoboto+Slab:500,700&display=swap" rel="stylesheet">
+
+    <!-- Link to icons for Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> 
+
+	<!-- Styles for Cookie Consent Popup Message  -->
+	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122243940-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-122243940-1');
+	</script>
+
+</head>
+
+
+<body>
+
+	<!-- Begin hero block -->
+	<div class="container-hero-block contact-page">
+		<div class="slide-in-top">
+			<h1>IBAT Tours</h1>
+			<h2>Making your holiday special</h2>
+		</div>
+	</div>
+	<!-- End hero block -->
+	
+	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+	<div class="container-flexbox">
+		<div class="item-1">
+			<h2>A getaway the way you want it</h2>
+            <p>If one of our regular holiday offerings is not what you are looking for, our expert staff can help you plan that special getaway for your unique tastes.</p>
+            <p>Take your first step to a holiday you will never forget by completing the form below.</p>
+
+		</div>
+	</div><!-- End parent flexbox container -->
+
+
+   <!-- Begin container for contact form -->
+        
+   <div class="container-contact-form">
+			
+        <!-- Contact form starts here -->
+		<form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/myname@gmail.com">
+
+			<div class="flex-row">
+				<div class="item-name">
+					<label for="full-name">Full Name</label>
+					<input type="text" name="name" id="full-name" placeholder="Your First and Last Name here." required>
+				</div>
+				<div class="item-email">
+					<label for="email-address">Email</label>
+					<input type="email" name="_replyto" id="email-address" placeholder="Your Email Address here." required>
+				</div>
+			</div>
+
+			<div class="flex-row">
+				<div class="item-textarea">
+					<label for="message">Message</label>
+					<textarea rows="5" name="message" id="message" placeholder="Your Message here." required></textarea>
+				</div>
+
+				<div class="item-btn">
+					<button id="btn-submit" type="submit">Submit <i class="fas fa-arrow-circle-right"></i></button> 
+				</div>
+			</div>
+
+			<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+
+        </form>
+        <!-- Contact form ends here -->
+
+	</div>
+	<!-- End container for contact form -->
+
+
+
+	<!-- JavaScript for Cookie Consent Popup Message -->
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  	"palette": {
+			"popup": {
+				"background": "#000"
+			},
+			"button": {
+				"background": "#f1d600"
+			}
+		},
+	  	"content": {
+			"href": "https://ibat-web-dev.github.io/privacy.html"
+		}
+	});
+	</script>
+
+</body>
+</html>
