@@ -30,8 +30,8 @@ body { background-color: #eff8f5 }
 	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/hero-about-us.jpg')
 }
 
-.container-hero-block.contact-page {
-	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/hero-about-us.jpg')
+.container-hero-block.contact-us-page {
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/hero-contact-us.jpg')
 }
 
 .container-hero-block h1, .container-hero-block h2 {
