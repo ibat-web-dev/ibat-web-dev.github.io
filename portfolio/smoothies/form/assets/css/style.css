@@ -169,7 +169,10 @@ img { width: 100%; height: auto; display: block }
 /* == Email sign up form container == */
 
 /* All screens */
-.container-form-email-signup  { text-align: center; background-color: #fff; border: solid 1px gray }
+.container-form-email-signup  { 
+	text-align: center; 
+	background-color: #fff; 
+}
 
 /* Desktop */
 @media all and (min-width:1024px) { 
@@ -191,20 +194,22 @@ img { width: 100%; height: auto; display: block }
 
 /* Heading */
 .container-form-email-signup h3 { 
+	font-family: 'Neucha', sans-serif;
 	font-weight: bold; 
-	color: #000;
+	color: #733fc0;
 	line-height: 1.2;
 	margin-bottom: 3%;
-	font-size: calc(26px + (56 - 26) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(32px + (84 - 32) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 /* Text */
 .container-form-email-signup p { 
+	font-family: 'Neucha', sans-serif;
     font-weight: normal;
-    color: #000; 
-    line-height: 1.5;
+    color: #733fc0; 
+	line-height: 1.5;
     margin-bottom: 7%;    
-	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 /* == Email sign up form fields == */
@@ -249,7 +254,7 @@ img { width: 100%; height: auto; display: block }
 #email-signup-form input {
 	background-color: #f0f0f0;
 	padding: 10px 12px;
-	border: 2px solid gray;
+	border: 2px solid #d1274b;
 }
 
 #email-signup-form input:focus { 
@@ -260,13 +265,12 @@ img { width: 100%; height: auto; display: block }
 	color:#fff;
     border: none; 
 	padding: 12px 22px;    
-	background-color: blue;
-    /* text-transform: uppercase; */
-    /* letter-spacing: 2px */
+	background-color: #d1274b;
+	border-radius: 50px;
 }
 
 #email-signup-form #btn-submit:hover {
-	background-color: darkblue;
+	background-color: #733fc0;
 }
 
 #email-signup-form #btn-submit i {
