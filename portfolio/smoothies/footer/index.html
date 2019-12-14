@@ -14,8 +14,8 @@
 	<link href="assets/css/style.css" rel="stylesheet">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet"> 
-
+	<link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+	
 	<!-- Link to icons for Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
@@ -112,6 +112,30 @@
 
 	</div><!-- End parent flexbox container -->
 
+	<!-- Begin container for email signup form -->
+	<div class="container-form-email-signup">
+
+		<h3>Join our email list</h3>
+        <p>Keep me up-to-date with your latest healthy smoothie recipes and special offers.</p>
+
+        <!-- Forn begins here -->
+		<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" action="https://formspree.io/ibat.training@gmail.com">
+			<div class="flex-row">
+				<label for="email-address">Email:</label>
+                <input type="text" id="email-address" name="email-address" placeholder="Your email address" maxlength="80" autocapitalize="none" required>
+                <input type="hidden" name="_subject" id="email-subject" value="Email Signup Form Submission">
+				<button id="btn-submit" type="submit" class="btn-submit">Subscribe <i class="fas fa-envelope"></i></button>
+			</div>
+		</form>
+        <!-- Form ends here -->
+
+    </div>
+	<!-- End container for email signup form -->
+
+<!-- ***************************************************
+	================ FOOTER TO COPY AND PASTE ==============
+	**************************************************** -->
+
 	<!-- Begin HTML footer -->
 
 	<div class="container-footer">
@@ -119,9 +143,9 @@
 		<div class="item-3">
 
 			<h4>Site Map</h4>
-			<p><i class="fas fa-home fa-fw"></i><a href="../../../index.html">Home</a></p>
-			<p><i class="fas fa-file-alt fa-fw"></i><a href="../../index.html">Portfolio</a></p>
-			<p><i class="fas fa-lock fa-fw"></i><a href="../../../privacy.html">Privacy</a></p>
+			<p><i class="fas fa-home fa-fw"></i><a href="index.html">Home</a></p>
+			<p><i class="fas fa-file-alt fa-fw"></i><a href="index.html">Portfolio</a></p>
+			<p><i class="fas fa-lock fa-fw"></i><a href="privacy.html">Privacy</a></p>
 		
 		</div>
 
@@ -142,7 +166,8 @@
 	</div>
 	
 	<!-- End HTML footer -->
-	
+
+
 	<!-- JavaScript for Cookie Consent Popup Message -->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
