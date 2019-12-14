@@ -37,10 +37,11 @@
 <body>
 
 	<!-- Begin hero block -->
-	<div class="container-flexbox">
+	<div class="container-flexbox hero-block">
 		<div class="item item-2">
 			<h1>Putting the tricks into web analytics</h1>
 			<p>IBAT Analytics helps you boost your business impact.</p>
+			<a class="btn-cta" href="#free-trial">Try it free</a>
 		</div>
 		<div class="item item-2">
 			<img src="assets/img/hero-image.png" alt="hero image">
@@ -154,7 +155,28 @@
 
 	</div><!-- End parent flexbox container -->
 
-    <!-- Begin footer -->
+
+<!-- Begin container for email signup form -->
+<div class="container-form-email-signup" id="free-trial">
+
+		<h3>Start your free trial</h3>
+        <p>Enjoy unlimited access for 14 days. No credit card required.</p>
+
+        <!-- Forn begins here -->
+		<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" action="https://formspree.io/ibat.training@gmail.com">
+			<div class="flex-row">
+				<label for="email-address">Email:</label>
+                <input type="text" id="email-address" name="email-address" placeholder="Your email address" maxlength="80" autocapitalize="none" required>
+                <input type="hidden" name="_subject" id="email-subject" value="Email Signup Form Submission">
+				<button id="btn-submit" type="submit" class="btn-submit">Try it free <i class="fas fa-arrow-right"></i></button>
+			</div>
+		</form>
+        <!-- Form ends here -->
+
+    </div>
+	<!-- End container for email signup form -->
+
+    <!-- Begin HTML footer -->
     
 	<div class="container-footer">
 
@@ -162,9 +184,9 @@
         <h5>Excellence in digital creation</h5>
 
         <ul class="footer-links">
-            <li><a href="../../../index.html">Home</a></li>
-            <li><a href="../../index.html">Portfolio</a></li>
-            <li><a href="../../../contact/index.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="index.html">Contact</a></li>
         </ul>
         
         <ul class="footer-icons">
@@ -200,10 +222,11 @@
             
          </ul>                
         
-        <a class="privacy-legal" href="../../../privacy.html">Privacy & Legal</a>
+        <a class="privacy-legal" href="privacy.html">Privacy & Legal</a>
     </div>
 	
-	<!-- End footer -->
+	<!-- End HTML footer -->
+
 
 	<!-- JavaScript for Cookie Consent Popup Message -->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
