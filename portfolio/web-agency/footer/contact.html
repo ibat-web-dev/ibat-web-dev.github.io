@@ -17,7 +17,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i&display=swap" rel="stylesheet"> 
 
     <!-- Link to icons for Font Awesome 5 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
 	<!-- Styles for Cookie Consent Popup Message  -->
 	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
@@ -38,67 +38,61 @@
 	<!-- Begin hero block -->
 	<div class="container-flexbox hero-block">
 		<div class="item-2 slide-in-left">
-			<h1>Helping you win online</h1>
+			<h1>Your partner in digital success</h1>
 			<hr>
-			<h2>The expertise and experience you need to gain online success for your products and services.</h2>
+			<h2>Working with clients to build digital campaigns rich in vision, meaning and creativity.</h2>
 		</div>
 		<div class="item-2">
-			<img src="assets/img/hero-home-page.png" alt="home page hero image">
+			<img src="assets/img/hero-contact-page.png" alt="contact page hero image">
 		</div>
 	</div>
 	<!-- End hero block -->
 
+		<!-- =============== BEGIN CONTACT FORM HTML ============= -->
 
-	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-pastel-pink">
-		<div class="item-1">
-			<h2>Stand out from the crowd</h2>
-			<p>We are an <a class="fancy-link" href="team.html">award-winning</a> web, mobile and digital design agency. We are based in Dublin, but have clients all over the globe. We can <a class="fancy-link" href="services.html">bring your ideas to life online</a>, and can transform great products and services into successful ones.</p>
-		</div>	
+    <!-- Begin container for contact form -->
+        
+    <div class="container-contact-form">
+		<h3>Let's talk</h3>
+		<p>Do you have a project you’d like to discuss with us. If so, please complete and submit this form.</p>
+		
+        <!-- Contact form starts here -->
+		<form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/ibat.training@gmail.com">
+
+			<!-- Begin contact form fields -->
+
+			<div class="flex-row">
+				<div class="item-name">
+					<label for="full-name">Full Name</label>
+					<input type="text" name="name" id="full-name" placeholder="Your First and Last Name here." required>
+				</div>
+				<div class="item-email">
+					<label for="email-address">Email</label>
+					<input type="email" name="_replyto" id="email-address" placeholder="Your Email Address here." required>
+				</div>
+			</div>
+
+			<div class="flex-row">
+				<div class="item-textarea">
+					<label for="message">Message</label>
+					<textarea rows="5" name="message" id="message" placeholder="Your Message here." required></textarea>
+				</div>
+
+				<div class="item-btn">
+					<button id="btn-submit" type="submit">Submit <i class="fas fa-arrow-circle-right"></i></button> 
+				</div>
+			</div>
+
+			<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+			<!-- End contact form fields -->
+
+        </form>
+        <!-- Contact form ends here -->
+
 	</div>
-	<!-- End parent flexbox container -->
+	<!-- End container for contact form -->
 
-
-	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox">
-		<div class="item-1">
-			<h2 class="no-margin-bottom">Some recent projects</h2>
-		</div>	
-	</div>
-	<!-- End parent flexbox container -->
-
-
-	<!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
-	<div class="container-flexbox">
-		<div class="item-3 bg-pastel-blue">
-			<img src="assets/img/gym.jpg" class="image-shadow" alt="Gym project">
-			<h3>Joey's Gym</h3>
-			<p>Website redesign, rebuild and relaunch.</p>
-		</div>
-
-		<div class="item-3 bg-pastel-blue">
-			<img src="assets/img/hotel-chain.jpg" class="image-shadow" alt="Hotel project">
-			<h3>Pyramid Hotels</h3>
-			<p>Online video and social media campaign.</p>
-		</div>
-
-		<div class="item-3 bg-pastel-blue">
-			<img src="assets/img/pet-store.jpg" class="image-shadow" alt="Pet store project">
-			<h3>Jane's Pet Store</h3>
-			<p>Mobile app to match pets with homes.</p>
-		</div>
-	</div>
-	<!-- End parent flexbox container -->	
-
-
-	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-pastel-pink">
-		<div class="item-1">
-			<h2>Let's make something great together.</h2>
-			<p>Have a project you'd like to discuss? <a href="contact.html" class="fancy-link">Get in touch for a quick quote</a>.</p>
-		</div>
-	</div>
-	<!-- End parent flexbox container -->	
+	<!-- =============== END CONTACT FORM HTML ============= -->
 
 	<!-- Begin HTML footer -->
 
@@ -130,7 +124,7 @@
 	</div>
 	
 	<!-- End HTML footer -->
-		
+
 	<!-- JavaScript for Cookie Consent Popup Message -->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
