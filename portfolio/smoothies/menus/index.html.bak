@@ -43,6 +43,7 @@
 	<div class="container-hero">
 		<h1>Smooth Smoothies</h1>
 		<h2>Where flavour meets goodness</h2>
+		<a href="#email-signup" class="btn-special-offers">Special offers</a>
 	</div>
 	<!-- End hero block -->
 
