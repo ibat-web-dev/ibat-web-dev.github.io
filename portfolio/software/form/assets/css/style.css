@@ -378,7 +378,7 @@ body { font-family: 'Roboto', sans-serif; background-color: #f5f5f5 }
 @media all and (max-width:767px) { 
 	#email-signup-form label { padding: 0 0 14px 0  }
 	#email-signup-form input { margin: 0 0 24px 0 }
-	#email-signup-form #btn-submit { margin: 30px auto 0 auto; width: 70% }
+	#email-signup-form #btn-submit { margin: 30px auto 0 auto; width: 80% }
 }
 
 
