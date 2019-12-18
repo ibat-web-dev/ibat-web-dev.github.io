@@ -3,10 +3,7 @@
 body, html { height: 100% }
 body { max-width: 1600px; font-family: sans-serif }
 img { width: 100%; height: auto; display: block }
-html { scroll-behavior: smooth }
-html { scroll-padding-top: 72px }
-
-/* Begin menu styles */
+html { scroll-behavior: smooth; scroll-padding-top: 72px }
 
 /* === ALL SCREEN SIZES ====== */
 
@@ -40,7 +37,7 @@ html { scroll-padding-top: 72px }
 .container-menu-desktop    a:first-child img,
 .container-menu-bar-mobile a:first-child img { width: 200px; height: 40px }
 
-/* website logo vertically centered in desktop menu and mobile menu bar  */
+/* website logo vertically cente#d1274b in desktop menu and mobile menu bar  */
 .container-menu-desktop    a:first-child,
 .container-menu-bar-mobile a:first-child { display: flex; flex-direction: row; align-items: center }
 
@@ -253,44 +250,44 @@ html { scroll-padding-top: 72px }
 }
 
 /* menu links */
-.menu-light ul li a:link,  .menu-light ul li a:visited { color: red }
+.menu-light ul li a:link,  .menu-light ul li a:visited { color: #d1274b }
 .menu-light ul li a:hover, .menu-light ul li a:active  { color: #222 }
 
 /* cta button */
 .menu-light ul li a.btn-cta:link, 
 .menu-light ul li a.btn-cta:visited {
     background-color: transparent;
-    color: red;
-    border-color:red
+    color: #d1274b;
+    border-color:#d1274b
 }
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
-    background-color: red;
+    background-color: #d1274b;
     color: #fff;
-    border-color:red
+    border-color:#d1274b
 }
 
 /* on mobiles only */
-.menu-light.flyout-menu hr { background-color: red; border-color: red } 
+.menu-light.flyout-menu hr { background-color: #d1274b; border-color: #d1274b } 
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
 .menu-light.flyout-menu h5 a, 
-.menu-light.flyout-menu p { color: red } 
+.menu-light.flyout-menu p { color: #d1274b } 
 
 /* colour of hamburger icon bars */
 .menu-light .item-icon .bar1, 
 .menu-light .item-icon .bar2, 
-.menu-light .item-icon .bar3 { background-color: red }	
+.menu-light .item-icon .bar3 { background-color: #d1274b }	
 
 /* phone number link */
-a[href^=tel] { text-decoration: none; color: red }
+a[href^=tel] { text-decoration: none; color: #d1274b }
 
 /* email link */
 .menu-light.flyout-menu h5 a:link, 
 .menu-light.flyout-menu h5 a:visited {
-    border-bottom-color:red;
+    border-bottom-color:#d1274b;
 }
 
 .menu-light.flyout-menu h5 a:hover, 
@@ -299,10 +296,10 @@ a[href^=tel] { text-decoration: none; color: red }
 }
 
 /* profile image border colour */
-.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: red }
+.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #d1274b }
 
 /* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color:red }
+.menu-light.flyout-menu .fly-out-social-icons a i { color:#d1274b }
 
 /* === End light background menu === */
 
@@ -310,7 +307,7 @@ a[href^=tel] { text-decoration: none; color: red }
 
 /* background colour */
 .menu-dark { 
-	background-color: red; 
+	background-color: #d1274b; 
 	transition: all .5s ease-in-out
 }
 
@@ -321,7 +318,7 @@ a[href^=tel] { text-decoration: none; color: red }
 /* cta button */
 .menu-dark ul li a.btn-cta:link,
 .menu-dark ul li a.btn-cta:visited { 
-    background-color: red;
+    background-color: #d1274b;
     color: #fff;
     border-color:#fff
 }
@@ -329,7 +326,7 @@ a[href^=tel] { text-decoration: none; color: red }
 .menu-dark ul li a.btn-cta:hover,
 .menu-dark ul li a.btn-cta:active { 
     background-color: #fff;
-    color: red;
+    color: #d1274b;
     border-color:#fff
 }
 
@@ -357,11 +354,11 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-dark.flyout-menu h5 a:hover, 
 .menu-dark.flyout-menu h5 a:active {
-    border-bottom-color: red;
+    border-bottom-color: #d1274b;
 }
 
 /* profile image border colour */
-.menu-dark.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: red }
+.menu-dark.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #d1274b }
 
 /* contact icons */
 .menu-dark.flyout-menu .fly-out-social-icons a i { color:#fff }
@@ -385,16 +382,16 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* cta button */
 .menu-transparent ul li a.btn-cta:link,
 .menu-transparent ul li a.btn-cta:visited { 
-    background-color: red;
+    background-color: #d1274b;
     color: #fff;
-    border-color:red;
+    border-color:#d1274b;
 }
 
 .menu-transparent ul li a.btn-cta:hover,
 .menu-transparent ul li a.btn-cta:active { 
     background-color: #fff;
-    color: red;
-    border-color:red
+    color: #d1274b;
+    border-color:#d1274b
 }
 
 /* on mobiles only - various content */
@@ -408,7 +405,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* colour of hamburger icon bars */
 .menu-transparent .item-icon .bar1, 
 .menu-transparent .item-icon .bar2, 
-.menu-transparent .item-icon .bar3 { background-color: red }
+.menu-transparent .item-icon .bar3 { background-color: #d1274b }
 
 /* phone number link */
 a[href^=tel] { text-decoration: none; color: #fff }
@@ -421,11 +418,11 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-transparent.flyout-menu h5 a:hover, 
 .menu-transparent.flyout-menu h5 a:active {
-    border-bottom-color: red;
+    border-bottom-color: #d1274b;
 }
 
 /* profile image border colour */
-.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: red }
+.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #d1274b }
 
 /* contact icons */
 .menu-transparent.flyout-menu .fly-out-social-icons a i { color:#fff }
@@ -439,7 +436,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/smoothie-hero-image.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/smoothie-hero-image.jpg');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -465,13 +462,13 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 /* Desktops - container height and h1 bottom margin */
 @media all and (min-width:768px) { 
-	.container-hero { height: 520px }
+	.container-hero { height: 580px }
 	.container-hero h1 { margin-bottom: 1% }
 }
 
 /* Mobiles - container height, text width and h1 bottom margin */
 @media all and (max-width:767px) { 
-	.container-hero { height: 360px }
+	.container-hero { height: 500px }
 	.container-hero h1 { 
 		margin-bottom: 5%
 	}
