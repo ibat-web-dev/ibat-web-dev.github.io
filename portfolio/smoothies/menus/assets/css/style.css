@@ -13,17 +13,21 @@ html { scroll-behavior: smooth; scroll-padding-top: 72px }
 .flyout-menu { z-index: 999 }
 .container-menu-desktop, .container-menu-bar-mobile { width:100% }
 
+
 /* on mobiles - hide desktop menu */
 @media all and (max-width:767px) { 
     .container-menu-desktop.menu-transparent,
-    .container-menu-desktop.menu-light { display: none }
+    .container-menu-desktop.menu-light,
+    .container-menu-desktop.menu-dark { display: none }
 }
 
 /* on desktops - hide mobile menu bar and list of menu options */
 @media all and (min-width:768px) { 
     .container-menu-bar-mobile.menu-transparent,
     .container-menu-bar-mobile.menu-light,
+    .container-menu-bar-mobile.menu-dark,
     .flyout-menu.menu-transparent,
+    .flyout-menu.menu-light,
     .flyout-menu.menu-light { display: none }
 }
 
