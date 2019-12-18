@@ -33,50 +33,49 @@
 
 </head>
 
+
 <body>
 
-
     <!-- Begin desktop menu -->
-    <div class="container-menu-desktop menu-light menu-sticky">
+    <div class="container-menu-desktop menu-dark menu-sticky">
         <!-- first child item -->
         <a href="../../index.html"><img src="assets/img/software-logo.png" alt="website logo"></a>
         <!-- second child item -->
-        <ul>
-            <li><a href="#benefits">Benefits</a></li>
+		<ul>
 			<li><a href="#features">Features</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="../../contact" class="btn-cta"><i class="fas fa-user"></i> Get in touch</a></li>
-        </ul>
+			<li><a href="#benefits">Benefits</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#free-trial" class="btn-cta">Start Your Free Trial</a></li>  
+		</ul>
     </div>
     <!-- End desktop menu -->
 
-
-    <!-- Begin mobile menu bar -->
-    <div class="container-menu-bar-mobile menu-light menu-sticky">
-            <!-- first child -->
-			<a href="../../index.html"><img src="assets/img/software-logo.png" alt="website logo"></a>
-            <!-- second child -->
-            <div class="item-icon">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </div>
-    <!-- End mobile menu bar -->
+	<!-- Begin mobile menu bar -->
+	<div class="container-menu-bar-mobile menu-light menu-sticky">
+		<!-- first child -->
+		<a href="#"><img src="assets/img/software-logo.png" alt="website logo"></a>  
+		<!-- second child -->
+		<div class="item-icon">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+	</div>
+	<!-- End mobile menu bar -->
 
     <!-- Begin mobile menu slide-out options -->
-    <div class="flyout-menu flyout-menu-is-closed menu-light">
-        <ul>
-            <li><a href="#benefits">Benefits</a></li>
+    <div class="flyout-menu flyout-menu-is-closed menu-dark">
+		<ul>
 			<li><a href="#features">Features</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="../../contact" class="btn-cta"><i class="fas fa-user"></i> Get in touch</a></li>
-        </ul>
+			<li><a href="#benefits">Benefits</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#free-trial" class="btn-cta">Free Trial</a></li>  
+		</ul>
 
         <hr>
         <h4>About Me</h4>
         <div class="fly-out-profile-box">
-            <img src="face-webdev.jpg">
+            <img src="face-webdev.jpg" alt="Mary Smith, web designer, Dublin">
             <p>Hi, I'm <b>Mary Smith</b>, a web and digital designer based in Dublin, Ireland.</p>
         </div>
    
@@ -85,7 +84,7 @@
 
         <h5><a href="tel:0881234567">088 123 4567</a></h5>
 
-        <h5><a href="mailto:marysmith@myemail.com" target="_blank" rel="noopener noreferrer">marysmith@myemail.com</a></h5>
+        <h5><a href="mailto:ibat.training@gmail.com" target="_blank">marysmith@myemail.com</a></h5>
 
         <h4>Social Links</h4>
         <div class="fly-out-social-icons">
@@ -101,14 +100,14 @@
     </div>
     <!-- End mobile menu slide-out options -->
 
-
 	<!-- Begin hero block -->
-	<div class="container-flexbox below-sticky-menu">
-		<div class="item item-2">
+	<div class="container-flexbox hero-block">
+		<div class="item-2">
 			<h1>Putting the tricks into web analytics</h1>
 			<p>IBAT Analytics helps you boost your business impact.</p>
+			<a class="btn-cta" href="#free-trial">Try it free</a>
 		</div>
-		<div class="item item-2">
+		<div class="item-2">
 			<img src="assets/img/hero-image.png" alt="hero image">
 		</div>
 	</div>
@@ -122,7 +121,7 @@
 	</div><!-- End parent flexbox container -->
 
 	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-light-gray below-sticky-menu" id="features">
+	<div class="container-flexbox bg-light-gray" id="features">
 		<div class="item-1">
 			<h2>What we offer</h2>
 			<p>Say 'Hello' to a simple yet powerful user analytics system. IBAT Analytics tells you all you need to know about your website traffic, without tracking or storing your visitors' personal information. </p>
@@ -152,14 +151,14 @@
 	</div><!-- End parent flexbox container -->
 
 	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-light-gray below-sticky-menu" id="benefits">
+	<div class="container-flexbox bg-light-gray" id="benefits">
 		<div class="item-1">
 			<h2>How you benefit</h2>
 			<p>IBAT Analytics helps you focus on what's important: your business.</p>
 		</div>
 	</div><!-- End parent flexbox container -->
 
-	<!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
+	<!-- Begin parent flexbox containr for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
 	<div class="container-flexbox bg-light-gray">
 
 		<div class="item-3">
@@ -190,15 +189,15 @@
 	</div><!-- End parent flexbox container -->
 	
 	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-light-gray below-sticky-menu" id="testimonials">
-		<div class="item item-1">
+	<div class="container-flexbox bg-light-gray" id="testimonials">
+		<div class="item-1">
 			<h2>Happy users</h2>
 			<p>Join the 1,000s of delighted customers from every sector of business around the world who are using IBAT Analytics to drive their future success.</p>
 		</div>
 	</div><!-- End parent flexbox container -->
 
 	<!-- Begin parent flexbox container for three-column layout (.item-3) on desktop and one-column layout on mobiles -->
-	<div class="container-flexbox bg-light-gray happy-users" id="testimonials">
+	<div class="container-flexbox bg-light-gray happy-users">
 
 		<div class="item-3">
 			<img src="assets/img/face-2.png"  alt="Joe Bloggs">
@@ -220,6 +219,26 @@
 
 	</div><!-- End parent flexbox container -->
 
+
+<!-- Begin container for email signup form -->
+<div class="container-form-email-signup" id="free-trial">
+
+		<h3>Start your free trial</h3>
+        <p>Enjoy unlimited access for 14 days. No credit card required.</p>
+
+        <!-- Forn begins here -->
+		<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" action="https://formspree.io/ibat.training@gmail.com">
+			<div class="flex-row">
+				<label for="email-address">Email:</label>
+                <input type="text" id="email-address" name="email-address" placeholder="Your email address" maxlength="80" autocapitalize="none" required>
+                <input type="hidden" name="_subject" id="email-subject" value="Email Signup Form Submission">
+				<button id="btn-submit" type="submit" class="btn-submit">Try it free <i class="fas fa-arrow-right"></i></button>
+			</div>
+		</form>
+        <!-- Form ends here -->
+
+    </div>
+	<!-- End container for email signup form -->
 
 	<!-- Begin HTML footer -->
 
@@ -249,21 +268,41 @@
 		</div>
 		
 	</div>
-	
 	<!-- End HTML footer -->
-	
-	<!-- Begin JavaScript code showing/hiding fly-out mobile menu -->
+
+	<!-- Begin JavaScript code for desktop and mobile menus -->
     <script>
+
+        // Code to detect click of option within fly-out menu
+        let specifiedElement = document.querySelector('.flyout-menu');
+        document.addEventListener('click', function(event) {
+            var isClickInside = specifiedElement.contains(event.target);
+            //If link is within current web page
+            if (isClickInside) {
+                //Get id of anchor
+                let anchor_id = window.location.hash;
+                //Add extra spacing above anchor
+                let elemAnchor = document.querySelector(anchor_id)
+                elemAnchor.classList.add('sticky-anchor');
+                //Close fly-out menu
+                toggleMobileMenu();
+            }
+            else {
+                return;
+            }
+        });
+
+	    // Code to show/hide fly-out mobile menu -->
         document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
-        let pageContainer = document.querySelector('.page-container');
+        const pageContainer = document.querySelector('.page-container');
    
         function toggleMobileMenu() {
             //toggle hamburger icon
-            let elemIcon = document.querySelector('.item-icon');
+            const elemIcon = document.querySelector('.item-icon');
             elemIcon.classList.toggle("change");
-            let elemHTML = document.querySelector('html');
-            let elemBody = document.querySelector('body');            
-            let elemFlyOut = document.querySelector('.flyout-menu');
+            const elemHTML = document.querySelector('html');
+            const elemBody = document.querySelector('body');            
+            const elemFlyOut = document.querySelector('.flyout-menu');
 
             //if fly-out menu is currently closed, open it.
             if (elemIcon.classList.contains('change')) {
@@ -280,8 +319,32 @@
                 elemBody.classList.remove('no-scroll');                                
             }
         }
-    </script>
-    <!-- End JavaScript code showing/hiding slide-out mobile menu -->
+
+		// Code for menus with transparent background
+		window.onscroll = function() {swapMenuStyle()};
+		const headerDesktop = document.querySelector('.container-menu-desktop');
+		const headerMobile = document.querySelector('.container-menu-bar-mobile');
+
+		const stickyDesktop = headerDesktop.offsetTop +300;
+		const stickyMobile = headerDesktop.offsetTop  +300;
+
+		function swapMenuStyle() {
+			if (window.pageYOffset > stickyDesktop) {
+				headerDesktop.classList.add("menu-light","menu-drop-shadow");
+				headerDesktop.classList.remove("menu-dark");
+				headerMobile.classList.add("menu-light","menu-drop-shadow");
+				headerMobile.classList.remove("menu-dark");
+
+			} else {
+				headerDesktop.classList.add("menu-dark");
+				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
+				headerMobile.classList.add("menu-dark");
+				headerMobile.classList.remove("menu-light","menu-drop-shadow");
+			}
+		}
+
+	</script>
+	<!-- End JavaScript code for desktop and mobile menus -->
 
 	<!-- JavaScript for Cookie Consent Popup Message -->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>

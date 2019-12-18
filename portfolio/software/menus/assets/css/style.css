@@ -3,36 +3,39 @@
 body, html { height: 100% }
 body { max-width: 1600px; font-family: sans-serif }
 img { width: 100%; height: auto; display: block }
-html { scroll-behavior: smooth }
+html { scroll-behavior: smooth; scroll-padding-top: 72px }
 
-body { font-family: 'Roboto', sans-serif }
-
+body { font-family: 'Roboto', sans-serif; background-color: #f5f5f5 }
 
 /* Begin menu styles */
 
 /* === ALL SCREEN SIZES ====== */
 
 /* Positions all menus in front of page content */
-.container-menu-desktop,
+.container-menu-desktop, 
 .container-menu-bar-mobile, 
 .flyout-menu { z-index: 999 }
+.container-menu-desktop, .container-menu-bar-mobile { width:100% }
 
 /* on mobiles - hide desktop menu */
 @media all and (max-width:767px) { 
     .container-menu-desktop.menu-transparent,
-    .container-menu-desktop.menu-light { display: none }
+    .container-menu-desktop.menu-light,
+    .container-menu-desktop.menu-dark { display: none }
 }
 
 /* on desktops - hide mobile menu bar and list of menu options */
 @media all and (min-width:768px) { 
     .container-menu-bar-mobile.menu-transparent,
     .container-menu-bar-mobile.menu-light,
+    .container-menu-bar-mobile.menu-dark,
     .flyout-menu.menu-transparent,
+    .flyout-menu.menu-light,
     .flyout-menu.menu-light { display: none }
 }
 
 /* sticks menu to top of desktop and/or mobile screen */
-.menu-sticky { position: fixed }
+.menu-sticky { position: fixed; top: 0; left: 0; right: 0; }
 
 /* Height of desktop menu and mobile menu bar */
 .container-menu-desktop, .container-menu-bar-mobile { height:72px }
@@ -41,7 +44,7 @@ body { font-family: 'Roboto', sans-serif }
 .container-menu-desktop    a:first-child img,
 .container-menu-bar-mobile a:first-child img { width: 200px; height: 40px }
 
-/* website logo vertically centered in desktop menu and mobile menu bar  */
+/* website logo vertically cente#d1274b in desktop menu and mobile menu bar  */
 .container-menu-desktop    a:first-child,
 .container-menu-bar-mobile a:first-child { display: flex; flex-direction: row; align-items: center }
 
@@ -53,12 +56,16 @@ body { font-family: 'Roboto', sans-serif }
 .container-menu-desktop ul li a,
 .flyout-menu            ul li a { text-decoration: none }
 
+/* make desktop menu options bold */
+.container-menu-desktop ul li a { font-weight:bold }
+
 /* style cta button on desktop and mobile menus */
 .container-menu-desktop ul li a.btn-cta,
 .flyout-menu            ul li a.btn-cta {
     display: inline-block;
     border-width: 2px;
     border-style: solid;
+    font-weight: bold;
     /* soften corners */
     /* border-radius: 4px; */
     /* rounded corners */
@@ -72,18 +79,17 @@ body { font-family: 'Roboto', sans-serif }
 /* on mobiles, prevent scrolling outside flyout menu */
 .no-scroll { overflow: hidden }
 
+.menu-drop-shadow { box-shadow: 0 1px 10px #888 }
 
-/* ================================= DESKTOP MENU ============================= */
+/* ======= DESKTOP MENU ======= */
 
 /* outer parent flexbox container 
    home page link (with website logo) at left and ul links at right are its two children */
-.container-menu-desktop {
+   .container-menu-desktop {
 	display: flex;
     justify-content: space-between;
     padding: 0 6% 0 6%;
     width: 100%;
-    /* drop shadow along bottom of menu  */
-    box-shadow: 0px 1px 10px #888
 }
 
 /* menu links and cta button aligned horizontally */
@@ -109,8 +115,7 @@ body { font-family: 'Roboto', sans-serif }
 /* cta button padding */
 .container-menu-desktop ul li a.btn-cta { padding: 6px 20px }
 
-
-/* ======================== MOBILE MENU  ======================= */
+/* ======= MOBILE MENU  ======== */
 
 /* outer flexbox container for mobile menu bar 
    home page link (with website logo) at left and hamburger icon at right are its two children */
@@ -121,8 +126,6 @@ body { font-family: 'Roboto', sans-serif }
 	align-items: center;
     width: 100%;
     padding: 0 6% 0 6%;
-   /* drop shadow along bottom of menu bar */
-    box-shadow: 0px 1px 10px #888    
 }
 
 /* three bars hozizontal in hamburger icon */
@@ -239,55 +242,58 @@ body { font-family: 'Roboto', sans-serif }
     text-align: center 
 }
 
-/* ============ Light background menu - desktops and mobiles ========= */
+/* ========= Light background menu - desktops and mobiles ========= */
 
 /* background colour */
-.menu-light { background-color: #fff }
+.menu-light { 
+	background-color: #fff;
+	transition: all .5s ease-in-out;
+}
 
 /* drop shadow border at left of fly-out menu */
 .flyout-menu.flyout-menu-is-open {
-    box-shadow: 0px 1px 10px #888    
+    box-shadow: 0px 1px 10px #888 
 }
 
 /* menu links */
-.menu-light ul li a:link,  .menu-light ul li a:visited { color: red }
+.menu-light ul li a:link,  .menu-light ul li a:visited { color: #5ba745 }
 .menu-light ul li a:hover, .menu-light ul li a:active  { color: #222 }
 
 /* cta button */
 .menu-light ul li a.btn-cta:link, 
 .menu-light ul li a.btn-cta:visited {
     background-color: transparent;
-    color: red;
-    border-color:red
+    color: #5ba745;
+    border-color:#5ba745
 }
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
-    background-color: red;
+    background-color: #5ba745;
     color: #fff;
-    border-color:red
+    border-color:#5ba745
 }
 
 /* on mobiles only */
-.menu-light.flyout-menu hr { background-color: red; border-color: red } 
+.menu-light.flyout-menu hr { background-color: #5ba745; border-color: #5ba745 } 
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
 .menu-light.flyout-menu h5 a, 
-.menu-light.flyout-menu p { color: red } 
+.menu-light.flyout-menu p { color: #5ba745 } 
 
 /* colour of hamburger icon bars */
 .menu-light .item-icon .bar1, 
 .menu-light .item-icon .bar2, 
-.menu-light .item-icon .bar3 { background-color: red }	
+.menu-light .item-icon .bar3 { background-color: #5ba745 }	
 
 /* phone number link */
-a[href^=tel] { text-decoration: none; color: red }
+a[href^=tel] { text-decoration: none; color: #5ba745 }
 
 /* email link */
 .menu-light.flyout-menu h5 a:link, 
 .menu-light.flyout-menu h5 a:visited {
-    border-bottom-color:red;
+    border-bottom-color:#5ba745;
 }
 
 .menu-light.flyout-menu h5 a:hover, 
@@ -296,17 +302,20 @@ a[href^=tel] { text-decoration: none; color: red }
 }
 
 /* profile image border colour */
-.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: red }
+.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #5ba745 }
 
 /* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color:red }
+.menu-light.flyout-menu .fly-out-social-icons a i { color:#5ba745 }
 
+/* === End light background menu === */
 
-
-/* ============== Dark background menu - desktops and mobiles =========== */
+/* ======= Dark background menu - desktops and mobiles ======= */
 
 /* background colour */
-.menu-dark { background-color: red }
+.menu-dark { 
+	background-color: #5ba745; 
+	transition: all .5s ease-in-out
+}
 
 /* menu links */
 .menu-dark ul li a:link,  .menu-dark ul li a:visited { color: #fff }
@@ -315,7 +324,7 @@ a[href^=tel] { text-decoration: none; color: red }
 /* cta button */
 .menu-dark ul li a.btn-cta:link,
 .menu-dark ul li a.btn-cta:visited { 
-    background-color: red;
+    background-color: #5ba745;
     color: #fff;
     border-color:#fff
 }
@@ -323,7 +332,7 @@ a[href^=tel] { text-decoration: none; color: red }
 .menu-dark ul li a.btn-cta:hover,
 .menu-dark ul li a.btn-cta:active { 
     background-color: #fff;
-    color: red;
+    color: #5ba745;
     border-color:#fff
 }
 
@@ -351,19 +360,82 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-dark.flyout-menu h5 a:hover, 
 .menu-dark.flyout-menu h5 a:active {
-    border-bottom-color: red;
+    border-bottom-color: #5ba745;
 }
 
 /* profile image border colour */
-.menu-dark.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: red }
+.menu-dark.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #5ba745 }
 
 /* contact icons */
 .menu-dark.flyout-menu .fly-out-social-icons a i { color:#fff }
 
-/*-- End menu syles */
+/* === End dark background menu === */
 
 
-.container-flexbox.below-sticky-menu { padding-top: 72px }
+
+/* ======== Transparent background menu - desktops and mobiles =========== */
+
+/* background colour */
+.menu-transparent { 
+	background-color: transparent;
+	transition: all .5s ease-in-out;
+}
+
+/* menu links */
+.menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: #fff }
+.menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: #b8b8b8 }
+
+/* cta button */
+.menu-transparent ul li a.btn-cta:link,
+.menu-transparent ul li a.btn-cta:visited { 
+    background-color: #5ba745;
+    color: #fff;
+    border-color:#5ba745;
+}
+
+.menu-transparent ul li a.btn-cta:hover,
+.menu-transparent ul li a.btn-cta:active { 
+    background-color: #fff;
+    color: #5ba745;
+    border-color:#5ba745
+}
+
+/* on mobiles only - various content */
+.menu-transparent.flyout-menu hr { background-color: #fff; border-color:#fff } 
+
+.menu-transparent.flyout-menu h4,
+.menu-transparent.flyout-menu h5,
+.menu-transparent.flyout-menu h5 a,
+.menu-transparent.flyout-menu p { color:#fff } 
+
+/* colour of hamburger icon bars */
+.menu-transparent .item-icon .bar1, 
+.menu-transparent .item-icon .bar2, 
+.menu-transparent .item-icon .bar3 { background-color: #5ba745 }
+
+/* phone number link */
+a[href^=tel] { text-decoration: none; color: #fff }
+
+/* email link */
+.menu-transparent.flyout-menu h5 a:link, 
+.menu-transparent.flyout-menu h5 a:visited {
+    border-bottom-color: #fff;
+}
+
+.menu-transparent.flyout-menu h5 a:hover, 
+.menu-transparent.flyout-menu h5 a:active {
+    border-bottom-color: #5ba745;
+}
+
+/* profile image border colour */
+.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #5ba745 }
+
+/* contact icons */
+.menu-transparent.flyout-menu .fly-out-social-icons a i { color:#fff }
+
+/* === End transparent background menu === */
+
+
 
 /* ============ PARENT FLEXBOX CONTAINERS ========== */
 
@@ -386,6 +458,56 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* Background colors */
 .container-flexbox.bg-light-gray { background-color: #f5f5f5 }
 .container-flexbox.bg-green      { background-color: #5ba745 }
+
+.container-flexbox.hero-block { background-color: #fff }
+
+
+/* Hero block height and spacing  */
+@media all and (min-width: 1000px) {
+	.container-flexbox.hero-block { margin-top: 5% }
+	.container-flexbox.hero-block h1 { margin-top: 5% }
+ 
+	.container-flexbox.hero-block .item-2:nth-child(2) { 
+	   display: flex;
+	   flex-direction: column;
+	   justify-content: center
+	}
+}
+ 
+@media all and (max-width: 999px) {
+	.container-flexbox.hero-block { margin-top: 10% }
+	.container-flexbox.hero-block .item-2:nth-child(2) { padding-bottom: 5% }
+}
+
+/* == CTA button == */
+.container-flexbox.hero-block a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 12px 42px;
+	border-style: solid;
+	border-width: 4px;
+	margin: 32px 0;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.container-flexbox.hero-block a:link,
+.container-flexbox.hero-block a:visited {
+	color: #5ba745;
+	background-color: #fff;
+	border-color: #5ba745
+}
+
+.container-flexbox.hero-block a:hover,
+.container-flexbox.hero-block a:active {
+	color: #fff;
+	background-color: #5ba745;
+	border-color: #5ba745
+}
+
 
 
 /* ============= FLEXBOX ITEM COLUMNS: 1 ITEM COLUMN EVERY SCREEN ========== */
@@ -511,7 +633,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	text-decoration: none;
 	color: #fff;
 	border-bottom: solid 2px #5ba745;
-	padding-bottom:3p;
+	padding-bottom:3px;
 }
 
 @media all and (max-width:767px) { 
@@ -519,7 +641,6 @@ a[href^=tel] { text-decoration: none; color: #fff }
 		margin-bottom: 24px
 	}
 }
-
 
 /* Two columns item-2 */
 
@@ -530,7 +651,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	margin-bottom: 12px;
 	letter-spacing: -1px;
 	margin-bottom: 20px;
-	font-size: calc(30px + (72 - 30) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 .container-flexbox .item-2 p { 
@@ -581,7 +702,132 @@ a[href^=tel] { text-decoration: none; color: #fff }
 		transform: scale(1);
 	}
 }
-  
+
+
+/* =============== BEGIN EMAIL SIGN UP FORM CSS ============= */
+
+/* == Email sign up form container == */
+
+/* All screens */
+.container-form-email-signup  { 
+	text-align: center; 
+	background-color:#5ba745; 
+	border: solid 1px gray
+}
+
+/* Desktop */
+@media all and (min-width:1024px) { 
+	.container-form-email-signup  {
+		margin:  4% 23% 5% 23%;
+		padding: 2% 4% 4% 4%
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:1023px) { 
+	.container-form-email-signup  { 
+		margin:  6% 8% 16% 8%;
+		padding: 7% 8% 8% 8%;
+	}
+}
+
+/* == CONTACT FORM HEADING AND TEXT == */
+
+/* Heading */
+.container-form-email-signup h3 { 
+	font-weight: bold; 
+	color: #fff;
+	line-height: 1.2;
+	margin-bottom: 3%;
+	font-size: calc(26px + (56 - 26) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+/* Text */
+.container-form-email-signup p { 
+    font-weight: normal;
+    color: #fff; 
+    line-height: 1.5;
+    margin-bottom: 7%;    
+	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+
+/* == EMAIL SIGN UP FORM FIELDS == */
+
+#email-signup-form .flex-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* Desktop */
+@media all and (min-width:768px) { 
+    #email-signup-form .flex-row { flex-direction: row }
+    #email-signup-form #email-address { flex: 1; margin: 0 30px 0 30px }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	#email-signup-form .flex-row { flex-direction: column }
+    #email-signup-form label { margin: 12px 0 0 0 }
+    #email-signup-form #email-address { margin: 0 }
+}
+
+#email-signup-form label,
+#email-signup-form input,
+#email-signup-form #btn-submit {
+	font-size: 16px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#email-signup-form label { padding: 14px 0; color: #fff }
+
+#email-signup-form label,
+#email-signup-form #btn-submit { font-weight: bold }
+
+#email-signup-form input,
+#email-signup-form #btn-submit { padding: 12px 20px }
+
+#email-signup-form ::placeholder { font-size: 96% }
+
+#email-signup-form input {
+	background-color: #f0f0f0;
+	padding: 10px 12px;
+	border: 2px solid gray;
+}
+
+#email-signup-form input:focus { 
+	background-color: #fff; 
+}
+
+#email-signup-form #btn-submit {
+	color:#fff;
+    border: solid 2px #fff; 
+	padding: 12px 22px;    
+	background-color: #fff;
+	letter-spacing: 1px;
+	border-radius: 50px;
+	color:#5ba745; 
+}
+
+#email-signup-form #btn-submit:hover {
+	color:#fff;
+	background-color:#5ba745;
+	border: solid 2px #fff
+}
+
+#email-signup-form #btn-submit i {
+	margin-left: 8px
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	#email-signup-form label { padding: 0 0 14px 0  }
+	#email-signup-form input { margin: 0 0 24px 0 }
+	#email-signup-form #btn-submit { margin: 30px auto 0 auto; width: 80% }
+}
+
 /* == Begin footer CSS == */
 
 /* Outer footer parent container */
@@ -644,10 +890,10 @@ a[href^=tel] { text-decoration: none; color: #fff }
 }
 
 .container-footer .item-3 p {
-	font-weight: normal;
-	margin-bottom: 12px;
-	font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
-	line-height: 1.6
+   font-weight: normal;
+   margin-bottom: 12px;
+   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+   line-height: 1.6
 }
 
 .container-footer .item-3 i { 
@@ -672,3 +918,4 @@ a[href^=tel] { text-decoration: none; color: #fff }
 }
 
 /* == End footer CSS == */
+
