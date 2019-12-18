@@ -3,9 +3,8 @@
 body, html { height: 100% }
 body { max-width: 1600px; font-family: sans-serif }
 img { width: 100%; height: auto; display: block }
-html { scroll-behavior: smooth; scroll-padding-top: 72px }
 
-body { font-family: 'Roboto', sans-serif; background-color: #f5f5f5 }
+body { background-color: #eff8f5 }
 
 /* Begin menu styles */
 
@@ -34,24 +33,6 @@ body { font-family: 'Roboto', sans-serif; background-color: #f5f5f5 }
 /* sticks menu to top of desktop and/or mobile screen */
 .menu-sticky { position: fixed; top: 0; left: 0; right: 0; }
 
-/* prevents content from disappearing udner sticky menus */
-.sticky-anchor {
-    position: relative;
-    border-top: 90px solid transparent;
-    margin: -90px 0 0;
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
- }
- 
- .sticky-anchor:before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: 0;
-    right: 0;
- }
- 
 /* Height of desktop menu and mobile menu bar */
 .container-menu-desktop, .container-menu-bar-mobile { height:72px }
 
@@ -59,7 +40,7 @@ body { font-family: 'Roboto', sans-serif; background-color: #f5f5f5 }
 .container-menu-desktop    a:first-child img,
 .container-menu-bar-mobile a:first-child img { width: 200px; height: 40px }
 
-/* website logo vertically centered in desktop menu and mobile menu bar  */
+/* website logo vertically cente#ff5000 in desktop menu and mobile menu bar  */
 .container-menu-desktop    a:first-child,
 .container-menu-bar-mobile a:first-child { display: flex; flex-direction: row; align-items: center }
 
@@ -70,9 +51,6 @@ body { font-family: 'Roboto', sans-serif; background-color: #f5f5f5 }
 /* hide link underlines on desktop and mobile menus */
 .container-menu-desktop ul li a,
 .flyout-menu            ul li a { text-decoration: none }
-
-/* make desktop menu options bold */
-.container-menu-desktop ul li a { font-weight:bold }
 
 /* style cta button on desktop and mobile menus */
 .container-menu-desktop ul li a.btn-cta,
@@ -90,6 +68,9 @@ body { font-family: 'Roboto', sans-serif; background-color: #f5f5f5 }
 /* style icon in cta button on desktop and mobile menus */
 .container-menu-desktop ul li a.btn-cta i,
 .flyout-menu            ul li a.btn-cta i { margin-right: 8px; font-size: 90% }
+
+/* make desktop menu options bold */
+.container-menu-desktop ul li a { font-weight:bold }
 
 /* on mobiles, prevent scrolling outside flyout menu */
 .no-scroll { overflow: hidden }
@@ -272,44 +253,44 @@ body { font-family: 'Roboto', sans-serif; background-color: #f5f5f5 }
 }
 
 /* menu links */
-.menu-light ul li a:link,  .menu-light ul li a:visited { color: red }
+.menu-light ul li a:link,  .menu-light ul li a:visited { color: #ff5000 }
 .menu-light ul li a:hover, .menu-light ul li a:active  { color: #222 }
 
 /* cta button */
 .menu-light ul li a.btn-cta:link, 
 .menu-light ul li a.btn-cta:visited {
     background-color: transparent;
-    color: red;
-    border-color:red
+    color: #ff5000;
+    border-color:#ff5000
 }
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
-    background-color: red;
+    background-color: #ff5000;
     color: #fff;
-    border-color:red
+    border-color:#ff5000
 }
 
 /* on mobiles only */
-.menu-light.flyout-menu hr { background-color: red; border-color: red } 
+.menu-light.flyout-menu hr { background-color: #ff5000; border-color: #ff5000 } 
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
 .menu-light.flyout-menu h5 a, 
-.menu-light.flyout-menu p { color: red } 
+.menu-light.flyout-menu p { color: #ff5000 } 
 
 /* colour of hamburger icon bars */
 .menu-light .item-icon .bar1, 
 .menu-light .item-icon .bar2, 
-.menu-light .item-icon .bar3 { background-color: red }	
+.menu-light .item-icon .bar3 { background-color: #ff5000 }	
 
 /* phone number link */
-a[href^=tel] { text-decoration: none; color: red }
+a[href^=tel] { text-decoration: none; color: #ff5000 }
 
 /* email link */
 .menu-light.flyout-menu h5 a:link, 
 .menu-light.flyout-menu h5 a:visited {
-    border-bottom-color:red;
+    border-bottom-color:#ff5000;
 }
 
 .menu-light.flyout-menu h5 a:hover, 
@@ -318,10 +299,10 @@ a[href^=tel] { text-decoration: none; color: red }
 }
 
 /* profile image border colour */
-.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: red }
+.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #ff5000 }
 
 /* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color:red }
+.menu-light.flyout-menu .fly-out-social-icons a i { color:#ff5000 }
 
 /* === End light background menu === */
 
@@ -329,7 +310,7 @@ a[href^=tel] { text-decoration: none; color: red }
 
 /* background colour */
 .menu-dark { 
-	background-color: red; 
+	background-color: #ff5000; 
 	transition: all .5s ease-in-out
 }
 
@@ -340,7 +321,7 @@ a[href^=tel] { text-decoration: none; color: red }
 /* cta button */
 .menu-dark ul li a.btn-cta:link,
 .menu-dark ul li a.btn-cta:visited { 
-    background-color: red;
+    background-color: #ff5000;
     color: #fff;
     border-color:#fff
 }
@@ -348,7 +329,7 @@ a[href^=tel] { text-decoration: none; color: red }
 .menu-dark ul li a.btn-cta:hover,
 .menu-dark ul li a.btn-cta:active { 
     background-color: #fff;
-    color: red;
+    color: #ff5000;
     border-color:#fff
 }
 
@@ -376,11 +357,11 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-dark.flyout-menu h5 a:hover, 
 .menu-dark.flyout-menu h5 a:active {
-    border-bottom-color: red;
+    border-bottom-color: #ff5000;
 }
 
 /* profile image border colour */
-.menu-dark.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: red }
+.menu-dark.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #ff5000 }
 
 /* contact icons */
 .menu-dark.flyout-menu .fly-out-social-icons a i { color:#fff }
@@ -404,16 +385,16 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* cta button */
 .menu-transparent ul li a.btn-cta:link,
 .menu-transparent ul li a.btn-cta:visited { 
-    background-color: red;
+    background-color: #ff5000;
     color: #fff;
-    border-color:red;
+    border-color:#ff5000;
 }
 
 .menu-transparent ul li a.btn-cta:hover,
 .menu-transparent ul li a.btn-cta:active { 
     background-color: #fff;
-    color: red;
-    border-color:red
+    color: #ff5000;
+    border-color:#ff5000
 }
 
 /* on mobiles only - various content */
@@ -427,7 +408,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* colour of hamburger icon bars */
 .menu-transparent .item-icon .bar1, 
 .menu-transparent .item-icon .bar2, 
-.menu-transparent .item-icon .bar3 { background-color: red }
+.menu-transparent .item-icon .bar3 { background-color: #fff }
 
 /* phone number link */
 a[href^=tel] { text-decoration: none; color: #fff }
@@ -440,20 +421,84 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-transparent.flyout-menu h5 a:hover, 
 .menu-transparent.flyout-menu h5 a:active {
-    border-bottom-color: red;
+    border-bottom-color: #ff5000;
 }
 
 /* profile image border colour */
-.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: red }
+.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #ff5000 }
 
 /* contact icons */
 .menu-transparent.flyout-menu .fly-out-social-icons a i { color:#fff }
 
 /* === End transparent background menu === */
 
+/* === HERO BLOCK === */
+
+.container-hero-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container-hero-block.home-page {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url('../img/hero-home.jpg');
+}
+
+.container-hero-block.destinations-page {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url('../img/hero-destinations.jpg');
+}
+
+.container-hero-block.about-us-page {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url('../img/hero-about-us.jpg')
+}
+
+.container-hero-block.contact-us-page {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url('../img/hero-contact-us.jpg')
+}
+
+.container-hero-block h1, .container-hero-block h2 {
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 2px 2px #222;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-hero-block h1 { 
+	color: #fff;
+	font-size: calc(42px + (102 - 42) * ((100vw - 320px)/(1600 - 320)))
+}
+
+.container-hero-block h2 {
+	color:  #ff5000;
+	line-height: 1.5;
+	font-size: calc(32px + (64 - 32) * ((100vw - 320px)/(1600 - 320)));
+}
+
+/* Desktop - block height, text width and h1 bottom margin */
+@media all and (min-width:768px) { 
+	.container-hero-block { height: 520px }
+	.container-hero-block h1, .container-hero-block h2 { 
+		width: 60%; 
+	}
+	.container-hero-block h1 {margin-top: 3%;  margin-bottom: 3% }
+}
+
+/* Mobiles - block height, text width and h1 bottom margin */
+@media all and (max-width:767px) { 
+	.container-hero-block { height: 500px }
+	.container-hero-block h1, .container-hero-block h2  { 
+		width: 90%; 
+	}
+	.container-hero-block h1 { margin-top: 18%; margin-bottom: 5% }
+}
 
 
-/* ============ PARENT FLEXBOX CONTAINERS ========== */
+/* ========= PARENT FLEXBOX CONTAINERS ======= */
 
 .container-flexbox { 
 	display: flex;
@@ -461,370 +506,335 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	flex-wrap: wrap;
 }
 
-/* Desktops only - inside padding  */
+/* Desktop - inside padding  */
 @media all and (min-width:768px) {
-	.container-flexbox { padding: 2% 10% 1% 10% }
+	.container-flexbox { padding: 2% 10% 2% 10% }
+	.container-flexbox.no-padding-bottom { padding: 2% 10% 0 10% }
+	.container-flexbox.no-padding-top    { padding: 0 10% 0 10% }
 }
 
-/* Mobiles only - inside padding */
+/* Mobiles - inside padding */
 @media all and (max-width:767px) {
 	.container-flexbox { padding: 7% 8% 1% 8% }
 }
 
 /* Background colors */
-.container-flexbox.bg-light-gray { background-color: #f5f5f5 }
-.container-flexbox.bg-green      { background-color: #5ba745 }
-
-.container-flexbox.hero-block { background-color: #fff }
-
-/* == CTA button == */
-.container-flexbox.hero-block a {
-	display: inline-block;
-	text-decoration: none;
-	padding: 12px 42px;
-	border-style: solid;
-	border-width: 4px;
-	margin: 32px 0;
-	border-radius: 50px;
-	font-size: 18px;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
-.container-flexbox.hero-block a:link,
-.container-flexbox.hero-block a:visited {
-	color: #5ba745;
-	background-color: #fff;
-	border-color: #5ba745
-}
-
-.container-flexbox.hero-block a:hover,
-.container-flexbox.hero-block a:active {
-	color: #fff;
-	background-color: #5ba745;
-	border-color: #5ba745
-}
+.container-flexbox.bg-orange { background-color: #ff5000  }
 
 
-
-/* ============= FLEXBOX ITEM COLUMNS: 1 ITEM COLUMN EVERY SCREEN ========== */
+/* ====== INNER FLEXBOX COLUMN: 1 COLUMN EVERY SCREEN ======= */
 
 .container-flexbox .item-1 { 
 	width: 100%;
 	padding: 1% 6% 0 6%;
 }
 
-/* ====== FLEXBOX ITEM COLUMNS: 2 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ====== */
 
-/* Desktops - 2 columns */
-@media all and (min-width:768px) { 
-	.container-flexbox .item-2 { 
-		width: 45%;
-		padding: 3% 0 4% 0;
-	}
-}
-
-/* Mobiles - 1 column */
-@media all and (max-width:767px) { 
-	.container-flexbox .item-2 {
-		text-align: center; 
-		width: 100%;
-		padding: 10% 10% 10% 10%;
-	}
-
-	.container-flexbox .item-2:nth-child(1) { order: 2 }
-	.container-flexbox .item-2:nth-child(2) { order: 1 }
-}
-
-/* ======= FLEXBOX ITEM COLUMNS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ===== */
-
-.container-flexbox .item-3 { 
-	background-color: #fff;
-	box-shadow: rgba(160,160,160,0.8) 5px 5px 20px;
-	border-radius: 12px 
-}
+/* =======INNER FLEXBOX COLUMNS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ===== */
 
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
-	.container-flexbox .item-3 { 
-		width: 30%;
-		text-align: left;
-		padding: 3% 3% 3% 3%;
-		margin-bottom: 7%
-	}
-	.container-flexbox .item-3.smaller-margin-bottom { 
-		margin-bottom: 2%
-	}
+	.container-flexbox .item-3 { width: 30% }
+	.container-flexbox .item-3 { margin-bottom: 3% }
 }
 
 /* Mobiles - 1 column */
 @media all and (max-width:767px) { 
-	.container-flexbox .item-3 { 
-		width: 100%;
-		text-align: center;
-		padding: 10% 10% 10% 10%;
-		margin-bottom: 14%
-	}
+	.container-flexbox .item-3 { width: 100% }
+	.container-flexbox .item-3 { margin-bottom: 14% }
 }
 
-.container-flexbox .item-3 img { 
-	margin-bottom: 20px;
-	border-radius: 5px
+
+/* ==== INNER FLEXBOX COLUMNS: 4 COLUMNS ON DESKTOPS, 2 COLUMNS ON MOBILES ======= */
+
+/* Desktops - 4 columns */
+@media all and (min-width:768px) { 
+	.container-flexbox .item-4-2 { width: 22% }
+	.container-flexbox .item-4-2 { margin-bottom: 3% }
 }
 
-.container-flexbox.happy-users .item-3 {
+/* Mobiles - 2 columns */
+@media all and (max-width:767px) { 
+	.container-flexbox .item-4-2 { width: 47% }
+	.container-flexbox .item-4-2 { margin-bottom: 10% }
+}
+
+/* =======INNER FLEXBOX COLUMNS: 3 COLUMNS ON DESKTOPS, 2 COLUMNS ON MOBILES ===== */
+
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+	.container-flexbox.happy-users .item-3-2 { width: 30% }
+	.container-flexbox.happy-users .item-3-2 { margin-bottom: 3% }
+}
+
+/* Mobiles - 2 column */
+@media all and (max-width:767px) { 
+	.container-flexbox.happy-users .item-3-2 { width: 45% }
+	.container-flexbox.happy-users .item-3-2 { margin-bottom: 14% }
+}
+
+.container-flexbox.happy-users .item-3-2 {
 	text-align: center;
 	margin-top: 3%;
-	padding-bottom:2%
+	padding-bottom:2%;
 }
 
-.container-flexbox.happy-users .item-3 img {
+.container-flexbox.happy-users .item-3-2 img {
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%; 
-	border-radius: 100%
+	margin-bottom:20px;
+	width: 70%; 
+	border-radius: 100%;
+	border-color: #ff5000;
+	border-style: solid;
+	border-width: 6px
 }
 
-/* ========== HEADINGS, PARAGRAPHS, IMAGES ======== */
 
-/* Single column item-1 */
+/* ================ HEADINGS, PARAGRAPHS, IMAGES AND FAUX BUTTONS ============== */
+
+/* Single column */
 .container-flexbox .item-1 h2 { 
-	font-weight: 900; 
-	color: #5ba745;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700; 
+	color: #044d6c;
 	line-height: 1.2;
 	margin-bottom: 12px;
-	letter-spacing: -1px;
+	letter-spacing: 2px;
 	text-align: center;
 	font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 .container-flexbox .item-1 p { 
+	font-family: 'Raleway', sans-serif;
 	font-weight: 400; 
-	line-height: 2;
+	color: #044d6c;
+	line-height: 1.6;
 	letter-spacing: 1px;
 	text-align: center;
+	margin-bottom:24px;
 	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
-	color: #000
 }
 
-.container-flexbox.bg-green .item-1 p.big-text {
-	font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1600 - 320))); 
-	margin-bottom:20px;
-	font-weight: 500;
-}
-
-.container-flexbox.bg-green .item-1 p.big-text,
-.container-flexbox.bg-green .item-1 p.big-text a {
-	color: #fff;
-}
-
-.container-flexbox.bg-green .item-1 p.big-text a {
+.container-flexbox .item-1 p a {
+	color: #ff5000;
+	font-weight: bold;	
 	text-decoration: none;
-	color: #fff;
-	border-bottom: solid 2px #fff;
-	padding-bottom:3px;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	padding-bottom: 2px;
 }
 
-.container-flexbox.bg-green .item-1 p.big-text a:hover,
-.container-flexbox.bg-green .item-1 p.big-text a:active {
-	text-decoration: none;
-	color: #fff;
-	border-bottom: solid 2px #5ba745;
-	padding-bottom:3px;
+
+.container-flexbox .item-1 p a:link,
+.container-flexbox .item-1 p a:visited { 
+	border-bottom-color: #ff5000;
 }
 
-@media all and (max-width:767px) { 
-	.container-flexbox.bg-green .item-1 img { 
-		margin-bottom: 24px
-	}
+.container-flexbox .item-1 p a:hover,
+.container-flexbox .item-1 p a:active { 
+	border-bottom-color: transparent;
 }
 
-/* Two columns item-2 */
 
-.container-flexbox .item-2 h1 { 
-	font-weight: 900; 
-	color: #000;
-	line-height: 1.1;
-	margin-bottom: 12px;
-	letter-spacing: -1px;
-	margin-bottom: 20px;
-	font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1600 - 320))); 
-}
-
-.container-flexbox .item-2 p { 
-	font-weight: 500; 
-	color: gray;
-	line-height: 1.3;
-	font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1600 - 320))); 
-}
-
-/* Three columns item-3 */
-
-.container-flexbox .item-3 h3 { 
-	font-weight: 500; 
-	color: #000;
+/* Three and four columns */
+.container-flexbox .item-3 h3,
+.container-flexbox .item-4-2 h3 { 
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700; 
+	color: #ff5000;;
 	line-height: 1.2;
 	margin-bottom: 2px;
-	font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1600 - 320))); 
+	letter-spacing: 2px;
+	font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1600 - 320))); 
 }
 
-.container-flexbox .item-3 p { 
+.container-flexbox .item-3 p,
+.container-flexbox .item-4-2 p { 
+	font-family: 'Roboto Slab', serif;
+	font-weight: 500;
 	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))); 
-	line-height: 1.5;
+	line-height: 1.7;
 	margin-bottom: 14px;
-	color: rgb(82, 95, 127);
 }
 
-.slide-in-left {
-    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.container-flexbox .item-3 img,
+.container-flexbox .item-4-2 img {
+	margin-bottom: 12px;
+	border-radius: 5px;
 }
+
+.container-flexbox.happy-users {
+	background-color: #fff
+}
+
+.container-flexbox.happy-users .item-3-2 p {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 500;
+	font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1600 - 320))); 
+	line-height: 1.5;
+}
+
+.container-flexbox.bg-orange h2,
+.container-flexbox.bg-orange h3,
+.container-flexbox.bg-orange p { color: #fff }
 
 /* ----------------------------------------------
- * Generated by Animista
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
+ * Generated by Animista on 2019-3-20 10:33:40
  * w: http://animista.net, t: @cssanimista
- * ----------------------------------------------
-*/
+ * ---------------------------------------------- */
 
-.scale-up-center {
-    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.slide-in-top {
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@keyframes scale-up-center {
-	0% {
-		transform: scale(0.5);
-	}
-	100% {
-		transform: scale(1);
-	}
+@-webkit-keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* =============== BEGIN CONTACT FORM CSS ============= */
 
-/* =============== BEGIN EMAIL SIGN UP FORM CSS ============= */
-
-/* == Email sign up form container == */
+/* == Contact form container == */
 
 /* All screens */
-.container-form-email-signup  { 
-	text-align: center; 
-	background-color:#5ba745; 
-	border: solid 1px gray
-}
+.container-contact-form { text-align: center; background-color: #fff; border: solid 1px gray }
 
 /* Desktop */
 @media all and (min-width:1024px) { 
-	.container-form-email-signup  {
-		margin:  4% 23% 5% 23%;
-		padding: 2% 4% 4% 4%
+	.container-contact-form {
+		margin: 0 23% 8% 23%;
+		padding: 2% 4% 1% 4%
 	}
 }
 
 /* Mobiles */
 @media all and (max-width:1023px) { 
-	.container-form-email-signup  { 
-		margin:  6% 8% 16% 8%;
+	.container-contact-form { 
+		margin: 2% 8% 16% 8%;
 		padding: 7% 8% 8% 8%;
 	}
 }
 
-/* == CONTACT FORM HEADING AND TEXT == */
+/* == Contact form heading and text == */
 
 /* Heading */
-.container-form-email-signup h3 { 
+.container-contact-form h3 { 
 	font-weight: bold; 
-	color: #fff;
+	color: #000;
 	line-height: 1.2;
 	margin-bottom: 3%;
-	font-size: calc(26px + (56 - 26) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 /* Text */
-.container-form-email-signup p { 
+.container-contact-form p { 
     font-weight: normal;
-    color: #fff; 
-    line-height: 1.5;
-    margin-bottom: 7%;    
+    color: #000; 
+	line-height: 1.5;
+	margin-bottom: 7%;
 	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 
-/* == EMAIL SIGN UP FORM FIELDS == */
+/* == Contact form fields == */
 
-#email-signup-form .flex-row {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
+#contact-form .flex-row { display: flex; justify-content: space-between }
 
 /* Desktop */
-@media all and (min-width:768px) { 
-    #email-signup-form .flex-row { flex-direction: row }
-    #email-signup-form #email-address { flex: 1; margin: 0 30px 0 30px }
+@media all and (min-width: 1024px) {
+	#contact-form .flex-row { flex-direction: row; text-align: left; margin-bottom: 6% }
+	#contact-form .flex-row .item-name,
+	#contact-form .flex-row .item-email { width: 47% }
+	#contact-form .flex-row .item-textarea { width: 64% }
+	#contact-form .flex-row .item-btn { width: 30%; align-self: flex-end }
 }
 
 /* Mobiles */
-@media all and (max-width:767px) { 
-	#email-signup-form .flex-row { flex-direction: column }
-    #email-signup-form label { margin: 12px 0 0 0 }
-    #email-signup-form #email-address { margin: 0 }
+@media all and (max-width: 1023px) {
+	#contact-form .flex-row { flex-direction: column; text-align: center; }
 }
 
-#email-signup-form label,
-#email-signup-form input,
-#email-signup-form #btn-submit {
-	font-size: 16px;
-    display: inline-block;
-    border-radius: 5px;
+#contact-form label, #contact-form input, #contact-form textarea {
+	font-family: sans-serif;
+	color: #000;
+	display: block;
 }
 
-#email-signup-form label { padding: 14px 0; color: #fff }
+#contact-form label {
+	font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320))); 
+	font-weight: bold;
+	margin-bottom: 8px;
+	display: flex;
+	align-items: baseline;
+}
 
-#email-signup-form label,
-#email-signup-form #btn-submit { font-weight: bold }
+#contact-form [type="text"], 
+#contact-form [type="email"],
+#contact-form textarea { width: 100% }
+#contact-form ::placeholder { font-size: 94% }
 
-#email-signup-form input,
-#email-signup-form #btn-submit { padding: 12px 20px }
+/* Mobiles */
+@media all and (max-width: 1023px) { 
+	#contact-form [type="text"], 
+	#contact-form [type="email"],
+	#contact-form textarea { margin-bottom: 20px }
+}
 
-#email-signup-form ::placeholder { font-size: 96% }
-
-#email-signup-form input {
-	background-color: #f0f0f0;
+#contact-form input, #contact-form textarea {
 	padding: 10px 12px;
 	border: 2px solid gray;
+	background-color: #f0f0f0;
+	border-radius: 5px;
 }
 
-#email-signup-form input:focus { 
-	background-color: #fff; 
-}
-
-#email-signup-form #btn-submit {
-	color:#fff;
-    border: solid 2px #fff; 
-	padding: 12px 22px;    
+#contact-form input:focus,
+#contact-form textarea:focus {
 	background-color: #fff;
-	letter-spacing: 1px;
-	border-radius: 50px;
-	color:#5ba745; 
 }
 
-#email-signup-form #btn-submit:hover {
-	color:#fff;
-	background-color:#5ba745;
-	border: solid 2px #fff
+#contact-form.flex-row .item-btn { width: 26% }
+
+#contact-form #btn-submit { 
+	float: right; 
+	color: #fff;
+	border: none; 
+	background-color: #ff5000;
+	font-weight: bold;
+	padding: 12px 22px;
+	font-size: 96%;
+	border-radius: 5px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px */
 }
 
-#email-signup-form #btn-submit i {
-	margin-left: 8px
+#contact-form #btn-submit:hover, 
+#contact-form #btn-submit:active { 
+	background-color: darkblue;
 }
 
-/* Mobiles */
-@media all and (max-width:767px) { 
-	#email-signup-form label { padding: 0 0 14px 0  }
-	#email-signup-form input { margin: 0 0 24px 0 }
-	#email-signup-form #btn-submit { margin: 30px auto 0 auto; width: 80% }
+#contact-form #btn-submit i.fas {
+	margin-left: 9px;
+	font-size: 104%
 }
+
+/* =============== END CONTACT FORM CSS ============= */
 
 /* == Begin footer CSS == */
 
@@ -833,7 +843,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	background-color:#5ba745
+	background-color:#044d6c
 }
 
 /* Desktop footer - inside padding  */
@@ -916,4 +926,5 @@ a[href^=tel] { text-decoration: none; color: #fff }
 }
 
 /* == End footer CSS == */
+
 
