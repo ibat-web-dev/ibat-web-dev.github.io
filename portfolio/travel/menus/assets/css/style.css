@@ -19,14 +19,17 @@ body { background-color: #eff8f5 }
 /* on mobiles - hide desktop menu */
 @media all and (max-width:767px) { 
     .container-menu-desktop.menu-transparent,
-    .container-menu-desktop.menu-light { display: none }
+    .container-menu-desktop.menu-light,
+    .container-menu-desktop.menu-dark { display: none }
 }
 
 /* on desktops - hide mobile menu bar and list of menu options */
 @media all and (min-width:768px) { 
     .container-menu-bar-mobile.menu-transparent,
     .container-menu-bar-mobile.menu-light,
+    .container-menu-bar-mobile.menu-dark,
     .flyout-menu.menu-transparent,
+    .flyout-menu.menu-light,
     .flyout-menu.menu-light { display: none }
 }
 
