@@ -5,16 +5,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Mary Smith Web Designer</title>
-	<meta name="description" content="I create digital experiences to promote products, services and events.">
-    
-    <meta name="author" content="Mary Smith">
-    	
-	<link href="assets/css/global-3.css" rel="stylesheet">
+	<title>Travel Agency Home Page | IBAT Portfolio Project | Mary Smith</title>
+
+	<meta name="description" content="IBAT Tours is an award-winning travel agency that has successfully provided happy holiday experiences for thousands of customers for over a decade.">
+
+	<meta name="author" content="Mary Smith">
+
+	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet"> 
-    
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i%7CRoboto+Slab:500,700&display=swap" rel="stylesheet">
+
     <!-- Link to icons for Font Awesome 5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
@@ -35,26 +36,26 @@
 
 
 
-<body class="home-page">
+<body>
 
     <!-- Begin desktop menu -->
     <div class="container-menu-desktop menu-transparent menu-sticky">
         <!-- first child item -->
-        <a href="index-3.html"><img src="assets/img/website-logo.png" alt="website logo"></a>
+        <a href="#"><img src="assets/img/travel-logo.png" alt="website logo"></a>
         <!-- second child item -->
-        <ul>
-            <li><a href="index-3.html">Home</a></li>
-            <li><a href="portfolio/index-3.html">Portfolio</a></li>
-            <li><a href="contact/index-3.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
-        </ul>
+		<ul>
+			<li><a href="destinations.html">Destinations</a></li>
+			<li><a href="about-us.html">About Us</a></li>
+			<li><a href="contact-us.html" class="btn-cta"><i class="fas fa-plane"></i> Contact Us</a></li>  
+		</ul>
     </div>
     <!-- End desktop menu -->
 
 
     <!-- Begin mobile menu bar -->
-    <div class="container-menu-bar-mobile menu-light menu-sticky">
+    <div class="container-menu-bar-mobile menu-transparent menu-sticky">
             <!-- first child -->
-            <a href="index-3.html"><img src="assets/img/website-logo.png" alt="website logo"></a>
+			<a href="#"><img src="assets/img/travel-logo.png" alt="website logo"></a>
             <!-- second child -->
             <div class="item-icon">
                 <div class="bar1"></div>
@@ -66,16 +67,16 @@
 
     <!-- Begin mobile menu slide-out options -->
     <div class="flyout-menu flyout-menu-is-closed menu-light">
-        <ul>
-            <li><a href="index-3.html">Home</a></li>
-            <li><a href="portfolio/index-3.html">Portfolio</a></li>
-            <li><a href="contact/index-3.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+  		<ul>
+			<li><a href="destinations.html">Destinations</a></li>
+			<li><a href="about-us.html">About Us</a></li>
+			<li><a href="contact-us.html" class="btn-cta"><i class="fas fa-plane"></i>Contact Us</a></li>  
         </ul>
 
         <hr>
         <h4>About Me</h4>
         <div class="fly-out-profile-box">
-            <img src="assets/img/profile-pic.jpg" alt="Mary Smith, web designer, Dublin">
+			<img src="../../assets/img/profile-pic.jpg" alt="Mary Smith, web designer, Dublin">
             <p>Hi, I'm <b>Mary Smith</b>, a web and digital designer based in Dublin, Ireland.</p>
         </div>
    
@@ -98,7 +99,7 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
     </div>
-    <!-- End mobile menu slide-out options -->
+	<!-- End mobile menu slide-out options -->
 		
 	<!-- Begin hero block -->
 	<div class="container-hero-block home-page">
@@ -109,97 +110,76 @@
 	</div>
 	<!-- End hero block -->
 	
-	<!-- Begin single-column container -->
 
 	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-pastel-green">
+	<div class="container-flexbox">
 		<div class="item-1">
-			<h2>Recent projects</h2>
-            <p>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/index-3.html" class="fancy-link">portfolio</a>.</p>
-            
-            <p>Have a project you'd like to discuss? <a href="contact/index-3.html" class="fancy-link">Let's make something great together!</a></p>
+			<h2>You need a holiday</h2>
+			<p>We are an <a href="about-us.html">award-winning travel agency</a> that has successfully provided happy holiday experiences for thousands of customers for over a decade. Whether you are planning a short getaway break or thinking of a longer, long-haul vacation, <a href="destinations.html">we have something for you</a>.</p>
 		</div>
-    </div><!-- End parent flexbox container -->
-    
+	</div><!-- End parent flexbox container -->
+
+
+	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+	<div class="container-flexbox bg-orange no-padding-bottom">
+		<div class="item item-1">
+			<h2>Special Offers</h2>
+		</div>
+	</div><!-- End parent flexbox container -->
 
 
 	<!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
-	<div class="container-flexbox">
+	<div class="container-flexbox bg-orange">
 
 		<div class="item-3">
-			<a href="portfolio/smoothies/index.html"><img src="assets/img/project-smoothie.jpg" alt="Project: Smooth Smoothies"></a>
-			<h3><a href="portfolio/smoothies/index.html" class="fancy-link">Smooth Smoothies</a></h3>
-            <p>Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>
-            <a href="portfolio/smoothies/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>             
+			<img src="assets/img/new-york.jpg"  alt="New York">
+			<h3>New York</h3>
+			<p>Its iconic sites include skyscrapers such as the Empire State Building, the sprawling Central Park, and neon-lit Times Square.</p>
 		</div>
 
-        <div class="item-3">
-			<a href="portfolio/software/index.html"><img src="assets/img/project-software.png" alt="Project: Software Analytics"></a>
-			<h3><a href="portfolio/software/index.html" class="fancy-link">Software Analytics</a></h3>
-            <p>Everything you need to know about your website traffic, without spying on visitors' personal information.</p>
-            <a href="portfolio/software/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>           
-        </div>
-        
 		<div class="item-3">
-			<a href="portfolio/travel/index.html"><img src="assets/img/project-travel.jpg"  alt="Project: Travel Agency"></a>
-			<h3><a href="portfolio/travel/index.html" class="fancy-link">IBAT Tours</a></h3>
-            <p>Need a holiday? IBAT Tours provides happy holiday experiences at affordable prices.</p>
-            <a href="portfolio/travel/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>               
+			<img src="assets/img/washington.jpg"  alt="Washington">
+			<h3>Washington</h3>
+			<p>Located on the Potomac River and contains such impressive buildings as the Capitol, White House and Supreme Court.</p>
+		</div>
+
+		<div class="item-3">
+			<img src="assets/img/ayers-rock.jpg"  alt="Ayers Rock">
+			<h3>Ayer's Rock</h3>
+			<p>Traditionally known as Uluru, Ayer's Rock is a world-famous sandstone monolith in the heart of Australia.</p>
 		</div>
 
 	</div><!-- End parent flexbox container -->
 
-    <!-- Begin HTML footer -->
-    
+	<!-- Begin HTML footer -->
+
 	<div class="container-footer">
 
-        <h4>Mary Smith, web designer</h4>
-        <h5>Excellence in digital creation</h5>
+		<div class="item-3">
 
-        <ul class="footer-links">
-            <li><a href="index-3.html">Home</a></li>
-            <li><a href="portfolio/index-3.html">Portfolio</a></li>
-            <li><a href="contact/index-3.html">Contact</a></li>
-        </ul>
-        
-        <ul class="footer-icons">
-            <li>
-                <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.instagram.com/ibatcollegedublin/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            
-         </ul>                
-        
-        <a class="privacy-legal" href="privacy-3.html">Privacy & Legal</a>
-    </div>
+			<h4>Site Map</h4>
+			<p><i class="fas fa-home fa-fw"></i><a href="../../index.html">Home</a></p>
+			<p><i class="fas fa-file-alt fa-fw"></i><a href="../../portfolio/index.html">Portfolio</a></p>
+			<p><i class="fas fa-lock fa-fw"></i><a href="../../privacy.html">Privacy</a></p>
 	
-	<!-- End HTML footer -->
+		</div>
 
+		<div class="item-3">
+			<h4>About Me</h4>
+			<p>Hi, I'm Mary Smith. I'm a web designer and developer.</p>
+			
+			<p>I created this sample web page to showcase some of my digital creation skills.</p>
+		</div>
+
+		<div class="item-3">
+			<h4>Contact</h4>
+			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:ibat.training@gmail.com">Email</a></p>
+			<p><i class="fab fa-github-square fa-fw"></i><a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
+			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
+		</div>
+		
+	</div>
+	<!-- End HTML footer -->
 
 	<!-- Begin JavaScript code for desktop and mobile menus -->
     <script>
@@ -251,8 +231,8 @@
             }
         }
 
-	// Code for menus with transparent background
-    window.onscroll = function() {swapMenuStyle()};
+		// Code for menus with transparent background
+		window.onscroll = function() {swapMenuStyle()};
 		const headerDesktop = document.querySelector('.container-menu-desktop');
 		const headerMobile = document.querySelector('.container-menu-bar-mobile');
 
@@ -277,8 +257,7 @@
 	</script>
 	<!-- End JavaScript code for desktop and mobile menus -->
 
-
-    <!-- JavaScript for Cookie Consent Popup Message -->
+	<!-- JavaScript for Cookie Consent Popup Message -->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
 	window.cookieconsent.initialise({
@@ -294,7 +273,7 @@
 			"href": "https://ibat-web-dev.github.io/privacy.html"
 		}
 	});
-    </script>
-    
+	</script>
+
 </body>
 </html>
