@@ -5,246 +5,318 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Web Design Portfolio | Mary Smith</title>
-	<meta name="description" content="Some of my recent website projects.">
+	<title>Portfolio | Mary Smith Web Designer</title>
+	<meta name="description" content="I use HTML and CSS with graphic design and animation to bring your ideas to life.">
+	
+	<link href="../assets/css/global-3.css" rel="stylesheet">
 
 	<meta name="author" content="Mary Smith">
 
-	<link rel="stylesheet" href="assets/css/portfolio-3.css">
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif:400,400i,700,700i&display=swap" rel="stylesheet"> 
 
-	<style>
-		p.note { text-align:center; margin-bottom:32px }
-	</style>
+    <!-- Link to icons for Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-	<!-- Link to icons for Font Awesome 4 -->
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+	<!-- Styles for Cookie Consent Popup Message  -->
+	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122243940-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-122243940-1');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-122243940-1');
 	</script>
+
 
 </head>
 
-<body>
-
-<!-- begin menu mobile -->
-
-<div class="container-menu-bar-mobile menu-mobile-dark menu-mobile-sticky">
-	<div class="item-logo">
-		<a href="../index.html">
-			<img src="assets/img/logo-purple.png" alt="logo">
-		</a>
-	</div>
-	<div class="item-icon">
-		<div class="bar1"></div>
-		<div class="bar2"></div>
-		<div class="bar3"></div>
-	</div>
-</div>
-
-<div class="container-menu-options-mobile menu-mobile-dark">
-	<ul>
-		<li><a href="../index.html">Home</a></li>
-		<li><a href="index.html">Portfolio</a></li>
-		<li><a href="../privacy.html">Privacy</a></li>
-		<li><a href="../contact.html" class="btn-solid btn-rounded">Get in touch</a></li>
-	</ul>
-</div>
-<!-- end menu mobile -->
 
 
-<!-- begin menu desktop -->
-<div class="container-menu-desktop menu-desktop-dark menu-desktop-sticky">
-	<div class="item-logo">
-		<a href="../index.html">
-			<img src="assets/img/logo-purple.png" alt="logo">
-		</a>
-	</div>
-	<div class="item-menu">
-		<ul>
-			<li><a href="../index.html">Home</a></li>
-			<li><a href="index.html">Portfolio</a></li>
-			<li><a href="../privacy.html">Privacy</a></li>
-			<li><a href="../contact.html" class="btn-solid btn-rounded">Get in touch</a></li>
-		</ul>
-	</div>
-</div>
-<!-- end menu desktop -->
+<body class="portfolio-page">
 
 
-<!-- begin page content -->
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-transparent menu-sticky">
+        <!-- first child item -->
+        <a href="../index-3.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
+        <!-- second child item -->
+        <ul>
+            <li><a href="../index-3.html">Home</a></li>
+            <li><a href="../portfolio/index-3.html">Portfolio</a></li>
+            <li><a href="../contact/index-3.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+    </div>
+    <!-- End desktop menu -->
 
 
-<div class="hero-block-9">
-	<div class="slide-in-left">
-		<h1>Portfolio</h1>
-		<hr>
-		<h2>Welcome to a selection of my web design and development work.</h2>
-	</div>
-</div>
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-light menu-sticky">
+            <!-- first child -->
+            <a href="#"><img src="../assets/img/website-logo.png" alt="website logo"></a>
+            <!-- second child -->
+            <div class="item-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    <!-- End mobile menu bar -->
 
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-light">
+        <ul>
+            <li><a href="../index-3.html">Home</a></li>
+            <li><a href="../portfolio/index-3.html">Portfolio</a></li>
+            <li><a href="../contact/index-3.html" class="btn-cta"><i class="fas fa-shopping-cart"></i> Contact</a></li>
+        </ul>
 
+        <hr>
+        <h4>About Me</h4>
+        <div class="fly-out-profile-box">
+            <img src="../assets/img/profile-pic.jpg" alt="Mary Smith, web designer, Dublin">
+            <p>Hi, I'm <b>Mary Smith</b>, a web and digital designer based in Dublin, Ireland.</p>
+        </div>
+   
+        <h4>Contact</h4>
+        <p>Have a project you'd like to discuss? Let's make something great together!</p>
 
+        <h5><a href="tel:0881234567">088 123 4567</a></h5>
 
-<div class="container-narrow">
+        <h5><a href="mailto:ibat.training@gmail.com" target="_blank">marysmith@myemail.com</a></h5>
 
-	<p class="note">(<b>NOTE</B>: See alternative versions:  <a href="index-1.html">here</a> and  <a href="index-2.html">here</a>.)</p>
-
-	<div class="flex-grid-three">
-
-		<div class="col-gutter">
-			<a href="../tourism.html">
-				<img src="assets/img/tourism.png" class="img-fluid images-shadow"  alt="portfolio powerpoint">
-			</a>
-			<h3>Irish Tourism</h3>
-			<p>A responsive web page with images and external hyperlinks that showcases Ireland&#8217;s most-visited tourist destinations.</p>
-			<a class="btn-solid btn-soft" href="../tourism.html">View web page</a>
-		</div>
-
-		<div class="col-gutter">
-			<a href="../how-to-set-up-a-website/index.html">
-				<img src="assets/img/portfolio-setup.png"  class="img-fluid images-shadow"  alt="portfolio careers summit">
-			</a>
-			<h3>Website Setup</h3>
-			<p>A responsive web page with three levels of heading, images, background colours and highlighted &lt;div&gt; elements.</p>
-			<a class="btn-solid btn-soft" href="../how-to-set-up-a-website/index.html">View web page</a>
-		</div>
-
-		<div class="col-gutter">
-			<a href="../hero/index.html">
-				<img src="assets/img/portfolio-hero.png" class="img-fluid images-shadow"  alt="portfolio hero">
-			</a>
-			<h3>Hero Blocks</h3>
-			<p>A showcase of hero blocks with various Google fonts, alignments, colours, gradients and background images.</p>
-			<a  class="btn-solid btn-soft" href="../hero/index.html">View web page</a>
-		</div>
-
-	</div><!--- /flex-grid -->
-
-</div><!--- /container -->
-
-
-<div class="container-narrow">
-
-	<div class="flex-grid-three">
-
-		<div class="col-gutter">
-			<a href="../menus/menu-desktop-1.html">
-				<img src="assets/img/portfolio-menus.png" class="img-fluid images-shadow"  alt="portfolio flexbox columns">
-			</a>
-			<h3>Desktop and Mobile Menus</h3>
-			<p>Navigation menus for desktop and mobile screens. Includes on-scroll background colour change options in JavaScript.</p>
-			<a class="btn-solid btn-soft" href="../menus/menu-desktop-1.html">View web page</a>
-		</div>
-
-		<div class="col-gutter">
-			<a href="../project-sample-1/index.html">
-				<img src="assets/img/sample-website-1.png" class="img-fluid images-shadow"  alt="portfolio final project 1">
-			</a>
-			<h3>IBAT Travel Agency</h3>
-			<p>Three-page website for a fictitious global travel agency. Includes Home, Destinations and About Us sample web pages.</p>
-			<a  class="btn-solid btn-soft" href="../project-sample-1/index.html">View web page</a>
-		</div>
-
-		<div class="col-gutter">
-			<a href="../project-sample-2/index.html">
-				<img src="assets/img/sample-website-2.png" class="img-fluid images-shadow"  alt="portfolio final project 2">
-			</a>
-			<h3>Web Design Agency</h3>
-			<p>Three-page website for a fictitious digital design and marketing agency. Includes Home, Services and Team sample web pages.</p>
-			<a class="btn-solid btn-soft" href="../project-sample-2/index.html">View web page</a>
-		</div>
-
-	</div><!--- /flex-grid -->
-
-</div><!--- /container -->
-
-<div class="container-footer">
-
-	<div class="flex-grid-footer">
-
-		<div class="col-gutter">
-
-			<h4>SITE MAP</h4>
-
-			<p><i class="fa fa-home"></i>&nbsp;&nbsp;<a href="../index.html">Home</a></p>
-
-			<p><i class="fa fa-file"></i>&nbsp;&nbsp;<a href="index.html">Portfolio</a></p>
-
-			<p><i class="fa fa-lock"></i>&nbsp;&nbsp;<a href="../privacy.html">Privacy</a></p>
+        <h4>Social Links</h4>
+        <div class="fly-out-social-icons">
+            <a href="https://www.github.com/ibat-web-dev" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
+            <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/ibatcollegedublin/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/IBATcollege" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    <!-- End mobile menu slide-out options -->
 		
-		</div><!-- /column -->
-
-		<div class="col-gutter">
-			<h4>ABOUT ME</h4>
-			<p>Hi, I'm Mary Smith. I'm a web designer and developer.</p>
-			<p>I created this website to showcase some of the projects I have created.</p>
-		</div><!-- /column -->
-
-		<div class="col-gutter">
-
-			<h4>CONTACT</h4>
-
-			<p><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:ibat.training@gmail.com">Email</a></p>
-
-			<p><i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
-
-			<p><i class="fa fa-linkedin"></i>&nbsp;&nbsp;<a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
-
-		</div><!-- /column -->
-
-	</div><!-- /flexgrid -->
+	<!-- Begin hero block -->
+	<div class="container-hero-block home-page">
+		<div class="slide-in-top">
+			<h1>IBAT Tours</h1>
+			<h2>Going further and faster</h2>
+		</div>
+	</div>
+	<!-- End hero block -->
 	
-</div> <!-- /footer -->
 
+	<!-- Begin single-column container -->
 
+		<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+        <div class="container-flexbox bg-pastel-green">
+            <div class="item-1">
+                <h2>I have been busy</h2>
+                <p>Below you can see a selection of my web design and development work.</p>
+                
+                <p>Have a project you'd like to discuss? <a href="contact/index-3.html" class="fancy-link">Let's make something great together!</a></p>
+            </div>
+        </div><!-- End parent flexbox container -->
+        
+        
+        <!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
+        <div class="container-flexbox">
+    
+            <div class="item-3">
+                <a href="smoothies/index.html"><img src="../assets/img/project-smoothie.jpg"  alt="Project: Smooth Smoothies"></a>
+                <h3><a href="smoothies/index.html" class="fancy-link">Smooth Smoothies</a></h3>
+                <p>Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>
+                <a href="smoothies/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>             
+            </div>
 
-<!-- Begin JavaScript code showing/hiding slide-out menu -->
-<script>
-	document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
+            <div class="item-3">
+                <a href="software/index.html"><img src="../assets/img/project-software.png"  alt="Project: Software Analytics"></a>
+                <h3><a href="software/index.html" class="fancy-link">Software Analytics</a></h3>
+                <p>Everything you need to know about your website traffic, without spying on visitors' personal information.</p>
+                <a href="software/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>           
+            </div>            
 
-	function toggleMobileMenu() {
-		//toggle hamburger icon
-		let elemIcon = document.querySelector('.item-icon');
-		elemIcon.classList.toggle("change");
+            <div class="item-3">
+                <a href="travel/index.html"><img src="../assets/img/project-travel.jpg"  alt="Project: Travel Agency"></a>
+                <h3><a href="travel/index.html" class="fancy-link">IBAT Tours</a></h3>
+                <p>Need a holiday? IBAT Tours provides happy holiday experiences at affordable prices.</p>
+                <a href="travel/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>               
+            </div>
+    
+            <div class="item-3">
+                <a href="web-agency/index.html"><img src="../assets/img/project-web-agency.png"  alt="Project: Web Agency"></a>
+                <h3><a href="web-agency/index.html" class="fancy-link">Web Agency</a></h3>
+                <p>Transforming great products and services into successful online brands and compelling digital  experiences.</p>
+                <a href="web-agency/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>             
+            </div>
+    
+            <div class="item-3">
+                <a href="hero/index.html"><img src="../assets/img/project-hero.jpg"  alt="Project: Hero Showcases"></a>
+                <h3><a href="hero/index.html" class="fancy-link">Hero Showcase</a></h3>
+                <p>Examples of responsive web page hero sections with various fonts, gradients, background images and animations.</p>
+                <a href="hero/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>               
+            </div>
+    
+            <div class="item-3">
+                <a href="how-to-set-up-a-website/index.html"><img src="../assets/img/project-setup.png"  alt="Porfolio: How-to-set-up-a-website"></a>
+                <h3><a href="how-to-set-up-a-website/index.html" class="fancy-link">Website Setup</a></h3>
+                <p>A short, introductory guide to IP addresses, web hosting, SSL certificates and domain names.</p>
+                <a href="how-to-set-up-a-website/index.html" class="button button-solid button-soft">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>           
+            </div>    
+    
+        </div><!-- End parent flexbox container -->
+
+    <!-- Begin HTML footer -->
+    
+	<div class="container-footer">
+
+        <h4>Mary Smith, web designer</h4>
+        <h5>Excellence in digital creation</h5>
+
+        <ul class="footer-links">
+            <li><a href="../index-3.html">Home</a></li>
+            <li><a href="index-3.html">Portfolio</a></li>
+            <li><a href="../contact/index-3.html">Contact</a></li>
+        </ul>
+        
+        <ul class="footer-icons">
+            <li>
+                <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/ibatcollegedublin/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+         </ul>                
+        
+        <a class="privacy-legal" href="../privacy-3.html">Privacy & Legal</a>
+    </div>
 	
-		//if mobile menu currently closed, open menu.
-		if (elemIcon.classList.contains('change')) {
-			document.querySelector(".container-menu-options-mobile").style.right = "0";
-		}
-		//if mobile menu currently open, close menu.
-		else {
-			document.querySelector(".container-menu-options-mobile").style.right = "-320px";
-		}
-	}
-</script>
-<!-- End JavaScript code showing/hiding slide-out menu -->
+	<!-- End HTML footer -->
 
+
+	<!-- Begin JavaScript code for desktop and mobile menus -->
+    <script>
+
+        // Code to detect click of option within fly-out menu
+        let specifiedElement = document.querySelector('.flyout-menu');
+        document.addEventListener('click', function(event) {
+            var isClickInside = specifiedElement.contains(event.target);
+            //If link is within current web page
+            if (isClickInside) {
+                //Get id of anchor
+                let anchor_id = window.location.hash;
+                //Add extra spacing above anchor
+                let elemAnchor = document.querySelector(anchor_id)
+                elemAnchor.classList.add('sticky-anchor');
+                //Close fly-out menu
+                toggleMobileMenu();
+            }
+            else {
+                return;
+            }
+        });
+
+	    // Code to show/hide fly-out mobile menu -->
+        document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
+        const pageContainer = document.querySelector('.page-container');
+   
+        function toggleMobileMenu() {
+            //toggle hamburger icon
+            const elemIcon = document.querySelector('.item-icon');
+            elemIcon.classList.toggle("change");
+            const elemHTML = document.querySelector('html');
+            const elemBody = document.querySelector('body');            
+            const elemFlyOut = document.querySelector('.flyout-menu');
+
+            //if fly-out menu is currently closed, open it.
+            if (elemIcon.classList.contains('change')) {
+                elemFlyOut.classList.remove('flyout-menu-is-closed');
+                elemFlyOut.classList.add('flyout-menu-is-open');
+                elemHTML.classList.add('no-scroll');
+                elemBody.classList.add('no-scroll');
+            }    
+            //if fly-out menu is currently open, close it.
+            else {
+                elemFlyOut.classList.remove('flyout-menu-is-open');
+                elemFlyOut.classList.add('flyout-menu-is-closed');
+                elemHTML.classList.remove('no-scroll');
+                elemBody.classList.remove('no-scroll');                                
+            }
+        }
+
+	// Code for menus with transparent background
+    window.onscroll = function() {swapMenuStyle()};
+		const headerDesktop = document.querySelector('.container-menu-desktop');
+		const headerMobile = document.querySelector('.container-menu-bar-mobile');
+
+		const stickyDesktop = headerDesktop.offsetTop +300;
+		const stickyMobile = headerDesktop.offsetTop  +300;
+
+		function swapMenuStyle() {
+			if (window.pageYOffset > stickyDesktop) {
+				headerDesktop.classList.add("menu-light","menu-drop-shadow");
+				headerDesktop.classList.remove("menu-transparent");
+				headerMobile.classList.add("menu-light","menu-drop-shadow");
+				headerMobile.classList.remove("menu-transparent");
+
+			} else {
+				headerDesktop.classList.add("menu-transparent");
+				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
+				headerMobile.classList.add("menu-transparent");
+				headerMobile.classList.remove("menu-light","menu-drop-shadow");
+			}
+		}
+
+	</script>
+	<!-- End JavaScript code for desktop and mobile menus -->
+
+
+    <!-- JavaScript for Cookie Consent Popup Message -->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
 	window.cookieconsent.initialise({
-	  "palette": {
-		"popup": {
-		  "background": "#000"
+	  	"palette": {
+			"popup": {
+				"background": "#000"
+			},
+			"button": {
+				"background": "#f1d600"
+			}
 		},
-		"button": {
-		  "background": "#f1d600"
+	  	"content": {
+			"href": "https://ibat-web-dev.github.io/privacy.html"
 		}
-	  },
-	  "content": {
-		"href": "https://www.munnelly.com/legal/"
-	  }
 	});
-	</script>
-
-
+    </script>
+    
 </body>
 </html>
