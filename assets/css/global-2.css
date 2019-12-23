@@ -384,6 +384,7 @@ a[href^=tel] { text-decoration: none; color: #2b189b }
         max-width: 380px;
         height: auto;
         margin: 0 auto;
+    
     }
     .container-flexbox.container-hero-block-two-columns .item-2 h1 {
         color:#0c2461;
