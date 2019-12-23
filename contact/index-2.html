@@ -8,10 +8,26 @@
 	<title>Contact | Mary Smith Web Designer</title>
 	<meta name="description" content="Helping businesses of every size and type get the most from digital platforms.">
 	
-	<link href="../assets/css/global-1.css" rel="stylesheet">
+	<link href="../assets/css/global-2.css" rel="stylesheet">
 
+    <style>
+        /* Desktops  */
+        @media all and (min-width: 768px) {
+            .container-flexbox.container-hero-block-two-columns { 
+                background-image: linear-gradient(to right,#fad390, #f6b93b);
+            }  
+        }
+      
+        /* Mobiles  */
+        @media all and (max-width: 767px) {
+            .container-flexbox.container-hero-block-two-columns { 
+                background-image: linear-gradient(#fad390, #f6b93b);
+            }
+        }
+    </style>
+    
     <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet"> 
 
 	<!-- Link to icons for Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -31,17 +47,17 @@
 </head>
 
 
-<body class="bg-pastel-grey">
+<body class="bg-pastel-pink">
 
      <!-- Begin desktop menu -->
     <div class="container-menu-desktop menu-light menu-sticky">
         <!-- first child item -->
-        <a href="index-1.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
+        <a href="../index-2.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
         <!-- second child item -->
         <ul>
-            <li><a href="../index-1.html">Home</a></li>
-            <li><a href="../portfolio/index-1.html">Portfolio</a></li>
-            <li><a href="../contact/index-1.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="../index-2.html">Home</a></li>
+            <li><a href="../portfolio/index-2.html">Portfolio</a></li>
+            <li><a href="../contact/index-2.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
         </ul>
     </div>
     <!-- End desktop menu -->
@@ -50,7 +66,7 @@
     <!-- Begin mobile menu bar -->
     <div class="container-menu-bar-mobile menu-light menu-sticky">
             <!-- first child -->
-            <a href="../index-1.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
+            <a href="../index-2.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
             <!-- second child -->
             <div class="item-icon">
                 <div class="bar1"></div>
@@ -63,9 +79,9 @@
     <!-- Begin mobile menu slide-out options -->
     <div class="flyout-menu flyout-menu-is-closed menu-light">
         <ul>
-            <li><a href="../index-1.html">Home</a></li>
-            <li><a href="../portfolio/index-1.html">Portfolio</a></li>
-            <li><a href="../contact/index-1.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="../index-2.html">Home</a></li>
+            <li><a href="../portfolio/index-2.html">Portfolio</a></li>
+            <li><a href="../contact/index-2.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
         </ul>
 
         <hr>
@@ -96,23 +112,26 @@
     </div>
     <!-- End mobile menu slide-out options -->
 
-    <!-- Begin hero block -->
-    <div class="container-flexbox container-hero-block-two-columns unhide-content-under-sticky-menu">
+     <!-- Begin hero block -->
+     <div class="container-flexbox container-hero-block-two-columns unhide-content-under-sticky-menu">
         <div class="item-2 slide-in-left">
-            <h1>Realise your digital potential</h1>
-            <h2>Helping <b>businesses</b> of every size and type get the most from <b>digital platforms</b>.</h2>
+            <h2>Websites ...</h2>
+            <h1>Planning.<br>
+            Launch.<br>
+            Upgrades.</h1>
+           <a href="../contact/index-2.html" class="button button-solid button-round">Hire me &nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="item-2">
-            <img src="../assets/img/hero-undraw-portfolio.png" alt="hero image">
+            <img src="../assets/img/hero-planning.png" alt="hero image">
         </div>
     </div>
     <!-- End hero block -->
 
     <!-- Begin container for contact form -->
         
-    <div class="container-contact-form">
+    <div class="container-contact-form bg-pastel-pink">
         <h3>Get in touch</h3>
-        <p>Use the form below to let me know a little more about your objectives and I'll get back to you.</p>
+        <p>Have a project you'd like to discuss? Let's make something great together!</p>
         
         <!-- Contact form starts here -->
         <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/myname@gmail.com">
@@ -159,9 +178,9 @@
         <h5>Excellence in digital creation</h5>
 
         <ul class="footer-links">
-            <li><a href="../index-1.html">Home</a></li>
-            <li><a href="../portfolio/index-1.html">Portfolio</a></li>
-            <li><a href="../contact/index-1.html">Contact</a></li>
+            <li><a href="../index-2.html">Home</a></li>
+            <li><a href="../portfolio/index-2.html">Portfolio</a></li>
+            <li><a href="../contact/index-2.html">Contact</a></li>
         </ul>
         
         <ul class="footer-icons">
@@ -254,7 +273,7 @@
         }
 
 		// Code for menus with transparent background
-		// window.onscroll = function() {swapMenuStyle()};
+		window.onscroll = function() {swapMenuStyle()};
 		const headerDesktop = document.querySelector('.container-menu-desktop');
 		const headerMobile = document.querySelector('.container-menu-bar-mobile');
 
@@ -263,16 +282,9 @@
 
 		function swapMenuStyle() {
 			if (window.pageYOffset > stickyDesktop) {
-				headerDesktop.classList.add("menu-light","menu-drop-shadow");
-				headerDesktop.classList.remove("menu-transparent");
-				headerMobile.classList.add("menu-light","menu-drop-shadow");
-				headerMobile.classList.remove("menu-transparent");
-
+				headerDesktop.classList.add("menu-drop-shadow");
 			} else {
-				headerDesktop.classList.add("menu-transparent");
-				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
-				headerMobile.classList.add("menu-transparent");
-				headerMobile.classList.remove("menu-light","menu-drop-shadow");
+				headerDesktop.classList.remove("menu-drop-shadow");
 			}
 		}
 
