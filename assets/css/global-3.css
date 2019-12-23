@@ -282,25 +282,25 @@ p, li { color: #fff; font-family:'Open Sans', serif }
 }
 
 /* on mobiles only */
-.menu-light.flyout-menu hr { background-color: #ff5000; border-color: #ff5000 } 
+.menu-light.flyout-menu hr { background-color: #0f2456; border-color:#0f2456 } 
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
 .menu-light.flyout-menu h5 a, 
-.menu-light.flyout-menu p { color: #ff5000 } 
+.menu-light.flyout-menu p { color:#0f2456 } 
 
 /* colour of hamburger icon bars */
 .menu-light .item-icon .bar1, 
 .menu-light .item-icon .bar2, 
-.menu-light .item-icon .bar3 { background-color: #ff5000 }	
+.menu-light .item-icon .bar3 { background-color:#0f2456 }	
 
 /* phone number link */
-a[href^=tel] { text-decoration: none; color: #ff5000 }
+a[href^=tel] { text-decoration: none; color:#0f2456 }
 
 /* email link */
 .menu-light.flyout-menu h5 a:link, 
 .menu-light.flyout-menu h5 a:visited {
-    border-bottom-color:#ff5000;
+    border-bottom-color: #0f2456;
 }
 
 .menu-light.flyout-menu h5 a:hover, 
@@ -309,10 +309,10 @@ a[href^=tel] { text-decoration: none; color: #ff5000 }
 }
 
 /* profile image border colour */
-.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #ff5000 }
+.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color:#0f2456 }
 
 /* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color:#ff5000 }
+.menu-light.flyout-menu .fly-out-social-icons a i { color: #0f2456 }
 
 /* === End light background menu === */
 
@@ -368,11 +368,11 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-transparent.flyout-menu h5 a:hover, 
 .menu-transparent.flyout-menu h5 a:active {
-    border-bottom-color: #ff5000;
+    border-bottom-color:#0f2456;
 }
 
 /* profile image border colour */
-.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #ff5000 }
+.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #0f2456 }
 
 /* contact icons */
 .menu-transparent.flyout-menu .fly-out-social-icons a i { color:#fff }
