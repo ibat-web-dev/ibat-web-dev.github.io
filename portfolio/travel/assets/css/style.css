@@ -3,170 +3,437 @@
 body, html { height: 100% }
 body { max-width: 1600px; font-family: sans-serif }
 img { width: 100%; height: auto; display: block }
-* { margin:0; padding:0; box-sizing: border-box }
 
+body { background-color: #eff8f5 }
 
-/* ===================== DESKTOP MENU =============================== */
+/* Begin menu styles */
 
-/* Mobiles - Hide desktp menu */
+/* === ALL SCREEN SIZES ====== */
+
+/* Positions all menus in front of page content */
+.container-menu-desktop, 
+.container-menu-bar-mobile, 
+.flyout-menu { z-index: 999 }
+.container-menu-desktop, .container-menu-bar-mobile { width:100% }
+
+/* on mobiles - hide desktop menu */
 @media all and (max-width:767px) { 
+    .container-menu-desktop.menu-transparent,
     .container-menu-desktop.menu-light,
-	.container-menu-desktop.menu-dark { 
-        display: none
-   }
+    .container-menu-desktop.menu-dark { display: none }
 }
 
-/* Outer parent desktop menu flexbox container */
-.container-menu-desktop { 
-	display: flex;
-	justify-content: space-between;
-    padding: 1.5% 8% 1% 8%;
-    /* box-shadow: 0px 1px 10px #888 */
-    /* margin-bottom: 60px; */
+/* on desktops - hide mobile menu bar and list of menu options */
+@media all and (min-width:768px) { 
+    .container-menu-bar-mobile.menu-transparent,
+    .container-menu-bar-mobile.menu-light,
+    .container-menu-bar-mobile.menu-dark,
+    .flyout-menu.menu-transparent,
+    .flyout-menu.menu-light,
+    .flyout-menu.menu-light { display: none }
 }
 
-.container-menu-desktop img { 
-    display: inline;
-    width: auto
-}
+/* sticks menu to top of desktop and/or mobile screen */
+.menu-sticky { position: fixed; top: 0; left: 0; right: 0; }
 
-.container-menu-desktop ul, 
-.container-menu-desktop li {
+/* Height of desktop menu and mobile menu bar */
+.container-menu-desktop, .container-menu-bar-mobile { height:72px }
+
+/* website logo fixed size in desktop menu and mobile menu bar  */
+.container-menu-desktop    a:first-child img,
+.container-menu-bar-mobile a:first-child img { width: 200px; height: 40px }
+
+/* website logo vertically cente#ff5000 in desktop menu and mobile menu bar  */
+.container-menu-desktop    a:first-child,
+.container-menu-bar-mobile a:first-child { display: flex; flex-direction: row; align-items: center }
+
+/* hide bullet character on listed links */
+.container-menu-desktop ul li,
+.flyout-menu            ul li { list-style-type: none }
+
+/* hide link underlines on desktop and mobile menus */
+.container-menu-desktop ul li a,
+.flyout-menu            ul li a { text-decoration: none }
+
+/* style cta button on desktop and mobile menus */
+.container-menu-desktop ul li a.btn-cta,
+.flyout-menu            ul li a.btn-cta {
     display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: bold;
+    /* soften corners */
+    /* border-radius: 4px; */
+    /* rounded corners */
+    border-radius: 100px
 }
 
+/* style icon in cta button on desktop and mobile menus */
+.container-menu-desktop ul li a.btn-cta i,
+.flyout-menu            ul li a.btn-cta i { margin-right: 8px; font-size: 90% }
+
+/* make desktop menu options bold */
+.container-menu-desktop ul li a { font-weight:bold }
+
+/* on mobiles, prevent scrolling outside flyout menu */
+.no-scroll { overflow: hidden }
+
+.menu-drop-shadow { box-shadow: 0 1px 10px #888 }
+
+/* ======= DESKTOP MENU ======= */
+
+/* outer parent flexbox container 
+   home page link (with website logo) at left and ul links at right are its two children */
+.container-menu-desktop {
+	display: flex;
+    justify-content: space-between;
+    padding: 0 6% 0 6%;
+    width: 100%;
+}
+
+/* menu links and cta button aligned horizontally */
 .container-menu-desktop ul li {
-    list-style-type: none;
-    margin-right: 40px
+    display: inline-block;
+    margin: 0 40px 0 0; /* spacing at right of menu links, cta button */
 }
 
 .container-menu-desktop ul li:last-child {
-    margin-right: 0
+    margin-right: 0 /* no spacing at right of last menu link or cta button */
 }
 
+/* vertically center menu links and cta button */
+.container-menu-desktop ul { display: flex; align-items: center }
+
+/* style text for links and cta button  */
 .container-menu-desktop ul li a {
-    text-decoration: none;
-    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+    font-size: calc(15px + (19 - 15) * ((100vw - 320px)/(1600 - 320)));
     /* font-weight:bold */
     /* text-transform: uppercase */
 }
 
-.container-menu-desktop ul li a.btn-cta {
-    padding: 8px 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 100px
-}
+/* cta button padding */
+.container-menu-desktop ul li a.btn-cta { padding: 6px 20px }
 
 
-/*===================== MOBILE LOGO WITH SLIDE-OUT NAVIGATION MENU  ======================= */
+/* ======= MOBILE MENU  ======== */
 
-/* Hide on desktops  */
-@media all and (min-width:768px) { 
-    .container-menu-bar-mobile.menu-light,
-    .container-menu-bar-mobile.menu-dark, 
-    .container-menu-options-mobile.menu-light,
-    .container-menu-options-mobile.menu-dark {
-		display: none;
-	}
-}
-
+/* outer flexbox container for mobile menu bar 
+   home page link (with website logo) at left and hamburger icon at right are its two children */
 .container-menu-bar-mobile {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
     width: 100%;
-    /* box-shadow: 0px 1px 10px #888 */
-    /*	margin-bottom: 40px; */
+    padding: 0 6% 0 6%;
 }
 
-/* Logo */
-.container-menu-bar-mobile .item-logo img { 
-	display: block; 
-	margin-left: 10px;
-	margin-top: 9px;
-	margin-bottom: 9px 
-}
-
-/* Hamburger icon */
-.container-menu-bar-mobile .item-icon {
-	text-align: right;
-	margin-right: 16px;
-	display: inline-block;
-	cursor: pointer;
-}
-
+/* three bars hozizontal in hamburger icon */
 .container-menu-bar-mobile .item-icon .bar1, 
 .container-menu-bar-mobile .item-icon .bar2, 
-.container-menu-bar-mobile .item-icon .bar3 {
-	width: 36px;
-	height: 4px;
-	margin: 7px 0;
-	transition: 0.4s;
-}
+.container-menu-bar-mobile .item-icon .bar3 { width: 36px; height: 4px; margin: 7px 0; transition: 0.4s }
 
-/* Hamburger icon chnages shape */
-.change .bar1 {
-	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-	transform: rotate(-45deg) translate(-9px, 6px);
-}
-
+/* hamburger icon changes shape to 'X' when fly-out menu is visible */
+.change .bar1 { transform: rotate(-45deg) translate(-9px, 6px) }
 .change .bar2 { opacity: 0 }
-.change .bar3 {
-	-webkit-transform: rotate(45deg) translate(-8px, -8px);
-	transform: rotate(45deg) translate(-8px, -8px);
+.change .bar3 { transform: rotate(45deg) translate(-8px, -8px) }
+
+/* container div for flyout menu content */
+.flyout-menu { 
+    position: fixed; display: block; 
+    top: 72px; /* same height as menu bar */
+    width: 320px; 
+    max-height: 100%;
+    height: 100%;
+    padding: 30px 40px 40px 40px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch; /* safari on mobiles */    
 }
 
-/* Mobile menu options */
-.container-menu-options-mobile { 
-	position: fixed; 
-	display: block; 
-	top: 60px;
-	height: 100%; 
-	width: 320px;
-	right: -320px;
-	padding-top: 30px;
-	transition: 0.5s;
+.flyout-menu.flyout-menu-is-closed {
+    right: -320px; /* hides flyout menu */
 }
 
-.container-menu-options-mobile ul li { 
-	list-style-type: none;
-    margin-left: 40px;
-	margin-bottom: 30px;
-	display: block;
-	line-height: 1
+.flyout-menu.flyout-menu-is-open {
+    right: 0; /* displays flyout menu */
+    overscroll-behavior: contain;
+    overscroll-behavior-y: contain
 }
 
+/* list of links on flyout menu */
+.flyout-menu ul li { margin: 0 40px 30px 0 }
 
-/*== Dark background menu == */
-.menu-dark { background-color: #ff5000 }
+/* style flyout menu links */
+.flyout-menu ul li a {
+    font-size: 18px;
+    /* font-weight:bold */
+    /* text-transform: uppercase */
+}
+
+/* cta button */
+.flyout-menu a.btn-cta {
+    display: inline-block;
+    padding: 10px 24px;
+}
+
+.flyout-menu hr { 
+    height: 4px;
+    margin: 32px 0 0 0;
+    border-style: solid;
+    border-width: 1px 
+} 
+
+.flyout-menu h4 {
+    font-size: 20px;
+    margin: 42px 0 4px 0;
+    text-align: center;
+    /* letter-spacing: 2px; *./
+    /* text-transform: uppercase */
+}
+
+.flyout-menu h5 {
+    font-size: 17px;
+    margin: 20px 0 20px 0;
+    text-align: center
+}
+
+.flyout-menu h5 a {
+    font-size: 17px;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px
+}
+
+.flyout-menu p { 
+    text-align: center; font-size: 15px; line-height: 1.4;
+}
+
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box,
+.flyout-menu.flyout-menu-is-open div.fly-out-social-icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img,
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box p { width: 47% }
+
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img {
+    display: block; border-radius: 100%;
+    width: 104px; height: 104px; 
+    border-style: solid;
+    border-width: 2px
+}
+
+.flyout-menu.flyout-menu-is-open div.fly-out-profile-box p {
+    text-align:left 
+}
+
+.flyout-menu.flyout-menu-is-open div.fly-out-social-icons { 
+    margin-top:12px
+}
+
+.flyout-menu.flyout-menu-is-open div.fly-out-social-icons a {
+    font-size: 26px;
+    text-align: center 
+}
+
+/* ========= Light background menu - desktops and mobiles ========= */
+
+/* background colour */
+.menu-light { 
+	background-color: #fff;
+	transition: all .5s ease-in-out;
+}
+
+/* drop shadow border at left of fly-out menu */
+.flyout-menu.flyout-menu-is-open {
+    box-shadow: 0px 1px 10px #888 
+}
+
+/* menu links */
+.menu-light ul li a:link,  .menu-light ul li a:visited { color: #ff5000 }
+.menu-light ul li a:hover, .menu-light ul li a:active  { color: #222 }
+
+/* cta button */
+.menu-light ul li a.btn-cta:link, 
+.menu-light ul li a.btn-cta:visited {
+    background-color: transparent;
+    color: #ff5000;
+    border-color:#ff5000
+}
+
+.menu-light ul li a.btn-cta:hover,
+.menu-light ul li a.btn-cta:active {
+    background-color: #ff5000;
+    color: #fff;
+    border-color:#ff5000
+}
+
+/* on mobiles only */
+.menu-light.flyout-menu hr { background-color: #ff5000; border-color: #ff5000 } 
+
+.menu-light.flyout-menu h4,
+.menu-light.flyout-menu h5,
+.menu-light.flyout-menu h5 a, 
+.menu-light.flyout-menu p { color: #ff5000 } 
+
+/* colour of hamburger icon bars */
+.menu-light .item-icon .bar1, 
+.menu-light .item-icon .bar2, 
+.menu-light .item-icon .bar3 { background-color: #ff5000 }	
+
+/* phone number link */
+a[href^=tel] { text-decoration: none; color: #ff5000 }
+
+/* email link */
+.menu-light.flyout-menu h5 a:link, 
+.menu-light.flyout-menu h5 a:visited {
+    border-bottom-color:#ff5000;
+}
+
+.menu-light.flyout-menu h5 a:hover, 
+.menu-light.flyout-menu h5 a:active {
+    border-bottom-color: #fff;
+}
+
+/* profile image border colour */
+.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #ff5000 }
+
+/* contact icons */
+.menu-light.flyout-menu .fly-out-social-icons a i { color:#ff5000 }
+
+/* === End light background menu === */
+
+/* ======= Dark background menu - desktops and mobiles ======= */
+
+/* background colour */
+.menu-dark { 
+	background-color: #ff5000; 
+	transition: all .5s ease-in-out
+}
+
+/* menu links */
+.menu-dark ul li a:link,  .menu-dark ul li a:visited { color: #fff }
+.menu-dark ul li a:hover, .menu-dark ul li a:active  { color: #b8b8b8 }
+
+/* cta button */
+.menu-dark ul li a.btn-cta:link,
+.menu-dark ul li a.btn-cta:visited { 
+    background-color: #ff5000;
+    color: #fff;
+    border-color:#fff
+}
+
+.menu-dark ul li a.btn-cta:hover,
+.menu-dark ul li a.btn-cta:active { 
+    background-color: #fff;
+    color: #ff5000;
+    border-color:#fff
+}
+
+/* on mobiles only - various content */
+.menu-dark.flyout-menu hr { background-color: #fff; border-color:#fff } 
+
+.menu-dark.flyout-menu h4,
+.menu-dark.flyout-menu h5,
+.menu-dark.flyout-menu h5 a,
+.menu-dark.flyout-menu p { color:#fff } 
+
+/* colour of hamburger icon bars */
 .menu-dark .item-icon .bar1, 
 .menu-dark .item-icon .bar2, 
-.menu-dark .item-icon .bar3 {
-	background-color: #fff;
+.menu-dark .item-icon .bar3 { background-color: #fff }
+
+/* phone number link */
+a[href^=tel] { text-decoration: none; color: #fff }
+
+/* email link */
+.menu-dark.flyout-menu h5 a:link, 
+.menu-dark.flyout-menu h5 a:visited {
+    border-bottom-color: #fff;
 }
 
-.menu-dark li a { color: #fff }
-.menu-dark li a.btn-cta { 
-	background-color: #fff; border-color: #fff; color:#500294;
+.menu-dark.flyout-menu h5 a:hover, 
+.menu-dark.flyout-menu h5 a:active {
+    border-bottom-color: #ff5000;
 }
 
-.menu-dark li a.btn-cta:hover, 
-.menu-dark li a.btn-cta:active { 
-	background-color: #500294; color:#fff;
+/* profile image border colour */
+.menu-dark.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #ff5000 }
+
+/* contact icons */
+.menu-dark.flyout-menu .fly-out-social-icons a i { color:#fff }
+
+/* === End dark background menu === */
+
+
+
+/* ======== Transparent background menu - desktops and mobiles =========== */
+
+/* background colour */
+.menu-transparent { 
+	background-color: transparent;
+	transition: all .5s ease-in-out;
 }
 
-/*== Light menu == */
-	.menu-light { background-color: #fff; }
-	.menu-light .item-icon .bar1, 
-	.menu-light .item-icon .bar2, 
-	.menu-light .item-icon .bar3 {
-		background-color: red;
-	
+/* menu links */
+.menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: #fff }
+.menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: #b8b8b8 }
+
+/* cta button */
+.menu-transparent ul li a.btn-cta:link,
+.menu-transparent ul li a.btn-cta:visited { 
+    background-color: #ff5000;
+    color: #fff;
+    border-color:#ff5000;
 }
 
+.menu-transparent ul li a.btn-cta:hover,
+.menu-transparent ul li a.btn-cta:active { 
+    background-color: #fff;
+    color: #ff5000;
+    border-color:#ff5000
+}
 
+/* on mobiles only - various content */
+.menu-transparent.flyout-menu hr { background-color: #fff; border-color:#fff } 
+
+.menu-transparent.flyout-menu h4,
+.menu-transparent.flyout-menu h5,
+.menu-transparent.flyout-menu h5 a,
+.menu-transparent.flyout-menu p { color:#fff } 
+
+/* colour of hamburger icon bars */
+.menu-transparent .item-icon .bar1, 
+.menu-transparent .item-icon .bar2, 
+.menu-transparent .item-icon .bar3 { background-color: #fff }
+
+/* phone number link */
+a[href^=tel] { text-decoration: none; color: #fff }
+
+/* email link */
+.menu-transparent.flyout-menu h5 a:link, 
+.menu-transparent.flyout-menu h5 a:visited {
+    border-bottom-color: #fff;
+}
+
+.menu-transparent.flyout-menu h5 a:hover, 
+.menu-transparent.flyout-menu h5 a:active {
+    border-bottom-color: #ff5000;
+}
+
+/* profile image border colour */
+.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #ff5000 }
+
+/* contact icons */
+.menu-transparent.flyout-menu .fly-out-social-icons a i { color:#fff }
+
+/* === End transparent background menu === */
 
 /* === HERO BLOCK === */
 
@@ -181,15 +448,19 @@ img { width: 100%; height: auto; display: block }
 }
 
 .container-hero-block.home-page {
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/hero-home.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('../img/hero-home.jpg');
 }
 
 .container-hero-block.destinations-page {
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/hero-destinations.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('../img/hero-destinations.jpg');
 }
 
 .container-hero-block.about-us-page {
-	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/hero-about-us.jpg')
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url('../img/hero-about-us.jpg')
+}
+
+.container-hero-block.contact-us-page {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url('../img/hero-contact-us.jpg')
 }
 
 .container-hero-block h1, .container-hero-block h2 {
@@ -217,16 +488,16 @@ img { width: 100%; height: auto; display: block }
 	.container-hero-block h1, .container-hero-block h2 { 
 		width: 60%; 
 	}
-	.container-hero-block h1 { margin-bottom: 3% }
+	.container-hero-block h1 {margin-top: 3%;  margin-bottom: 3% }
 }
 
 /* Mobiles - block height, text width and h1 bottom margin */
 @media all and (max-width:767px) { 
-	.container-hero-block { height: 360px }
+	.container-hero-block { height: 500px }
 	.container-hero-block h1, .container-hero-block h2  { 
 		width: 90%; 
 	}
-	.container-hero-block h1 { margin-bottom: 5% }
+	.container-hero-block h1 { margin-top: 18%; margin-bottom: 5% }
 }
 
 
@@ -240,7 +511,9 @@ img { width: 100%; height: auto; display: block }
 
 /* Desktop - inside padding  */
 @media all and (min-width:768px) {
-	.container-flexbox { padding: 2% 10% 1% 10% }
+	.container-flexbox { padding: 2% 10% 2% 10% }
+	.container-flexbox.no-padding-bottom { padding: 2% 10% 0 10% }
+	.container-flexbox.no-padding-top    { padding: 0 10% 0 10% }
 }
 
 /* Mobiles - inside padding */
@@ -249,9 +522,7 @@ img { width: 100%; height: auto; display: block }
 }
 
 /* Background colors */
-.container-flexbox.bg-orange { background-color: #ff5000 /* #e45724 */ }
-.container-flexbox.bg-light  { background-color: #eff8f5 /* #f0f0f0 */ }
-
+.container-flexbox.bg-orange { background-color: #ff5000  }
 
 
 /* ====== INNER FLEXBOX COLUMN: 1 COLUMN EVERY SCREEN ======= */
@@ -288,7 +559,7 @@ img { width: 100%; height: auto; display: block }
 /* Mobiles - 2 columns */
 @media all and (max-width:767px) { 
 	.container-flexbox .item-4-2 { width: 47% }
-	.container-flexbox .item-4-2 { margin-bottom: 14% }
+	.container-flexbox .item-4-2 { margin-bottom: 10% }
 }
 
 /* =======INNER FLEXBOX COLUMNS: 3 COLUMNS ON DESKTOPS, 2 COLUMNS ON MOBILES ===== */
@@ -329,7 +600,7 @@ img { width: 100%; height: auto; display: block }
 .container-flexbox .item-1 h2 { 
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700; 
-	color: #ff5000;
+	color: #044d6c;
 	line-height: 1.2;
 	margin-bottom: 12px;
 	letter-spacing: 2px;
@@ -340,7 +611,7 @@ img { width: 100%; height: auto; display: block }
 .container-flexbox .item-1 p { 
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400; 
-	color: #222;
+	color: #044d6c;
 	line-height: 1.6;
 	letter-spacing: 1px;
 	text-align: center;
@@ -365,16 +636,16 @@ img { width: 100%; height: auto; display: block }
 
 .container-flexbox .item-1 p a:hover,
 .container-flexbox .item-1 p a:active { 
-	border-bottom-color: #fff;
+	border-bottom-color: transparent;
 }
 
 
-/* Three and four column */
+/* Three and four columns */
 .container-flexbox .item-3 h3,
 .container-flexbox .item-4-2 h3 { 
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700; 
-	color: #d1274b;
+	color: #ff5000;;
 	line-height: 1.2;
 	margin-bottom: 2px;
 	letter-spacing: 2px;
@@ -396,6 +667,10 @@ img { width: 100%; height: auto; display: block }
 	border-radius: 5px;
 }
 
+.container-flexbox.happy-users {
+	background-color: #fff
+}
+
 .container-flexbox.happy-users .item-3-2 p {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 500;
@@ -406,11 +681,6 @@ img { width: 100%; height: auto; display: block }
 .container-flexbox.bg-orange h2,
 .container-flexbox.bg-orange h3,
 .container-flexbox.bg-orange p { color: #fff }
-
-.container-flexbox.bg-light h2,
-.container-flexbox.bg-light h3,  
-.container-flexbox.bg-light p  { color: #044d6c }
-
 
 /* ----------------------------------------------
  * Generated by Animista on 2019-3-20 10:33:40
@@ -442,35 +712,165 @@ img { width: 100%; height: auto; display: block }
     opacity: 1;
   }
 }
+/* =============== BEGIN CONTACT FORM CSS ============= */
+
+/* == Contact form container == */
+
+/* All screens */
+.container-contact-form { text-align: center; background-color: #fff; border: solid 1px gray }
+
+/* Desktop */
+@media all and (min-width:1024px) { 
+	.container-contact-form {
+		margin: 0 23% 8% 23%;
+		padding: 2% 4% 1% 4%
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:1023px) { 
+	.container-contact-form { 
+		margin: 2% 8% 16% 8%;
+		padding: 7% 8% 8% 8%;
+	}
+}
+
+/* == Contact form heading and text == */
+
+/* Heading */
+.container-contact-form h3 { 
+	font-weight: bold; 
+	color: #000;
+	line-height: 1.2;
+	margin-bottom: 3%;
+	font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+/* Text */
+.container-contact-form p { 
+    font-weight: normal;
+    color: #000; 
+	line-height: 1.5;
+	margin-bottom: 7%;
+	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
+}
 
 
-/* ============ FOOTER STYLES ================= */
+/* == Contact form fields == */
 
-/* Outer parent container */
+#contact-form .flex-row { display: flex; justify-content: space-between }
+
+/* Desktop */
+@media all and (min-width: 1024px) {
+	#contact-form .flex-row { flex-direction: row; text-align: left; margin-bottom: 6% }
+	#contact-form .flex-row .item-name,
+	#contact-form .flex-row .item-email { width: 47% }
+	#contact-form .flex-row .item-textarea { width: 64% }
+	#contact-form .flex-row .item-btn { width: 30%; align-self: flex-end }
+}
+
+/* Mobiles */
+@media all and (max-width: 1023px) {
+	#contact-form .flex-row { flex-direction: column; text-align: center; }
+}
+
+#contact-form label, #contact-form input, #contact-form textarea {
+	font-family: sans-serif;
+	color: #000;
+	display: block;
+}
+
+#contact-form label {
+	font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320))); 
+	font-weight: bold;
+	margin-bottom: 8px;
+	display: flex;
+	align-items: baseline;
+}
+
+#contact-form [type="text"], 
+#contact-form [type="email"],
+#contact-form textarea { width: 100% }
+#contact-form ::placeholder { font-size: 94% }
+
+/* Mobiles */
+@media all and (max-width: 1023px) { 
+	#contact-form [type="text"], 
+	#contact-form [type="email"],
+	#contact-form textarea { margin-bottom: 20px }
+}
+
+#contact-form input, #contact-form textarea {
+	padding: 10px 12px;
+	border: 2px solid gray;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+	background-color: #fff;
+}
+
+#contact-form.flex-row .item-btn { width: 26% }
+
+#contact-form #btn-submit { 
+	float: right; 
+	color: #fff;
+	border: none; 
+	background-color: #ff5000;
+	font-weight: bold;
+	padding: 12px 22px;
+	font-size: 96%;
+	border-radius: 5px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px */
+}
+
+#contact-form #btn-submit:hover, 
+#contact-form #btn-submit:active { 
+	background-color: darkblue;
+}
+
+#contact-form #btn-submit i.fas {
+	margin-left: 9px;
+	font-size: 104%
+}
+
+/* =============== END CONTACT FORM CSS ============= */
+
+/* == Begin footer CSS == */
+
+/* Outer footer parent container */
 .container-footer { 
 	display: flex;
 	justify-content: space-between;
-   flex-wrap: wrap;
-   background:#2c3e50
+	flex-wrap: wrap;
+	background-color:#044d6c
 }
 
-/* Desktop - inside padding  */
+/* Desktop footer - inside padding  */
 @media all and (min-width:768px) {
-	.container-footer { padding: 3% 8% 5% 8% }
+	.container-footer { padding: 3% 8% 3% 8% }
 }
 
-/* Mobiles - inside padding */
+/* Mobiles footer - inside padding */
 @media all and (max-width:767px) {
 	.container-footer { padding: 12% 8% 1% 8% }
 }
 
-/* Inner columns */
+/* Inner footer columns */
 
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
    .container-footer .item-3:nth-child(1) { width: 20% }
-   .container-footer .item-3:nth-child(2) { width: 50% }
-   .container-footer .item-3:nth-child(3) { width: 20% }
+   .container-footer .item-3:nth-child(2) { 
+      width: 50%;
+      /* text-align: center */
+   }
+   .container-footer .item-3:nth-child(3) { 
+      width: 20%;
+   }
 }
 
 /* Mobiles - 1 column */
@@ -484,7 +884,7 @@ img { width: 100%; height: auto; display: block }
    .container-footer .item-3:nth-child(3) { order: 3 } 
 }
 
-/* Styles for background, text and links */
+/* Styles for footer background, text, icons and links */
 
 .container-footer .item-3 h4,
 .container-footer .item-3 p,
@@ -495,14 +895,16 @@ img { width: 100%; height: auto; display: block }
 
 .container-footer .item-3 h4 {
    font-weight: bold;
+   /* text-transform: uppercase */
    margin-bottom: 12px;
-   font-size: calc(18px + (20 - 18) * ((100vw - 320px)/(1600 - 320)));
+   font-size: calc(17px + (19 - 17) * ((100vw - 320px)/(1600 - 320)));
 }
 
 .container-footer .item-3 p {
    font-weight: normal;
    margin-bottom: 12px;
    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+   line-height: 1.6
 }
 
 .container-footer .item-3 i { 
@@ -524,5 +926,8 @@ img { width: 100%; height: auto; display: block }
 .container-footer .item-3 p a:hover, 
 .container-footer .item-3 p a:active  {
    border-bottom-color: #fff
-
 }
+
+/* == End footer CSS == */
+
+
