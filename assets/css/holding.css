@@ -103,7 +103,7 @@ a.button:hover, a.button:active {
     line-height: 1;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px */
+    letter-spacing: 1px 
 }
  
 a.button-solid:link, .button-solid:visited {
@@ -118,18 +118,7 @@ a.button-solid:hover, .button-solid:active {
     color: #222
 }
  
-a.button-ghost:link, a.button-ghost:visited {
-    border-color: red;
-    background-color: transparent;
-    color: red
-} 
- 
-a.button-ghost:hover, .button-ghost:active {
-    border-color: red;
-    background-color: red;
-    color: #fff
-}
- 
+
 a.button-soft { border-radius: 5px }
 a.button-round { border-radius: 25px }
 
