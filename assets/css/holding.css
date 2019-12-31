@@ -122,6 +122,7 @@ a.button-solid:hover, .button-solid:active {
 a.button-soft { border-radius: 5px }
 a.button-round { border-radius: 25px }
 
+a.button i.fas { margin-left: 6px }
 
 /* ============ PARENT FLEXBOX CONTAINERS ========== */
 
