@@ -17,8 +17,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i%7CRoboto+Slab:500,700&display=swap" rel="stylesheet">
 
     <!-- Link to icons for Font Awesome 5 -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-		
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
 	<!-- Styles for Cookie Consent Popup Message  -->
 	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
 
@@ -39,55 +39,66 @@
 <body>
 
 	<!-- Begin hero block -->
-	<div class="container-hero-block home-page">
+	<div class="container-hero-block contact-us-page">
 		<div class="slide-in-top">
 			<h1>IBAT Tours</h1>
-			<h2>Going further and faster</h2>
+			<h2>Making your holiday special</h2>
 		</div>
 	</div>
 	<!-- End hero block -->
 	
-
-	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox">
+    <!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+    <div class="container-flexbox">
 		<div class="item-1">
-			<h2>You need a holiday</h2>
-			<p>We are an <a href="about-us.html">award-winning travel agency</a> that has successfully provided happy holiday experiences for thousands of customers for over a decade. Whether you are planning a short getaway break or thinking of a longer, long-haul vacation, <a href="destinations.html">we have something for you</a>.</p>
+			<h2>A getaway the way you want it</h2>
+            <p>If one of our regular holiday offerings is not what you are looking for, our expert staff can help you plan that special getaway for your unique tastes.</p>
+            <p>Take your first step to a holiday you will never forget by completing the form below.</p>
+
 		</div>
 	</div><!-- End parent flexbox container -->
 
+	<!-- =============== BEGIN CONTACT FORM HTML ============= -->
 
-	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-orange no-padding-bottom">
-		<div class="item item-1">
-			<h2>Special Offers</h2>
-		</div>
-	</div><!-- End parent flexbox container -->
-
-
-	<!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
-	<div class="container-flexbox bg-orange">
-
-		<div class="item-3">
-			<img src="assets/img/new-york.jpg"  alt="New York">
-			<h3>New York</h3>
-			<p>Its iconic sites include skyscrapers such as the Empire State Building, the sprawling Central Park, and neon-lit Times Square.</p>
-		</div>
-
-		<div class="item-3">
-			<img src="assets/img/washington.jpg"  alt="Washington">
-			<h3>Washington</h3>
-			<p>Located on the Potomac River and contains such impressive buildings as the Capitol, White House and Supreme Court.</p>
-		</div>
-
-		<div class="item-3">
-			<img src="assets/img/ayers-rock.jpg"  alt="Ayers Rock">
-			<h3>Ayer's Rock</h3>
-			<p>Traditionally known as Uluru, Ayer's Rock is a world-famous sandstone monolith in the heart of Australia.</p>
-		</div>
-
-	</div><!-- End parent flexbox container -->
-
+    <!-- Begin container for contact form -->
+        
+    <div class="container-contact-form">
+				
+		<!-- Contact form starts here -->
+		<form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/ibat.training@gmail.com">
+	
+		<!-- Begin contact form fields -->
+	
+			<div class="flex-row">
+				<div class="item-name">
+					<label for="full-name">Full Name</label>
+					<input type="text" name="name" id="full-name" placeholder="Your First and Last Name here." required>
+				</div>
+				<div class="item-email">
+					<label for="email-address">Email</label>
+					<input type="email" name="_replyto" id="email-address" placeholder="Your Email Address here." required>
+				</div>
+			</div>
+	
+			<div class="flex-row">
+				<div class="item-textarea">
+					<label for="message">Message</label>
+					<textarea rows="5" name="message" id="message" placeholder="Your Message here." required></textarea>
+				</div>
+	
+				<div class="item-btn">
+					<button id="btn-submit" type="submit">Submit <i class="fas fa-arrow-circle-right"></i></button> 
+				</div>
+			</div>
+	
+			<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+			<!-- End contact form fields -->
+	
+		</form>
+		<!-- Contact form ends here -->
+	
+	</div>
+	<!-- End container for contact form -->
+	
     <!-- Begin HTML footer -->
     
 	<div class="container-footer">
@@ -98,8 +109,8 @@
         <ul class="footer-links">
             <li><a href="../../../index.html">Home</a></li>
             <li><a href="../../index.html">Portfolio</a></li>
-            <li><a href="../../../contact/index.html">Contact</a></li>
-        </ul>
+			<li><a href="../../../contact/index.html">Contact</a></li>
+		</ul>
         
         <ul class="footer-icons">
             <li>
@@ -139,6 +150,9 @@
 	
 	<!-- End HTML footer -->
 
+	<!-- =============== END CONTACT FORM HTML ============= -->
+
+		
 	<!-- JavaScript for Cookie Consent Popup Message -->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
