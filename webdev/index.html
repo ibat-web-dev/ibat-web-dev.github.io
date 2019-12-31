@@ -13,9 +13,17 @@
 
 	<meta name="author" content="Brendan Munnelly">
 
-	<link rel="stylesheet" href="assets/css/brendan-munnelly-web-design.css">
+	<link rel="stylesheet" href="assets/css/2n2l-web-design.css">
 
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+	<!-- Link to Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet"> 
+
+	<!-- Link to icons for Font Awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+	<!-- Styles for Cookie Consent Popup Message  -->
+	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
 
 <style>
 
@@ -31,6 +39,12 @@
 	.ibat-banner-desktop { margin-top: 0 }
 }
 
+.block-content .box-toc h4 {
+	font-weight: bold;
+	margin: 32px 0 1px 0;
+	font-size: calc(15px + (20 - 15) * ((100vw - 320px)/(1600 - 320)));
+	line-height: 1.1;
+}
 </style>
 
 
@@ -66,7 +80,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="box-toc">
 		<h2>Things to Do</h2>
 		<p><a href="exercises.html">Exercises to complete</a></p>
-		<p><a href="projects.html">Projects to complete</a></p>
+		<p><a href="projects.html">Web Page Projects to complete</a></p>
+
 	</div>
 	<p>&nbsp;</p>
 </div>
@@ -75,33 +90,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<h2>Setting Up</h2>
 
-	<div class="flex-grid-three">
+	<div class="flex-grid">
 
-		<div class="col-gutter">
-			<a href="web-hosting-on-github.html">
-				<img src="assets/img/toc-github.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			<a href="exercises/web-hosting-on-github.html">
+				<img src="assets/img/toc-github.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Web Hosting on GitHub</h3>
 			<p>Creating a free GitHub account, choosing a username and setting up a repository for serving your web pages.</p>
-			<a class="btn-solid btn-rounded" href="web-hosting-on-github.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/web-hosting-on-github.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			 <a href="working-with-web-browsers.html">
-				<img src="assets/img/toc-chrome.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			 <a href="exercises/working-with-web-browsers.html">
+				<img src="assets/img/toc-chrome.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Working with Web Browsers</h3>
 			<p>Installing and customising the two web browsers popular with web designers and web developers.</p>
-			<a class="btn-solid btn-rounded" href="working-with-web-browsers.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/working-with-web-browsers.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			<a href="working-with-text-editors.html">
-				<img src="assets/img/toc-vscode.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			<a href="exercises/working-with-text-editors.html">
+				<img src="assets/img/toc-vscode.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Working with Text Editors</h3>
 			<p>Installing and customising a text editor for creating web pages (HTML files) and stylesheets (CSS files).</p>
-			<a class="btn-solid btn-rounded" href="working-with-text-editors.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/working-with-text-editors.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
 	</div><!--- /flex-grid -->
@@ -113,33 +128,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<h2>Web Design Fundamentals</h2>
 
-	<div class="flex-grid-three">
+	<div class="flex-grid">
 
-		<div class="col-gutter">
-			<a href="setting-up-google-analytics.html">
-				<img src="assets/img/toc-ga.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			<a href="exercises/setting-up-google-analytics.html">
+				<img src="assets/img/toc-ga.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Setting Up Google Analytics</h3>
 			<p>Monitoring your website visitors with Google Analytics and adding the unique tracking code to your web pages.</p>
-			<a class="btn-solid btn-rounded" href="setting-up-google-analytics.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/setting-up-google-analytics.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			 <a href="about-html-files.html">
-				<img src="assets/img/toc-html.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			 <a href="exercises/about-html-files.html">
+				<img src="assets/img/toc-html.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>About HTML Files</h3>
 			<p>Understanding the basic structure of an HTML file and recognising the elements commonly found in the &lt;head&gt; section.</p>
-			<a class="btn-solid btn-rounded" href="about-html-files.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/about-html-files.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			<a href="marking-up-with-html.html">
-				<img src="assets/img/toc-markup.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			<a href="exercises/marking-up-with-html.html">
+				<img src="assets/img/toc-markup.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Marking Up with HTML</h3>
 			<p>Adding HTML tags to your web page, and checking the page with the official WC3 Markup Validation Service.</p>
-			<a class="btn-solid btn-rounded" href="marking-up-with-html.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/marking-up-with-html.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
 	</div><!--- /flex-grid -->
@@ -151,33 +166,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<h2>Responsive Web Design</h2>
 
-	<div class="flex-grid-three">
+	<div class="flex-grid">
 
-		<div class="col-gutter">
-			<a href="styling-html-with-css.html">
-				<img src="assets/img/toc-styling.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			<a href="exercises/styling-html-with-css.html">
+				<img src="assets/img/toc-styling.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Styling HTML with CSS</h3>
 			<p>Linking a web page to a CSS file, resetting browser default styles, and creating heading and paragraph styles.</p>
-			<a class="btn-solid btn-rounded" href="styling-html-with-css.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/styling-html-with-css.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			 <a href="responsive-web-design-media-queries.html">
-				<img src="assets/img/toc-media-queries.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			 <a href="exercises/responsive-web-design-media-queries.html">
+				<img src="assets/img/toc-media-queries.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>RWD: Media Queries</h3>
 			<p>Adding media queries to a CSS file so that your web page can resize according to the width and height of the screen.</p>
-			<a class="btn-solid btn-rounded" href="responsive-web-design-media-queries.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/responsive-web-design-media-queries.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			<a href="responsive-web-design-fluid-typography.html">
-				<img src="assets/img/toc-fluid-typography.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			<a href="exercises/responsive-web-design-fluid-typography.html">
+				<img src="assets/img/toc-fluid-typography.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>RWD: Fluid Typography</h3>
-			<p>Setting maximum and minimum screen widths, and using the fluid typographic equation to enable text to resize responsively.</p>
-			<a class="btn-solid btn-rounded" href="responsive-web-design-fluid-typography.html">View Tutorial</a>
+			<p>Setting maximum and minimum screen widths, and using the fluid typographic equation to resize responsively.</p>
+			<a class="btn-solid btn-rounded" href="exercises/responsive-web-design-fluid-typography.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
 	</div><!--- /flex-grid -->
@@ -188,33 +203,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<h2>Lists, Fonts and Images</h2>
 
-	<div class="flex-grid-three">
+	<div class="flex-grid">
 
-		<div class="col-gutter">
-			<a href="lists-and-bullets.html">
-				<img src="assets/img/toc-lists.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			<a href="exercises/lists-and-bullets.html">
+				<img src="assets/img/toc-lists.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Lists and Bullets</h3>
 			<p>Marking-up content as bullet points in unordered and ordered lists, and creating CSS styles to display them responsively.</p>
-			<a class="btn-solid btn-rounded" href="lists-and-bullets.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/lists-and-bullets.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			 <a href="working-with-google-fonts.html">
-				<img src="assets/img/toc-fonts.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			 <a href="exercises/working-with-google-fonts.html">
+				<img src="assets/img/toc-fonts.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Working with Google Fonts</h3>
 			<p>Selecting font families, weights and styles from Google Fonts, and using them to style text elements in your web pages.</p>
-			<a class="btn-solid btn-rounded" href="working-with-google-fonts.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/working-with-google-fonts.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			<a href="working-with-images.html">
-				<img src="assets/img/toc-images.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			<a href="exercises/working-with-images.html">
+				<img src="assets/img/toc-images.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Working with Images</h3>
 			<p>Understanding bitmap and vector images, discovering sources of free images, and adding images to your web pages.</p>
-			<a class="btn-solid btn-rounded" href="working-with-images.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/working-with-images.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 	</div><!--- /flex-grid -->
 
@@ -225,33 +240,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<h2>The Box Model, Colours and Hyperlinks</h2>
 
-	<div class="flex-grid-three">
+	<div class="flex-grid">
 
-		<div class="col-gutter">
-			<a href="working-with-the-box-model.html">
-				<img src="assets/img/toc-box-model.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			<a href="exercises/working-with-the-box-model.html">
+				<img src="assets/img/toc-box-model.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Working with the Box Model</h3>
 			<p>Applying CSS styles to the three components of the box model: padding, borders and margins.</p>
-			<a class="btn-solid btn-rounded" href="working-with-the-box-model.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/working-with-the-box-model.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			 <a href="colours-and-web-design.html">
-				<img src="assets/img/toc-colours.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			 <a href="exercises/colours-and-web-design.html">
+				<img src="assets/img/toc-colours.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Colours and Web Design</h3>
-			<p>Learn about the web colour systems, and apply the CSS properties of color, background-color and border-color to web page elements.</p>
-			<a class="btn-solid btn-rounded" href="colours-and-web-design.html">View Tutorial</a>
+			<p>Learn about the web colour systems, and apply the CSS properties of color, background-color and border-color.</p>
+			<a class="btn-solid btn-rounded" href="exercises/colours-and-web-design.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-gutter">
-			 <a href="working-with-hyperlinks.html">
-				<img src="assets/img/toc-hyperlinks.png" class="images-shadow" alt="portfolio all the light">
+		<div class="item-3">
+			 <a href="exercises/working-with-hyperlinks.html">
+				<img src="assets/img/toc-hyperlinks.png" class="img-shadow" alt="portfolio all the light">
 			</a>
 			<h3>Working with Hyperlinks</h3>
 			<p>About absolute, relative and internal hyperlinks, the four hyperlink states and styling hyperlinks in CSS.</p>
-			<a class="btn-solid btn-rounded" href="working-with-hyperlinks.html">View Tutorial</a>
+			<a class="btn-solid btn-rounded" href="exercises/working-with-hyperlinks.html">View Tutorial &nbsp;<i class="fas fa-arrow-right"></i></a>
 		</div>
 
 	</div><!--- /flex-grid -->
@@ -262,48 +277,129 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="block-content bg-white">
 	<div class="box-toc">
-		<h2>Projects</h2>
-
-		<p><a href="projects/project-setup/index.html">Project 1: How to set up a website</a></p>
+		<h2>Six Projects</h2>
+		<p><a href="projects/project-setup/index.html">Project 1: How to set up a website</a>
 		<p><a href="projects/project-hero/index.html">Project 2: Hero Blocks Showcase</a></p>
-		<p><a href="projects/project-menus/index.html">Project 3: Desktop and Mobile Menus</a></p>
-		<p><a href="projects/project-privacy/index.html">Project 4: Your Privacy Web Page</a></p>
-		<p><a href="projects/project-contact/index.html">Project 5: Your Contact Form</a></p>
-		<p><a href="projects/project-portfolio/index.html">Project 6: Your Portfolio Web Page</a></p>
+		<p><a href="projects/project-smoothies/index.html">Project 3: Smooth Smoothies</a></p>
+		<p><a href="projects/project-software/index.html">Project 4: Software Analytics</a></p>
+		<p><a href="projects/project-travel/index.html">Project 5: Travel Agency</a></p>
+		<p><a href="projects/project-web-agency/index.html">Project 6: Web Design Agency</a></p>
 	</div>
 </div>
 </section>
 
 <section class="block-content bg-white">
 	<div class="box-toc">
-		<h2>Project Templates</h2>
-		<p><a href="https://www.munnelly.com/webdev/projects/project-final/index.html">Project 7: Two sample final project templates</a></p>
-		<p><a href="https://www.munnelly.com/webdev/projects/project-home/index.html">Project 8: Three sample home page templates</a></p>
+		<h2>Four Project Projects with Forms</h2>
+		<p><a href="projects/project-smoothies-form/index.html">Project 3: Smooth Smoothies</a></p>
+		<p><a href="projects/project-software-form/index.html">Project 4: Software Analytics</a></p>
+		<p><a href="projects/project-travel-form/index.html">Project 5: Travel Agency</a></p>
+		<p><a href="projects/project-web-agency-form/index.html">Project 6: Web Design Agency</a></p>
 	</div>
+</div>
 </section>
 
 
+<section class="block-content bg-white">
+	<div class="box-toc">
+		<h2>Six Projects with Footers</h2>
+		<p><a href="projects/project-setup-footer/index.html">Project 1: How to set up a website</a></p>
+		<p><a href="projects/project-hero-footer/index.html">Project 2: Hero Blocks Showcase</a></p>
+		<p><a href="projects/project-smoothies-footer/index.html">Project 3: Smooth Smoothies</a></p>
+		<p><a href="projects/project-software-footer/index.html">Project 4: Software Analytics</a></p>
+		<p><a href="projects/project-travel-footer/index.html">Project 5: Travel Agency</a></p>
+		<p><a href="projects/project-web-agency-footer/index.html">Project 6: Web Design Agency</a></p>
+	</div>
+</div>
+</section>
+
+
+<section class="block-content bg-white">
+	<div class="box-toc">
+		<h2>Four Projects with Menus</h2>
+		<p><a href="projects/project-smoothies-menus/index.html">Project 3: Smooth Smoothies</a></p>
+		<p><a href="projects/project-software-menus/index.html">Project 4: Software Analytics</a></p>
+		<p><a href="projects/project-travel-menus/index.html">Project 5: Travel Agency</a></p>
+		<p><a href="projects/project-web-agency-menus/index.html">Project 6: Web Design Agency</a></p>
+	</div>
+</div>
+</section>
+
+<!--
+
+<section class="block-content bg-white">
+	<div class="box-toc">
+		<h2>Your Personal Website</h2>
+		<p><a href="projects/project-contact/index.html">Project 7: Your Contact Form Web Page</a></p>
+		<p><a href="projects/project-privacy/index.html">Project 8: Your Privacy Web Page</a></p>
+		<p><a href="projects/project-portfolio/index.html">Project 9: Your Portfolio Web Page</a></p>
+		<p><a href="projects/project-portfolio/index.html">Project 10: Your Home Page</a></p>
+	</div>
+</div>
+</section>
+
+-->
+
+
+
+<section class="block-content bg-white">
+	<div class="box-toc">
+		<h2>Project Templates</h2>
+
+		<h4>Privacy and Cookie Consent</h4>
+
+		<p><a href="templates/privacy-template.html">Cookie Code and CSS Link</a><br>
+		(Use 'View Page Source' to see the page content.)</p></p>
+
+		<h4>Footers</h4>
+		<p><a href="templates/footer-template.html">Footer HTML</a><br>
+		<a href="templates/footer-template.css">Footer CSS</a><br>
+		<a href="templates/footer-template-2.html">Footer HTML 2</a><br>
+		<a href="templates/footer-template-2.css">Footer CSS 2</a></p>
+
+		<h4>Email Sign-up Form</h4>
+		<p><a href="templates/email-signup-form-template.html">Email Sign-up Form HTML</a><br>
+		<a href="templates/email-signup-form-template.css">Email Sign-up Form CSS</a></p>
+
+		<h4>Contact Form</h4>
+		<p><a href="templates/contact-form-template.html">Contact Form HTML</a><br>
+		<a href="templates/contact-form-template.css">Contact Form CSS</a></p>
+
+		<h4>Desktop and Mobile Menus</h4>
+		<p><a href="templates/menus-template.html">Menus HTML</a><br>
+		<a href="templates/menus-template.css">Menus CSS</a><br>
+		<a href="templates/menus-logo.png">Logo image for menus</a><br>
+		<a href="templates/profile-pic.jpg">Face image for menus</a><br>
+
+
+<!--
+		<p><a href="projects/project-final/index.html">Project 7: Two sample final project templates</a></p>
+		<p><a href="projects/project-home/index.html">Project 8: Three sample home page templates</a></p> -->
+	</div>
+</section>
+
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <!-- JavaScript for Cookie Consent Popup Message -->
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
 	window.cookieconsent.initialise({
-	  "palette": {
-		"popup": {
-		  "background": "#000"
+	  	"palette": {
+			"popup": {
+				"background": "#000"
+			},
+			"button": {
+				"background": "#f1d600"
+			}
 		},
-		"button": {
-		  "background": "#f1d600"
+	  	"content": {
+			"href": "https://www.munnelly.com/legal/index.html"
 		}
-	  },
-	  "content": {
-		"href": "https://www.munnelly.com/legal/"
-	  }
 	});
-	</script>
+    </script>
 
 </body>
 </html>
