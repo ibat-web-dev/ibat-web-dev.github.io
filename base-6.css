@@ -1,8 +1,7 @@
 /* ==== BROWSER RESETS  ==== */
-* { padding: 0; margin: 0; border: 0; box-sizing: border-box; font-weight: normal; font-size: 16px }
-body, html { height: 100% }	
+* { padding: 0; margin: 0; border: 0; box-sizing: border-box; font-weight: normal; font-size: 16px }  
+body, html { height: 100% } 
 body { max-width: 1600px; margin: 0 auto }
-img { display: block; width: 100%; height: auto }
 
 
 /* ==== PAGE WIDTH ==== */
@@ -155,53 +154,47 @@ ul li, ol li {
 /* ==== TEXT BOXES ==== */
 
 .important-note-1 { 
-   margin: 42px 0 42px 0;
-   padding: 14px 14px 14px 14px;
-   border-style: solid;
-   border-width: 1px
+    margin: 42px 0 42px 0;
+    padding: 14px 14px 14px 14px;
+    border-style: solid;
+    border-width: 1px
 }
 
 .important-note-1 h3 { margin-top: 0 }
-
 .important-note-1 p { margin-bottom: 0  }
 
 .important-note-2 { 
-   margin: 42px 0 42px 0;
-   padding: 14px 0 14px 0;
-   border-style: solid;
-   border-top-width: 8px;
-   border-bottom-width: 4px;
-   border-left-width: 0;
-   border-right-width: 0
+    margin: 42px 0 42px 0;
+    padding: 14px 0 14px 0;
+    border-style: solid;
+    border-top-width: 8px;
+    border-bottom-width: 4px;
+    border-left-width: 0;
+    border-right-width: 0
 }
-
 .important-note-2 h3 { margin-top: 0 }
-
 .important-note-2 p { margin-bottom: 0  }
 
+
 .important-note-3 { 
-   margin: 42px 0 42px 0;
-   padding: 14px 14px 20px 14px;
-   border-style: solid;
-   border-top-width: 0;
-   border-bottom-width: 0;
-   border-left-width: 20px;
-   border-right-width: 0
+    margin: 42px 0 42px 0;
+    padding: 14px 14px 20px 14px;
+    border-style: solid;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 20px;
+    border-right-width: 0
 }
-
 .important-note-3 h3 { margin-top: 0 }
-
 .important-note-3 p { margin-bottom: 0  }
 
 
-div.important-note-4 { 
-   margin: 42px 0 42px 0;
-   padding: 14px 14px 24px 14px;
-   border-style: solid;
-   border-width: 3px;
-   border-radius: 10px
+.important-note-4 { 
+    margin: 42px 0 42px 0;
+    padding: 14px 14px 24px 14px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px
 }
-
 .important-note-4 h3 { margin-top: 0 }
-
 .important-note-4 p { margin-bottom: 0  }
